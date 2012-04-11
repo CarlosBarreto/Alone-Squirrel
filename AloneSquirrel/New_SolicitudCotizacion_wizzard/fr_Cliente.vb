@@ -54,6 +54,16 @@ Public Class fr_Cliente
     End Sub
 
     Private Sub bt_Siguiente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bt_Siguiente.Click
+        'Determinar si se seleccionó un Cliente
+        If cb_Cliente.SelectedValue <> "" Then
+            'Guardar el numero de cliente
+            _NumeroDeCliente = cb_Cliente.SelectedValue
+        Else
+            If txt_Empresa.Visible = False Then
+                MsgBox("Es necesario que seleccione un cliente", MsgBoxStyle.Critical, "MIGSA")
+                Exit Sub
+            End If
+        End If
         'Guardar los datos del cliente en la variable global correspondiente
         If _NumeroDeCliente = Nothing Or _NumeroDeCliente = "" Then
             With _Cliente
@@ -85,6 +95,11 @@ Public Class fr_Cliente
             cb_Cliente.ValueMember = obDataTable.Columns(0).ToString()
             cb_Cliente.DisplayMember = obDataTable.Columns(1).ToString()
             cb_Cliente.Text = ""
+        End If
+
+        If cb_Cliente.Items.Count > 0 Then
+            cb_Cliente.Text = "Selecciona un Cliente"
+            cb_Cliente.SelectedValue = ""
         End If
 
 

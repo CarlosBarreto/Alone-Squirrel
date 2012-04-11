@@ -2,7 +2,7 @@
 <DB_Connection>
   <Server>localhost</Server>
   <User>root</User>
-  <Pass>Foxconn01</Pass>
+  <Pass></Pass>
   <DataBase>migsa_</DataBase>
 </DB_Connection>
 <!-- 

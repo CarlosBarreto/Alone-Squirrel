@@ -29,3 +29,23 @@ C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone
 C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\bin\Debug\MySql.Data.dll
 C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\bin\Debug\BDConnection.pdb
 C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\bin\Debug\BDConnection.xml
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\bin\Debug\New_SolicitudCotizacion_wizzard.exe
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\bin\Debug\New_SolicitudCotizacion_wizzard.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\bin\Debug\New_SolicitudCotizacion_wizzard.xml
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\bin\Debug\BDConnection.dll
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\bin\Debug\MySql.Data.dll
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\bin\Debug\BDConnection.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\bin\Debug\BDConnection.xml
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.fr_Cliente.resources
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.fr_CondicionesPago.resources
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.fr_EspecificacionServicio.resources
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.fr_Pressentation.resources
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.fr_Requisitor.resources
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.fr_Servicio.resources
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.Resources.resources
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.exe
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.xml
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.pdb

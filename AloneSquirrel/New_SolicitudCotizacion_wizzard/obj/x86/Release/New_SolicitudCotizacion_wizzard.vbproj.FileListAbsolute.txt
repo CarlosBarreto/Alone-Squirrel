@@ -14,3 +14,6 @@ C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone
 C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.exe
 C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.xml
 C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.exe
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.xml
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.pdb

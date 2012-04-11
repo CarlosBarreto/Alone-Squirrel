@@ -38,3 +38,13 @@ C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone
 C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\obj\Debug\BDConnection.dll
 C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\obj\Debug\BDConnection.xml
 C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\obj\Debug\BDConnection.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Debug\BDConnection.dll
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Debug\BDConnection.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Debug\BDConnection.xml
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Debug\BDConnection.Resources.resources
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Debug\BDConnection.dll
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Debug\BDConnection.xml
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Debug\BDConnection.pdb

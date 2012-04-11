@@ -61,6 +61,17 @@ Namespace BDConnection
             DT = getDataTableQuery(strSQL.ToString)
             Return DT
         End Function
+
+        Public Function RequisitoresPorCliente(ByVal NumeroDeCliente As String) As DataTable
+            Dim DT As DataTable
+            Dim strSQL As New StringBuilder
+
+            strSQL.Append("CALL migsa_RequisitoresXClientes(")
+            strSQL.Append("'" & NumeroDeCliente & "');")
+
+            DT = getDataTableQuery(strSQL.ToString)
+            Return DT
+        End Function
     End Class
 End Namespace
 

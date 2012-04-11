@@ -1,4 +1,5 @@
 ﻿Imports New_SolicitudCotizacion_wizzard.Globals
+Imports BDConnection.BDConnection
 
 Public Class fr_Requisitor
 
@@ -25,6 +26,25 @@ Public Class fr_Requisitor
             'Si el numero de cliente está vacío, en automatico se habilitan los controles para un nuevo requisitor
             'Mostrar el formulario para nuevo requisitor
             ShowNewRequisitorForm()
+        Else
+            'Obtener todos los Clientes mediante el SP
+            Dim obDataTable As DataTable
+            Dim BDCon As New Cliente
+
+            obDataTable = BDCon.RequisitoresPorCliente(_NumeroDeCliente)
+
+            'Cargar los datos del DataTable
+            If obDataTable.Rows.Count > 0 Then
+                cb_Requisitor.DataSource = obDataTable
+                cb_Requisitor.ValueMember = obDataTable.Columns(0).ToString()
+                cb_Requisitor.DisplayMember = obDataTable.Columns(1).ToString()
+                cb_Requisitor.Text = ""
+            End If
+
+            If cb_Requisitor.Items.Count > 0 Then
+                cb_Requisitor.Text = "Selecciona un Requisitor"
+                cb_Requisitor.SelectedValue = ""
+            End If
         End If
     End Sub
 
