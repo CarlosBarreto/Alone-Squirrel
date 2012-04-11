@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DB_Connection>
+  <Server>localhost</Server>
+  <User>root</User>
+  <Pass>Foxconn01</Pass>
+  <DataBase>migsa_</DataBase>
+</DB_Connection>
+<!-- 
+   DB_Connection = xDoc.GetElementsByTagName("DB_Connection")
+            For Each nodo As XmlElement In DB_Connection
+                DBServer = nodo.GetElementsByTagName("Server")
+                DBUser = nodo.GetElementsByTagName("User")
+                DBPass = nodo.GetElementsByTagName("Pass")
+                DBDataBase = nodo.GetElementsByTagName("DataBase")
+-->
+

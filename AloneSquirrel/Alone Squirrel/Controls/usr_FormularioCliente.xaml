@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="usr_FormularioCliente"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+    <Grid Height="400" Width="600">
+        <Label Content="Numero de Cliente" Height="25" HorizontalAlignment="Left" Margin="322,38,0,0" Name="lb_NumeroCliente" VerticalAlignment="Top" FontSize="16" Foreground="#FF666666" BorderBrush="#FF999999" BorderThickness="0" Width="142" />
+        <Label Content="Empresa" Height="25" HorizontalAlignment="Left" Margin="40,115,0,0" Name="lb_Empresa" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FF666666" BorderBrush="#FF999999" BorderThickness="0" />
+        <Label Content="Domicilio" Height="25" HorizontalAlignment="Left" Margin="40,152,0,0" Name="lb_Domicilio" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FF666666" BorderBrush="#FF999999" BorderThickness="0" />
+        <Label Content="Colonia" Height="25" HorizontalAlignment="Left" Margin="40,189,0,0" Name="lb_Colonia" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FF666666" BorderBrush="#FF999999" BorderThickness="0" />
+        <Label Content="CP" Height="25" HorizontalAlignment="Left" Margin="416,189,0,0" Name="lb_CP" VerticalAlignment="Top" Width="80" FontSize="14" Foreground="#FF666666" BorderBrush="#FF999999" BorderThickness="0" />
+        <Label Content="Ciudad" Height="25" HorizontalAlignment="Left" Margin="40,226,0,0" Name="lb_Ciudad" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FF666666" BorderBrush="#FF999999" BorderThickness="0" />
+        <Label Content="Estado" Height="25" HorizontalAlignment="Left" Margin="40,263,0,0" Name="lb_Estado" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FF666666" BorderBrush="#FF999999" BorderThickness="0" />
+        <Label Content="Ramo" Height="25" HorizontalAlignment="Left" Margin="40,300,0,0" Name="lb_Ramo" VerticalAlignment="Top" Width="70" FontSize="14" Foreground="#FF666666" BorderBrush="#FF999999" BorderThickness="0" />
+        <TextBox Height="24" HorizontalAlignment="Left" Margin="474,38,0,0" Name="TextBox1" VerticalAlignment="Top" Width="94" BorderThickness="1" BorderBrush="#FF666666" FontSize="13" />
+        <TextBox BorderBrush="#FF666666" BorderThickness="1" Height="24" HorizontalAlignment="Left" Margin="116,115,0,0" Name="TextBox2" VerticalAlignment="Top" Width="452" FontSize="14" />
+        <TextBox BorderBrush="#FF666666" BorderThickness="1" Height="24" HorizontalAlignment="Left" Margin="116,152,0,0" Name="TextBox3" VerticalAlignment="Top" Width="452" FontSize="14" />
+        <TextBox BorderBrush="#FF666666" BorderThickness="1" Height="24" HorizontalAlignment="Left" Margin="116,189,0,0" Name="TextBox4" VerticalAlignment="Top" Width="281" FontSize="14" />
+        <TextBox BorderBrush="#FF666666" BorderThickness="1" Height="24" HorizontalAlignment="Left" Margin="116,226,0,0" Name="TextBox5" VerticalAlignment="Top" Width="452" FontSize="14" />
+        <TextBox BorderBrush="#FF666666" BorderThickness="1" Height="24" HorizontalAlignment="Left" Margin="451,189,0,0" Name="TextBox6" VerticalAlignment="Top" Width="117" FontSize="14" />
+        <TextBox BorderBrush="#FF666666" BorderThickness="1" Height="24" HorizontalAlignment="Left" Margin="116,263,0,0" Name="TextBox7" VerticalAlignment="Top" Width="452" FontSize="14" />
+        <TextBox BorderBrush="#FF666666" BorderThickness="1" Height="24" HorizontalAlignment="Left" Margin="116,300,0,0" Name="TextBox8" VerticalAlignment="Top" Width="452" FontSize="14" />
+        <Button Content="Aceptar" Height="29" HorizontalAlignment="Left" Margin="493,344,0,0" Name="Button1" VerticalAlignment="Top" Width="75" Background="#FFEEEEEE" />
+        <Button Content="Cancelar" Height="29" HorizontalAlignment="Left" Margin="412,344,0,0" Name="Button2" VerticalAlignment="Top" Width="75" Background="#FFEEEEEE" />
+    </Grid>
+</UserControl>

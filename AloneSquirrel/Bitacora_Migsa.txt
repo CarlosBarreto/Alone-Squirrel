@@ -1,0 +1,9 @@
+-- -----------------------------------------------
+-- Author: Carlos Barreto 
+-- Date:   2012.03.20
+-- Desc:   Bitacora de versiones MIGSA
+-- -----------------------------------------------
+2012.03.20 v1.0.1 Oficina
+  - Se termino con SP para ingresar nuevo usuario
+  - Se realizó prueba funcional a SP nuevo usuario
+  - Inicio de SP para Requsitor

@@ -1,0 +1,16 @@
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\bin\Release\New_SolicitudCotizacion_wizzard.exe
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\bin\Release\New_SolicitudCotizacion_wizzard.pdb
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\bin\Release\New_SolicitudCotizacion_wizzard.xml
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.fr_Cliente.resources
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.fr_CondicionesPago.resources
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.fr_EspecificacionServicio.resources
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.fr_Pressentation.resources
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.fr_Requisitor.resources
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.fr_Servicio.resources
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.Resources.resources
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.exe
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.xml
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\New_SolicitudCotizacion_wizzard\obj\x86\Release\New_SolicitudCotizacion_wizzard.pdb
