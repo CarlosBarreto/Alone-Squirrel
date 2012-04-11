@@ -1,0 +1,44 @@
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\bin\Release\BDConnection.dll
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\bin\Release\BDConnection.pdb
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\bin\Release\BDConnection.xml
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\bin\Release\MySql.Data.dll
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\obj\Release\BDConnection.Resources.resources
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\obj\Release\BDConnection.dll
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\obj\Release\BDConnection.xml
+C:\Users\Carlos Barreto\documents\visual studio 2010\Projects\Alone Squirrel\BDConnection\obj\Release\BDConnection.pdb
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\bin\Release\BDConnection.dll
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\bin\Release\BDConnection.pdb
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\bin\Release\BDConnection.xml
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\bin\Release\MySql.Data.dll
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\obj\Release\ResolveAssemblyReference.cache
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.Resources.resources
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\obj\Release\GenerateResource.read.1.tlog
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\obj\Release\GenerateResource.write.1.tlog
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.dll
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.xml
+C:\Users\carlos.barreto\Downloads\Alone Squirrel v1.0.1 2012.03.20 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.pdb
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\bin\Release\BDConnection.dll
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\bin\Release\BDConnection.pdb
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\bin\Release\BDConnection.xml
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\bin\Release\MySql.Data.dll
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.Resources.resources
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.dll
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.xml
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.03.21 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.pdb
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\bin\Release\BDConnection.dll
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\bin\Release\BDConnection.pdb
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\bin\Release\BDConnection.xml
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\bin\Release\MySql.Data.dll
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.Resources.resources
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.dll
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.xml
+C:\Users\Carlos Barreto\Downloads\Alone Squirrel v1.0.1 2012.04.03 Oficina\Alone Squirrel\BDConnection\obj\Release\BDConnection.pdb
