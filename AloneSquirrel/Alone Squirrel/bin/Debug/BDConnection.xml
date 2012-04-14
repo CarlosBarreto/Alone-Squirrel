@@ -6,20 +6,7 @@ BDConnection
 </name>
 </assembly>
 <members>
-<member name="P:BDConnection.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:BDConnection.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:BDConnection.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="F:BDConnection.BDConnection.BDConnection._LastErrorMessage">
+<member name="F:BDConnection.BDConnection.BDConnection._LastErrorMessage">
 	<summary>
  Almacena el ultimo error ocurrido en la clase
  </summary>
@@ -146,6 +133,19 @@ BDConnection
  Clase que implemente la conexion a la base de datos
  </summary>
 	<remarks></remarks>
+</member><member name="P:BDConnection.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:BDConnection.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:BDConnection.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member>
 </members>
 </doc>

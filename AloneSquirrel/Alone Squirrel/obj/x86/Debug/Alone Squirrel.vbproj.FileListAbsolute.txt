@@ -156,3 +156,29 @@ C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debu
 C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone Squirrel.exe
 C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone Squirrel.xml
 C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone Squirrel.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\bin\Debug\Alone Squirrel.exe
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\bin\Debug\Alone Squirrel.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\bin\Debug\Alone Squirrel.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\bin\Debug\BDConnection.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\bin\Debug\MySql.Data.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\bin\Debug\BDConnection.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\bin\Debug\BDConnection.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Controls\usr_FormularioCliente.baml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Controls\usr_TabPanel.baml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Controls\usr_FormularioCliente.g.vb
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Controls\usr_TabPanel.g.vb
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone Squirrel_Content.g.vb
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone Squirrel_MarkupCompile.cache
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone Squirrel.g.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone_Squirrel.usr_FormClienteAgregar.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone_Squirrel.usr_SolicitudCotizacion_Agregar.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone_Squirrel.fr_Main.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone_Squirrel.fr_Main_2op.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone_Squirrel.Resources.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone_Squirrel.UserMenu.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone Squirrel.exe
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone Squirrel.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\Alone Squirrel\obj\x86\Debug\Alone Squirrel.pdb

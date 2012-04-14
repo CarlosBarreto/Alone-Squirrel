@@ -1,4 +1,5 @@
 ﻿
+
 Public Class Globals
     ''' <summary>
     ''' Almacena el numero de Cliente
@@ -95,9 +96,6 @@ Public Class Globals
         _DT.Columns.Add("CondicionesEntrega")
         _DT.Columns.Add("MaterialProporcionado")
     End Sub
-    'Agregar columnas al datatable
-
-
 
     ''' <summary>
     ''' Para cerrar la aplicacion
@@ -115,5 +113,14 @@ Public Class Globals
             End
         End If
     End Sub
+
+   
+
+
+
+
+
+
+           
 End Class
 

@@ -13,4 +13,7 @@
     Private Sub bt_Cancelar_Disposed(ByVal sender As Object, ByVal e As System.EventArgs) Handles bt_Cancelar.Disposed
         End
     End Sub
+
+    Private Sub bt_Ayuda_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bt_Ayuda.Click
+    End Sub
 End Class
