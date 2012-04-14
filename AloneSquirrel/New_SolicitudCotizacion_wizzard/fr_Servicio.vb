@@ -20,7 +20,12 @@ Public Class fr_Servicio
         Me.Hide()
     End Sub
 
-    Private Sub bt_Siguiente_Disposed(ByVal sender As Object, ByVal e As System.EventArgs) Handles bt_Siguiente.Disposed
-        End
+    'Opciones para cerrar el wizzard
+    Private Sub bt_Cancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bt_Cancelar.Click
+        _CancelFc("Cancelar")
+    End Sub
+    Private Sub fr_Servicio_Close(ByVal sender As Object, ByVal e As FormClosingEventArgs) Handles Me.Closing
+        _CancelFc("Salir")
+        e.Cancel = True
     End Sub
 End Class

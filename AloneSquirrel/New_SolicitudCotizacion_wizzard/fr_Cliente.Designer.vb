@@ -384,6 +384,7 @@ Partial Class fr_Cliente
         Me.cb_Cliente.Name = "cb_Cliente"
         Me.cb_Cliente.Size = New System.Drawing.Size(346, 21)
         Me.cb_Cliente.TabIndex = 1
+        Me.cb_Cliente.Text = "Selecciona un Cliente"
         '
         'fr_Cliente
         '

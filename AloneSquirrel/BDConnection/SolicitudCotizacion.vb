@@ -47,5 +47,15 @@ Namespace BDConnection
 
             DT = getDataTableQuery(strSQL.ToString)
         End Sub
+
+        Public Function GetCondicionesDeServicio() As DataTable
+            Dim DT As DataTable
+            Dim strSQL As New StringBuilder
+
+            strSQL.Append("Select Nombre, Anticipo, Resto From `migsa_`.`migsa_catalogocondicionespago`")
+            DT = getDataTableQuery(strSQL.ToString)
+
+            Return DT
+        End Function
     End Class
 End Namespace

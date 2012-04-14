@@ -53,3 +53,14 @@ C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Release\BD
 C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Release\BDConnection.pdb
 C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Release\BDConnection.xml
 C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Release\MySql.Data.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Release\BDConnection.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Release\BDConnection.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Release\BDConnection.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\bin\Release\MySql.Data.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Release\BDConnection.Resources.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Release\BDConnection.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Release\BDConnection.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\BDConnection\obj\Release\BDConnection.pdb

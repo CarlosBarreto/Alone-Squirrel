@@ -6,6 +6,7 @@ Public Class Globals
     ''' </summary>
     ''' <remarks></remarks>
     Public Shared _NumeroDeCliente As String
+    Public Shared _IDRequisitor As String
 
     ''' <summary>
     ''' Estructura que almacena los datos del cliente
@@ -97,6 +98,8 @@ Public Class Globals
         _DT.Columns.Add("MaterialProporcionado")
     End Sub
 
+    Public Shared _PrecioTotal As Integer
+
     ''' <summary>
     ''' Para cerrar la aplicacion
     ''' </summary>
@@ -114,13 +117,5 @@ Public Class Globals
         End If
     End Sub
 
-   
-
-
-
-
-
-
-           
 End Class
 

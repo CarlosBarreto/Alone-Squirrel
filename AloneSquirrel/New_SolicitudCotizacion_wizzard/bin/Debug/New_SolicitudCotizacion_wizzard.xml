@@ -62,14 +62,6 @@ New_SolicitudCotizacion_wizzard
  </summary>
 	<param name="Type">Complemento del mensaje Cancelar/Salir</param>
 	<remarks></remarks>
-</member><member name="M:New_SolicitudCotizacion_wizzard.Globals.ListFieldNames">
-	<summary>
- Lista todos los elementos del formulario en una Cadena.The
- form fields identified can be used to map each of 
- fields in a PDF
- </summary>
-	<returns></returns>
-	<remarks></remarks>
 </member><member name="P:New_SolicitudCotizacion_wizzard.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.

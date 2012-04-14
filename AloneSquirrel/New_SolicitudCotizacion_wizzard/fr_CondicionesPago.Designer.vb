@@ -23,24 +23,26 @@ Partial Class fr_CondicionesPago
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fr_CondicionesPago))
-        Me.txt_Correo = New System.Windows.Forms.TextBox()
-        Me.txt_Radio = New System.Windows.Forms.TextBox()
+        Me.txt_Observaciones = New System.Windows.Forms.TextBox()
+        Me.txt_TipoPago = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.bt_Ayuda = New System.Windows.Forms.Button()
         Me.bt_Cancelar = New System.Windows.Forms.Button()
         Me.bt_finalizar = New System.Windows.Forms.Button()
         Me.bt_Siguiente = New System.Windows.Forms.Button()
         Me.bt_Anterior = New System.Windows.Forms.Button()
-        Me.txt_Celular = New System.Windows.Forms.TextBox()
-        Me.txt_Ext = New System.Windows.Forms.TextBox()
-        Me.txt_Telefono = New System.Windows.Forms.TextBox()
+        Me.txt_Contado = New System.Windows.Forms.TextBox()
+        Me.txt_Credito = New System.Windows.Forms.TextBox()
+        Me.txt_Resto = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.txt_Nombre = New System.Windows.Forms.TextBox()
+        Me.txt_Anticipo = New System.Windows.Forms.TextBox()
         Me.lb_Correo = New System.Windows.Forms.Label()
         Me.lb_Nombre = New System.Windows.Forms.Label()
         Me.lb_Telefono = New System.Windows.Forms.Label()
         Me.lb_Ext = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.cb_Condiciones = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.lb_Celular = New System.Windows.Forms.Label()
         Me.lb_Radio = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -50,26 +52,26 @@ Partial Class fr_CondicionesPago
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'txt_Correo
+        'txt_Observaciones
         '
-        Me.txt_Correo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Correo.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.txt_Correo.ForeColor = System.Drawing.Color.Black
-        Me.txt_Correo.Location = New System.Drawing.Point(145, 220)
-        Me.txt_Correo.Multiline = True
-        Me.txt_Correo.Name = "txt_Correo"
-        Me.txt_Correo.Size = New System.Drawing.Size(326, 86)
-        Me.txt_Correo.TabIndex = 51
+        Me.txt_Observaciones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Observaciones.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.txt_Observaciones.ForeColor = System.Drawing.Color.Black
+        Me.txt_Observaciones.Location = New System.Drawing.Point(145, 220)
+        Me.txt_Observaciones.Multiline = True
+        Me.txt_Observaciones.Name = "txt_Observaciones"
+        Me.txt_Observaciones.Size = New System.Drawing.Size(326, 86)
+        Me.txt_Observaciones.TabIndex = 51
         '
-        'txt_Radio
+        'txt_TipoPago
         '
-        Me.txt_Radio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Radio.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.txt_Radio.ForeColor = System.Drawing.Color.Black
-        Me.txt_Radio.Location = New System.Drawing.Point(145, 178)
-        Me.txt_Radio.Name = "txt_Radio"
-        Me.txt_Radio.Size = New System.Drawing.Size(326, 26)
-        Me.txt_Radio.TabIndex = 50
+        Me.txt_TipoPago.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_TipoPago.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.txt_TipoPago.ForeColor = System.Drawing.Color.Black
+        Me.txt_TipoPago.Location = New System.Drawing.Point(145, 178)
+        Me.txt_TipoPago.Name = "txt_TipoPago"
+        Me.txt_TipoPago.Size = New System.Drawing.Size(326, 26)
+        Me.txt_TipoPago.TabIndex = 50
         '
         'Panel1
         '
@@ -130,35 +132,35 @@ Partial Class fr_CondicionesPago
         Me.bt_Anterior.Text = "< Anterior"
         Me.bt_Anterior.UseVisualStyleBackColor = True
         '
-        'txt_Celular
+        'txt_Contado
         '
-        Me.txt_Celular.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Celular.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.txt_Celular.ForeColor = System.Drawing.Color.Black
-        Me.txt_Celular.Location = New System.Drawing.Point(111, 139)
-        Me.txt_Celular.Name = "txt_Celular"
-        Me.txt_Celular.Size = New System.Drawing.Size(360, 26)
-        Me.txt_Celular.TabIndex = 49
+        Me.txt_Contado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Contado.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.txt_Contado.ForeColor = System.Drawing.Color.Black
+        Me.txt_Contado.Location = New System.Drawing.Point(111, 139)
+        Me.txt_Contado.Name = "txt_Contado"
+        Me.txt_Contado.Size = New System.Drawing.Size(360, 26)
+        Me.txt_Contado.TabIndex = 49
         '
-        'txt_Ext
+        'txt_Credito
         '
-        Me.txt_Ext.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Ext.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.txt_Ext.ForeColor = System.Drawing.Color.Black
-        Me.txt_Ext.Location = New System.Drawing.Point(111, 98)
-        Me.txt_Ext.Name = "txt_Ext"
-        Me.txt_Ext.Size = New System.Drawing.Size(360, 26)
-        Me.txt_Ext.TabIndex = 48
+        Me.txt_Credito.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Credito.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.txt_Credito.ForeColor = System.Drawing.Color.Black
+        Me.txt_Credito.Location = New System.Drawing.Point(111, 103)
+        Me.txt_Credito.Name = "txt_Credito"
+        Me.txt_Credito.Size = New System.Drawing.Size(360, 26)
+        Me.txt_Credito.TabIndex = 48
         '
-        'txt_Telefono
+        'txt_Resto
         '
-        Me.txt_Telefono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Telefono.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.txt_Telefono.ForeColor = System.Drawing.Color.Black
-        Me.txt_Telefono.Location = New System.Drawing.Point(111, 56)
-        Me.txt_Telefono.Name = "txt_Telefono"
-        Me.txt_Telefono.Size = New System.Drawing.Size(360, 26)
-        Me.txt_Telefono.TabIndex = 47
+        Me.txt_Resto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Resto.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.txt_Resto.ForeColor = System.Drawing.Color.Black
+        Me.txt_Resto.Location = New System.Drawing.Point(341, 62)
+        Me.txt_Resto.Name = "txt_Resto"
+        Me.txt_Resto.Size = New System.Drawing.Size(130, 26)
+        Me.txt_Resto.TabIndex = 47
         '
         'PictureBox1
         '
@@ -170,15 +172,15 @@ Partial Class fr_CondicionesPago
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'txt_Nombre
+        'txt_Anticipo
         '
-        Me.txt_Nombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Nombre.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.txt_Nombre.ForeColor = System.Drawing.Color.Black
-        Me.txt_Nombre.Location = New System.Drawing.Point(111, 15)
-        Me.txt_Nombre.Name = "txt_Nombre"
-        Me.txt_Nombre.Size = New System.Drawing.Size(360, 26)
-        Me.txt_Nombre.TabIndex = 46
+        Me.txt_Anticipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Anticipo.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.txt_Anticipo.ForeColor = System.Drawing.Color.Black
+        Me.txt_Anticipo.Location = New System.Drawing.Point(111, 62)
+        Me.txt_Anticipo.Name = "txt_Anticipo"
+        Me.txt_Anticipo.Size = New System.Drawing.Size(130, 26)
+        Me.txt_Anticipo.TabIndex = 46
         '
         'lb_Correo
         '
@@ -198,7 +200,7 @@ Partial Class fr_CondicionesPago
         Me.lb_Nombre.Font = New System.Drawing.Font("Arial", 12.0!)
         Me.lb_Nombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.lb_Nombre.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lb_Nombre.Location = New System.Drawing.Point(17, 23)
+        Me.lb_Nombre.Location = New System.Drawing.Point(17, 64)
         Me.lb_Nombre.Name = "lb_Nombre"
         Me.lb_Nombre.Size = New System.Drawing.Size(83, 18)
         Me.lb_Nombre.TabIndex = 42
@@ -210,7 +212,7 @@ Partial Class fr_CondicionesPago
         Me.lb_Telefono.Font = New System.Drawing.Font("Arial", 12.0!)
         Me.lb_Telefono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.lb_Telefono.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lb_Telefono.Location = New System.Drawing.Point(17, 64)
+        Me.lb_Telefono.Location = New System.Drawing.Point(268, 64)
         Me.lb_Telefono.Name = "lb_Telefono"
         Me.lb_Telefono.Size = New System.Drawing.Size(67, 18)
         Me.lb_Telefono.TabIndex = 41
@@ -222,7 +224,7 @@ Partial Class fr_CondicionesPago
         Me.lb_Ext.Font = New System.Drawing.Font("Arial", 12.0!)
         Me.lb_Ext.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.lb_Ext.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lb_Ext.Location = New System.Drawing.Point(17, 106)
+        Me.lb_Ext.Location = New System.Drawing.Point(17, 111)
         Me.lb_Ext.Name = "lb_Ext"
         Me.lb_Ext.Size = New System.Drawing.Size(60, 18)
         Me.lb_Ext.TabIndex = 40
@@ -230,12 +232,14 @@ Partial Class fr_CondicionesPago
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.txt_Correo)
-        Me.Panel3.Controls.Add(Me.txt_Radio)
-        Me.Panel3.Controls.Add(Me.txt_Celular)
-        Me.Panel3.Controls.Add(Me.txt_Ext)
-        Me.Panel3.Controls.Add(Me.txt_Telefono)
-        Me.Panel3.Controls.Add(Me.txt_Nombre)
+        Me.Panel3.Controls.Add(Me.cb_Condiciones)
+        Me.Panel3.Controls.Add(Me.Label1)
+        Me.Panel3.Controls.Add(Me.txt_Observaciones)
+        Me.Panel3.Controls.Add(Me.txt_TipoPago)
+        Me.Panel3.Controls.Add(Me.txt_Contado)
+        Me.Panel3.Controls.Add(Me.txt_Credito)
+        Me.Panel3.Controls.Add(Me.txt_Resto)
+        Me.Panel3.Controls.Add(Me.txt_Anticipo)
         Me.Panel3.Controls.Add(Me.lb_Correo)
         Me.Panel3.Controls.Add(Me.lb_Nombre)
         Me.Panel3.Controls.Add(Me.lb_Telefono)
@@ -247,6 +251,27 @@ Partial Class fr_CondicionesPago
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(483, 367)
         Me.Panel3.TabIndex = 9
+        '
+        'cb_Condiciones
+        '
+        Me.cb_Condiciones.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.cb_Condiciones.FormattingEnabled = True
+        Me.cb_Condiciones.Location = New System.Drawing.Point(171, 21)
+        Me.cb_Condiciones.Name = "cb_Condiciones"
+        Me.cb_Condiciones.Size = New System.Drawing.Size(300, 26)
+        Me.cb_Condiciones.TabIndex = 53
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label1.Location = New System.Drawing.Point(17, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(148, 18)
+        Me.Label1.TabIndex = 52
+        Me.Label1.Text = "Condiones de Pago"
         '
         'lb_Celular
         '
@@ -302,19 +327,19 @@ Partial Class fr_CondicionesPago
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents txt_Correo As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Radio As System.Windows.Forms.TextBox
+    Friend WithEvents txt_Observaciones As System.Windows.Forms.TextBox
+    Friend WithEvents txt_TipoPago As System.Windows.Forms.TextBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents bt_Ayuda As System.Windows.Forms.Button
     Friend WithEvents bt_Cancelar As System.Windows.Forms.Button
     Friend WithEvents bt_finalizar As System.Windows.Forms.Button
     Friend WithEvents bt_Siguiente As System.Windows.Forms.Button
     Friend WithEvents bt_Anterior As System.Windows.Forms.Button
-    Friend WithEvents txt_Celular As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Ext As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Telefono As System.Windows.Forms.TextBox
+    Friend WithEvents txt_Contado As System.Windows.Forms.TextBox
+    Friend WithEvents txt_Credito As System.Windows.Forms.TextBox
+    Friend WithEvents txt_Resto As System.Windows.Forms.TextBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents txt_Nombre As System.Windows.Forms.TextBox
+    Friend WithEvents txt_Anticipo As System.Windows.Forms.TextBox
     Friend WithEvents lb_Correo As System.Windows.Forms.Label
     Friend WithEvents lb_Nombre As System.Windows.Forms.Label
     Friend WithEvents lb_Telefono As System.Windows.Forms.Label
@@ -323,4 +348,6 @@ Partial Class fr_CondicionesPago
     Friend WithEvents lb_Celular As System.Windows.Forms.Label
     Friend WithEvents lb_Radio As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents cb_Condiciones As System.Windows.Forms.ComboBox
 End Class
