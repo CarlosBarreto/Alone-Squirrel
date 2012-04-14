@@ -7,3 +7,5 @@
   - Se termino con SP para ingresar nuevo usuario
   - Se realizó prueba funcional a SP nuevo usuario
   - Inicio de SP para Requsitor
+2012.04.13 v1.0.1 Casa
+  -- Pruebas con git y github
