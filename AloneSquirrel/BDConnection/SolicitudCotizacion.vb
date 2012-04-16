@@ -4,9 +4,9 @@ Namespace BDConnection
     Public Class SolicitudCotizacion
         Inherits BDConnection
 
-        Public Sub GuardarSolicitudCotizacion(ByVal NumeroDeCliente As String, ByVal ID_Requisitor As String, ByVal Servicio As String, ByVal Solicitud As String, _
+        Public Function GuardarSolicitudCotizacion(ByVal NumeroDeCliente As String, ByVal ID_Requisitor As String, ByVal Servicio As String, ByVal Solicitud As String, _
                                               ByVal Entrega As String, ByVal Anticipo As String, ByVal Resto As String, ByVal Credito As String, ByVal Contado As String, _
-                                              ByVal TiempoPago As String, ByVal Observaciones As String)
+                                              ByVal TiempoPago As String, ByVal Observaciones As String) As DataTable
             Dim DT As DataTable
             Dim strSQL As New StringBuilder
 
@@ -24,7 +24,8 @@ Namespace BDConnection
             strSQL.Append("'" & Observaciones & "'); ")
 
             DT = getDataTableQuery(strSQL.ToString)
-        End Sub
+            Return DT
+        End Function
 
         Public Sub GuardarEspecificacionSolicitudCotizacion(ByVal NumeroSolicitud As String, ByVal Nombre As String, ByVal Descripcion As String, _
                                                             ByVal Material As String, ByVal Proceso As String, ByVal Tratamiento As String, ByVal Cantidad As Integer, _

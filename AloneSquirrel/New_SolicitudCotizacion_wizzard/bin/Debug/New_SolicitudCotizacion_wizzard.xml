@@ -56,6 +56,11 @@ New_SolicitudCotizacion_wizzard
  Almacena los datos de la especificacion
  </summary>
 	<remarks></remarks>
+</member><member name="F:New_SolicitudCotizacion_wizzard.Globals._DT">
+	<summary>
+ Data table
+ </summary>
+	<remarks></remarks>
 </member><member name="M:New_SolicitudCotizacion_wizzard.Globals._CancelFc(System.String)">
 	<summary>
  Para cerrar la aplicacion

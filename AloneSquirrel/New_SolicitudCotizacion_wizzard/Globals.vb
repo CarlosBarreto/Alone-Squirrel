@@ -83,6 +83,10 @@ Public Class Globals
     ''' <remarks></remarks>
     Public Shared _EspecificacionServicios(0) As DatosEspecificacionServicios
 
+    ''' <summary>
+    ''' Data table
+    ''' </summary>
+    ''' <remarks></remarks>
     Public Shared _DT As DataTable
     Public Shared Sub CreateDT()
         _DT = New DataTable
@@ -99,6 +103,18 @@ Public Class Globals
     End Sub
 
     Public Shared _PrecioTotal As Integer
+
+    Public Structure DatosCondicionesPago
+        Public Anticipo As String
+        Public Resto As String
+        Public Credito As String
+        Public Contado As String
+        Public TiempoPago As String
+        Public Observaciones As String
+    End Structure
+    Public Shared _CondicionesPago As DatosCondicionesPago
+
+    Public Shared _NumeroCotizacion As String
 
     ''' <summary>
     ''' Para cerrar la aplicacion
