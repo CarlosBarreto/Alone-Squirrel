@@ -7,6 +7,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BDConnection", "BDConnectio
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "New_SolicitudCotizacion_wizzard", "New_SolicitudCotizacion_wizzard\New_SolicitudCotizacion_wizzard.vbproj", "{BBB9840A-631B-489C-A2CB-88918C3C626A}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PDFUtility", "PDFUtility\PDFUtility.vbproj", "{09E805EA-E0B3-4283-8649-5EF744D37536}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,16 @@ Global
 		{BBB9840A-631B-489C-A2CB-88918C3C626A}.Release|Mixed Platforms.Build.0 = Release|x86
 		{BBB9840A-631B-489C-A2CB-88918C3C626A}.Release|x86.ActiveCfg = Release|x86
 		{BBB9840A-631B-489C-A2CB-88918C3C626A}.Release|x86.Build.0 = Release|x86
+		{09E805EA-E0B3-4283-8649-5EF744D37536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E805EA-E0B3-4283-8649-5EF744D37536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E805EA-E0B3-4283-8649-5EF744D37536}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{09E805EA-E0B3-4283-8649-5EF744D37536}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{09E805EA-E0B3-4283-8649-5EF744D37536}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{09E805EA-E0B3-4283-8649-5EF744D37536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E805EA-E0B3-4283-8649-5EF744D37536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E805EA-E0B3-4283-8649-5EF744D37536}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{09E805EA-E0B3-4283-8649-5EF744D37536}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{09E805EA-E0B3-4283-8649-5EF744D37536}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

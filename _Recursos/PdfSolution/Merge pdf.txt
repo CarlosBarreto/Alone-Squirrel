@@ -1,0 +1,90 @@
+
+    public void Merge(Stream outputStream)
+    {
+        if (outputStream == null || !outputStream.CanWrite)
+            throw new Exception("OutputStream es nulo o no se puede escribir en éste.");
+
+        Document newDocument = null;
+        try
+        {
+            newDocument = new Document();
+            PdfWriter pdfWriter = PdfWriter.GetInstance(newDocument, outputStream);
+            newDocument.Open();
+            PdfContentByte pdfContentByte = pdfWriter.DirectContent;
+
+            if (EnablePagination)
+                documents.ForEach(delegate(PdfReader doc)
+                                  {
+                                      totalPages += doc.NumberOfPages;
+
+                                  });
+
+
+
+            int currentPage = 1;
+
+            foreach (PdfReader pdfReader in documents)
+
+            {
+
+                for (int page = 1; page <= pdfReader.NumberOfPages; page++)
+
+                {
+
+                    newDocument.NewPage();
+
+                    PdfImportedPage importedPage = pdfWriter.GetImportedPage(pdfReader, page);
+
+                    pdfContentByte.AddTemplate(importedPage, 0, 0);
+
+
+
+                    if (EnablePagination)
+
+                    {
+
+                        pdfContentByte.BeginText();
+
+                        pdfContentByte.SetFontAndSize(baseFont, 9);
+
+                        pdfContentByte.ShowTextAligned(PdfContentByte.ALIGN_CENTER,
+
+                            string.Format("{0} de {1}", currentPage++, totalPages), 520, 5, 0);
+
+                        pdfContentByte.EndText();
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        finally
+
+        {
+
+            outputStream.Flush();
+
+            if (newDocument != null)
+
+                newDocument.Close();
+
+            outputStream.Close();
+
+        }
+
+    }
+
+
+
+Public PdfMerge()
+
+    {
+
+        documents = new List<PdfReader>();
+
+    }
+
+}
