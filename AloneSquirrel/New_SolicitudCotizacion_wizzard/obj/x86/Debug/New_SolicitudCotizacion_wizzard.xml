@@ -6,12 +6,7 @@ New_SolicitudCotizacion_wizzard
 </name>
 </assembly>
 <members>
-<member name="M:New_SolicitudCotizacion_wizzard.fr_Requisitor.ShowNewRequisitorForm">
-	<summary>
- Permite mostrar el formulario para un nuevo requisitor
- </summary>
-	<remarks></remarks>
-</member><member name="F:New_SolicitudCotizacion_wizzard.Globals._NumeroDeCliente">
+<member name="F:New_SolicitudCotizacion_wizzard.Globals._NumeroDeCliente">
 	<summary>
  Almacena el numero de Cliente
  </summary>
@@ -67,6 +62,16 @@ New_SolicitudCotizacion_wizzard
  </summary>
 	<param name="Type">Complemento del mensaje Cancelar/Salir</param>
 	<remarks></remarks>
+</member><member name="M:New_SolicitudCotizacion_wizzard.fr_Requisitor.ShowNewRequisitorForm">
+	<summary>
+ Permite mostrar el formulario para un nuevo requisitor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:New_SolicitudCotizacion_wizzard.fr_Cliente.ShowNewClientForm">
+	<summary>
+ Funcion encargada de mostrar los controles para agregar un nuevo cliente
+ </summary>
+	<remarks></remarks>
 </member><member name="P:New_SolicitudCotizacion_wizzard.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
@@ -80,11 +85,6 @@ New_SolicitudCotizacion_wizzard
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
-</member><member name="M:New_SolicitudCotizacion_wizzard.fr_Cliente.ShowNewClientForm">
-	<summary>
- Funcion encargada de mostrar los controles para agregar un nuevo cliente
- </summary>
-	<remarks></remarks>
 </member>
 </members>
 </doc>

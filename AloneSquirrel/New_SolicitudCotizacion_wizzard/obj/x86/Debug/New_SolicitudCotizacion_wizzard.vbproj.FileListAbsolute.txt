@@ -70,3 +70,4 @@ C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wiz
 C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\New_SolicitudCotizacion_wizzard.Resources.resources
 C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_SolicitudCotizacion_wizzard\bin\Debug\itextsharp.dll
