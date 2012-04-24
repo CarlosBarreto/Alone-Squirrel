@@ -108,6 +108,9 @@ Public Class fr_CondicionesPago
             MsgBox(ex.Message, MsgBoxStyle.Critical, "MIGSA")
             Exit Sub
         End Try
+
+        'Generar el documento PDF
+
     End Sub
 
     Private Sub fr_CondicionesPago_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

@@ -33,7 +33,7 @@ Namespace BDConnection
             Dim DT As DataTable
             Dim strSQL As New StringBuilder
 
-            strSQL.Append("migsa_EspecificacionSolicitudCotizacion_Insertar(")
+            strSQL.Append("call migsa_EspecificacionSolicitudCotizacion_Insertar(")
             strSQL.Append("'" & NumeroSolicitud & "', ")
             strSQL.Append("'" & Nombre & "', ")
             strSQL.Append("'" & Descripcion & "', ")
