@@ -11,8 +11,8 @@
         TabControl1.Width = Globals._WIDHT
         TabControl1.Height = Globals._HEIGHT
 
-        Dim UserMenu As New UserMenu
-        TabPage1.Controls.Add(UserMenu)
+        'Dim UserMenu As New UserMenu
+        'TabPage1.Controls.Add(UserMenu)
 
         'Set the Mode of Drawing as Owner Drawn
         TabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed

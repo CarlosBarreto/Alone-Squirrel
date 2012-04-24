@@ -9,6 +9,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "New_SolicitudCotizacion_wiz
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PDFUtility", "PDFUtility\PDFUtility.vbproj", "{6D88DE7A-37FC-4494-8972-E3EAC2FA7B66}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "New_Cotizacion_wizzard", "New_Cotizacion_wizzard\New_Cotizacion_wizzard.vbproj", "{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,16 @@ Global
 		{6D88DE7A-37FC-4494-8972-E3EAC2FA7B66}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6D88DE7A-37FC-4494-8972-E3EAC2FA7B66}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6D88DE7A-37FC-4494-8972-E3EAC2FA7B66}.Release|x86.ActiveCfg = Release|Any CPU
+		{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}.Debug|x86.ActiveCfg = Debug|x86
+		{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}.Debug|x86.Build.0 = Debug|x86
+		{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}.Release|Any CPU.ActiveCfg = Release|x86
+		{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}.Release|x86.ActiveCfg = Release|x86
+		{2D9939D0-C1EA-4129-8717-CF8AC998FB5C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

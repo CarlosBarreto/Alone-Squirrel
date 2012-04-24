@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+New_Cotizacion_wizzard
+</name>
+</assembly>
+<members>
+<member name="M:New_Cotizacion_wizzard.Globals._CancelFc(System.String)">
+	<summary>
+ Para cerrar la aplicacion
+ </summary>
+	<param name="Type">Complemento del mensaje Cancelar/Salir</param>
+	<remarks></remarks>
+</member><member name="P:New_Cotizacion_wizzard.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:New_Cotizacion_wizzard.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:New_Cotizacion_wizzard.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

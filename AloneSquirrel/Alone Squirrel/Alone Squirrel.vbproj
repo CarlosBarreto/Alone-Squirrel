@@ -85,17 +85,11 @@
     <Compile Include="Controls\usr_FormClienteAgregar.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\usr_FormularioCliente.xaml.vb">
-      <DependentUpon>usr_FormularioCliente.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Controls\usr_SolicitudCotizacion_Agregar.Designer.vb">
       <DependentUpon>usr_SolicitudCotizacion_Agregar.vb</DependentUpon>
     </Compile>
     <Compile Include="Controls\usr_SolicitudCotizacion_Agregar.vb">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\usr_TabPanel.xaml.vb">
-      <DependentUpon>usr_TabPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="fr_Main.vb">
       <SubType>Form</SubType>
@@ -126,12 +120,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Controls\UserMenu.Designer.vb">
-      <DependentUpon>UserMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\UserMenu.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="Posicionamiento.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -152,9 +140,6 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\UserMenu.resx">
-      <DependentUpon>UserMenu.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -177,16 +162,6 @@
   <ItemGroup>
     <Content Include="Images\migsa_background1.png" />
     <Content Include="Images\migsa_logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="Controls\usr_FormularioCliente.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Controls\usr_TabPanel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

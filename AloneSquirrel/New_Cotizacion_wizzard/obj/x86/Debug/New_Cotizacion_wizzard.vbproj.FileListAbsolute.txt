@@ -1,0 +1,17 @@
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\bin\Debug\New_Cotizacion_wizzard.exe
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\bin\Debug\New_Cotizacion_wizzard.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\bin\Debug\New_Cotizacion_wizzard.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\bin\Debug\BDConnection.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\bin\Debug\MySql.Data.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\bin\Debug\BDConnection.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\bin\Debug\BDConnection.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.fr_Presentacion.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.fr_SelectOption.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.fr_Solicitudes.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.Resources.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.exe
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.pdb

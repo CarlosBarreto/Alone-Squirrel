@@ -1,13 +1,56 @@
 ﻿Imports System.Text
 Imports System.IO
+Imports System.Collections.Generic
 Imports iTextSharp
 Imports iTextSharp.text
 Imports iTextSharp.text.pdf
 Imports iTextSharp.text.xml
 
+''' <summary>
+''' Clase encargada del manejo de los archivos PDF
+''' </summary>
+''' <remarks></remarks>
 Public Class PDFUtility
-    'vARIABLES
+    'Variables 
+    'Not used --     Protected _PDFTemplate As String
+    'Not used --     Protected _PDFFile As String
 
+    'Propiedades
+    'Not used --     Public Property PDFTemplate() As String
+    'Not used --         Get
+    'Not used --             If _PDFTemplate Is Nothing Then _PDFTemplate = "template.pdf"
+    'Not used --             Return _PDFTemplate
+    'Not used --         End Get
+    'Not used --         Set(ByVal value As String)
+    'Not used --             _PDFTemplate = value
+    'Not used --         End Set
+    'Not used --     End Property
+    'Not used --     Public Property PDFFile() As String
+    'Not used --         Get
+    'Not used --             If _PDFFile Is Nothing Then _PDFFile = "File.pdf"
+    'Not used --             Return _PDFFile
+    'Not used --         End Get
+    'Not used --         Set(value As String)
+    'Not used --             _PDFFile = value
+    'Not used --         End Set
+    'Not used --     End Property
+
+    Private Property [Delegate] As System.Action(Of PdfReader)
+
+    Public Sub pdf_NewSolicitudCotizacion()
+
+    End Sub
+
+    Public Sub pdf_NewCotizacion(ByVal _NewFile As String)
+        Dim _PDFTemplate As String
+
+        'Determinar que archivo utilizar
+
+        Dim pdfReader As New PdfReader(_PDFTemplate)
+        Dim pdfStamper As New PdfStamper(pdfReader, New FileStream(_NewFile, FileMode.Create))
+        Dim pdfFormFields As AcroFields = pdfStamper.AcroFields
+
+    End Sub
 
     'Funciones para el manejo de archivos PDF
 
@@ -64,5 +107,4 @@ Public Class PDFUtility
 
         pdfStamper.Close()
     End Sub
-
 End Class

@@ -1,0 +1,72 @@
+'PDFMerge
+    Private _BaseFont As BaseFont
+    Private _EnablePagination As Boolean = False
+    Private _Documents As List(Of PdfReader)
+    Private _TotalPages As Integer
+
+    Public Property BaseFont As BaseFont
+        Get
+            Return _BaseFont
+        End Get
+        Set(value As BaseFont)
+            _BaseFont = value
+        End Set
+    End Property
+    Public Property EnablePagination As Boolean
+        Get
+            Return _EnablePagination
+        End Get
+        Set(value As Boolean)
+            _EnablePagination = value
+            If _BaseFont Is Nothing Then
+                _BaseFont = BaseFont.CreateFont(BaseFont.HELVETICA, BaseFont.CP1252, BaseFont.NOT_EMBEDDED)
+            End If
+
+        End Set
+    End Property
+    Public ReadOnly Property Documents As List(Of PdfReader)
+        Get
+            Return _Documents
+        End Get
+    End Property
+
+    Public Sub AddDocument(filename As String)
+        _Documents.Add(New PdfReader(filename))
+    End Sub
+
+    Public Sub AddDocument(pdfstream As Stream)
+        _Documents.Add(New PdfReader(pdfstream))
+    End Sub
+
+    Public Sub AddDocument(pdfContents As Byte())
+        _Documents.Add(New PdfReader(pdfContents))
+    End Sub
+
+    Public Sub AddDocument(pdfDocument As PdfReader)
+        _Documents.Add(pdfDocument)
+    End Sub
+
+    Public Sub Merge(OutputFileName As String)
+        Merge(New FileStream(OutputFileName, FileMode.Create))
+    End Sub
+
+    Public Sub Merge(outputStream As Stream)
+        If outputStream Is Nothing Or Not outputStream.CanWrite Then
+            Throw New Exception("OutputStream es nulo o no se puede escribir en él")
+        End If
+
+        Dim NewDocument As Document = Nothing
+        Try
+            NewDocument = New Document
+            Dim pdfWriter As PdfWriter = pdfWriter.GetInstance(NewDocument, outputStream)
+            NewDocument.Open()
+
+            Dim pdfContentByte As PdfContentByte = pdfWriter.DirectContent
+
+            If _EnablePagination Then
+                ' _Documents.ForEach([Delegate](doc As iTextSharp.text.pdf.PdfReader )(_TotalPages = _TotalPages + doc.NumberOfPages)
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub

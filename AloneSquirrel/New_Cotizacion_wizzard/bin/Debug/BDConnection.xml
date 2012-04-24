@@ -1,0 +1,151 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BDConnection
+</name>
+</assembly>
+<members>
+<member name="F:BDConnection.BDConnection.BDConnection._LastErrorMessage">
+	<summary>
+ Almacena el ultimo error ocurrido en la clase
+ </summary>
+	<remarks></remarks>
+</member><member name="F:BDConnection.BDConnection.BDConnection._dbServer">
+	<summary>
+ Almacena el nombre del servidor de Base de datos
+ </summary>
+	<remarks></remarks>
+</member><member name="F:BDConnection.BDConnection.BDConnection._dbDataBase">
+	<summary>
+ Almacena el nombre de la base de datos
+ </summary>
+	<remarks></remarks>
+</member><member name="F:BDConnection.BDConnection.BDConnection._dbUser">
+	<summary>
+ Almacena el Id de usuario de la base de datos
+ </summary>
+	<remarks></remarks>
+</member><member name="F:BDConnection.BDConnection.BDConnection._dbPassword">
+	<summary>
+ Almacena el password de acceso a la base de datos
+ </summary>
+	<remarks></remarks>
+</member><member name="F:BDConnection.BDConnection.BDConnection._xmlFilePath">
+	<summary>
+ Almacena la ruta del archivo XML de configuración
+ </summary>
+	<remarks></remarks>
+</member><member name="P:BDConnection.BDConnection.BDConnection.LastErrorMessage">
+	<summary>
+ Contiene el ultimo error ocurrido en el sistema
+ </summary>
+	<value>El valor inicial es una cadena en vacia</value>
+	<returns>Retorna el ultimo error ocurrido en la clase</returns>
+	<remarks>El sistema no muestra las exepciones que ocurren, debido a esto es preferible
+          que se guarde el ultimo mensaje de error para que pueda ser mostrado en la 
+          página
+ </remarks>
+</member><member name="P:BDConnection.BDConnection.BDConnection.db_Server">
+	<summary>
+ Contiene el nombre del servidor de Base de Datos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BDConnection.BDConnection.BDConnection.db_DataBase">
+	<summary>
+ Contiene el nombre de la Base de Datos Accesada
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BDConnection.BDConnection.BDConnection.db_User">
+	<summary>
+ Contiene el ID de usuario de acceso a la Base de Datos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BDConnection.BDConnection.BDConnection.db_Password">
+	<summary>
+ Contiene el ID password de acceso a la Base de Datos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BDConnection.BDConnection.BDConnection.XmlConfigurationFile">
+	<summary>
+ Contiene el path del archivo XML de configuración
+ </summary>
+	<value>El valor inicial siempre es vacío</value>
+	<returns>Retorna el path del archivo de configuración</returns>
+	<remarks></remarks>
+</member><member name="M:BDConnection.BDConnection.BDConnection.CadenaConexion">
+	<summary>
+ Genera una cadena de conexión / Make a new Connection String
+ </summary>
+	<returns>Connection String</returns>
+	<remarks>Modificada para utilizar MySQL</remarks>
+</member><member name="M:BDConnection.BDConnection.BDConnection.LoadXMLDBConfig">
+	<summary>
+ Lee el archivo XML especificado en _xmlFilePath para obtener los valores de conexion
+ a la base de datos
+ </summary>
+	<remarks></remarks>
+</member><member name="M:BDConnection.BDConnection.BDConnection.#ctor">
+	<summary>
+ Constructor 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:BDConnection.BDConnection.BDConnection.Dispose">
+	<summary>
+ Destructor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:BDConnection.BDConnection.BDConnection.getDatabases">
+	<summary>
+ Query preestablecido para la lectura de las Bases de Datos del servidor
+ </summary>
+	<returns>Retorna un MySqlDataReader con el resultado de la consulta</returns>
+	<remarks>La Base de datos del servidor debe ser MySql</remarks>
+</member><member name="M:BDConnection.BDConnection.BDConnection.showTables">
+	<summary>
+ Query preestablecido para la lectura de las tablas que componen la base de datos.
+ </summary>
+	<returns>Retorna un MySqlDataReader el resultado de la consulta</returns>
+	<remarks></remarks>
+</member><member name="M:BDConnection.BDConnection.BDConnection.changeDataBase(System.String)">
+	<summary>
+ Procedimiento para actualizar la Base de Datos a la que se esta conectado. Solo en tiempo de ejecución
+ </summary>
+	<param name="NewDataBase">Nombre de la Base de Datos</param>
+	<remarks></remarks>
+</member><member name="M:BDConnection.BDConnection.BDConnection.getDataTableQuery(System.String)">
+	<summary>
+ Procedimiento para ejecutar un Query y retonar un DataTable
+ </summary>
+	<param name="strQuery">String con el Query a ejecutar</param>
+	<returns>DataTable con el resultado del Query</returns>
+	<remarks></remarks>
+</member><member name="T:BDConnection.BDConnection.BDConnection">
+	<summary>
+ Clase que implemente la conexion a la base de datos
+ </summary>
+	<remarks></remarks>
+</member><member name="P:BDConnection.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:BDConnection.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:BDConnection.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

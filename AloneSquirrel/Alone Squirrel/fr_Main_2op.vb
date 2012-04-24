@@ -124,7 +124,7 @@ Public Class fr_Main_2op
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim TabPage_AgregarCliente As TabPage
         Dim TabControl As TabControl
-        Dim UserMenu As New UserMenu
+        'Dim UserMenu As New UserMenu
         Dim Form As New usr_FormClienteAgregar
 
         TabControl = Me.TabControl2

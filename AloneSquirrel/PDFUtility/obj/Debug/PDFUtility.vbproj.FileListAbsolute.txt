@@ -1,0 +1,11 @@
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\obj\Debug\PDFUtility.Resources.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\bin\Debug\PDFUtility.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\bin\Debug\PDFUtility.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\bin\Debug\PDFUtility.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\bin\Debug\itextsharp.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\obj\Debug\PDFUtility.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\obj\Debug\PDFUtility.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\PDFUtility\obj\Debug\PDFUtility.pdb

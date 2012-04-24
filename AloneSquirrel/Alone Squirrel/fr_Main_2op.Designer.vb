@@ -71,17 +71,20 @@ Partial Class fr_Main_2op
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.TabM_Proyecto = New System.Windows.Forms.TabPage()
-        Me.TabM_Reportes = New System.Windows.Forms.TabPage()
-        Me.TabM_Ayuda = New System.Windows.Forms.TabPage()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button20 = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Button21 = New System.Windows.Forms.Button()
         Me.Button22 = New System.Windows.Forms.Button()
         Me.Button23 = New System.Windows.Forms.Button()
         Me.Button24 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Button20 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TabM_Reportes = New System.Windows.Forms.TabPage()
+        Me.TabM_Ayuda = New System.Windows.Forms.TabPage()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.panel_principal.SuspendLayout()
         Me.TabControl2.SuspendLayout()
@@ -93,8 +96,9 @@ Partial Class fr_Main_2op
         Me.Panel3.SuspendLayout()
         Me.PM_CatCliente.SuspendLayout()
         Me.TabM_Proyecto.SuspendLayout()
-        Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.Panel8.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -570,6 +574,7 @@ Partial Class fr_Main_2op
         '
         'TabM_Proyecto
         '
+        Me.TabM_Proyecto.Controls.Add(Me.Panel8)
         Me.TabM_Proyecto.Controls.Add(Me.Panel7)
         Me.TabM_Proyecto.Controls.Add(Me.Panel6)
         Me.TabM_Proyecto.Location = New System.Drawing.Point(4, 22)
@@ -579,54 +584,6 @@ Partial Class fr_Main_2op
         Me.TabM_Proyecto.TabIndex = 1
         Me.TabM_Proyecto.Text = "Proyecto"
         Me.TabM_Proyecto.UseVisualStyleBackColor = True
-        '
-        'TabM_Reportes
-        '
-        Me.TabM_Reportes.Location = New System.Drawing.Point(4, 22)
-        Me.TabM_Reportes.Name = "TabM_Reportes"
-        Me.TabM_Reportes.Size = New System.Drawing.Size(952, 90)
-        Me.TabM_Reportes.TabIndex = 2
-        Me.TabM_Reportes.Text = "Reportes"
-        Me.TabM_Reportes.UseVisualStyleBackColor = True
-        '
-        'TabM_Ayuda
-        '
-        Me.TabM_Ayuda.Location = New System.Drawing.Point(4, 22)
-        Me.TabM_Ayuda.Name = "TabM_Ayuda"
-        Me.TabM_Ayuda.Size = New System.Drawing.Size(952, 90)
-        Me.TabM_Ayuda.TabIndex = 3
-        Me.TabM_Ayuda.Text = "Ayuda"
-        Me.TabM_Ayuda.UseVisualStyleBackColor = True
-        '
-        'Panel6
-        '
-        Me.Panel6.Controls.Add(Me.Button20)
-        Me.Panel6.Controls.Add(Me.Label5)
-        Me.Panel6.Location = New System.Drawing.Point(3, 3)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(100, 87)
-        Me.Panel6.TabIndex = 1
-        '
-        'Button20
-        '
-        Me.Button20.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(236, Byte), Integer))
-        Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button20.Location = New System.Drawing.Point(21, 0)
-        Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(54, 71)
-        Me.Button20.TabIndex = 1
-        Me.Button20.Text = "Nueva"
-        Me.Button20.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button20.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.Location = New System.Drawing.Point(1, 70)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(100, 14)
-        Me.Label5.TabIndex = 1
-        Me.Label5.Text = "Solicitud Cotización"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel7
         '
@@ -700,6 +657,84 @@ Partial Class fr_Main_2op
         Me.Label6.Text = "Clientes"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.Button20)
+        Me.Panel6.Controls.Add(Me.Label5)
+        Me.Panel6.Location = New System.Drawing.Point(3, 3)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(100, 87)
+        Me.Panel6.TabIndex = 1
+        '
+        'Button20
+        '
+        Me.Button20.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button20.Location = New System.Drawing.Point(21, 0)
+        Me.Button20.Name = "Button20"
+        Me.Button20.Size = New System.Drawing.Size(54, 71)
+        Me.Button20.TabIndex = 1
+        Me.Button20.Text = "Nueva"
+        Me.Button20.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button20.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.Location = New System.Drawing.Point(1, 70)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(100, 14)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "Solicitud Cotización"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TabM_Reportes
+        '
+        Me.TabM_Reportes.Location = New System.Drawing.Point(4, 22)
+        Me.TabM_Reportes.Name = "TabM_Reportes"
+        Me.TabM_Reportes.Size = New System.Drawing.Size(952, 90)
+        Me.TabM_Reportes.TabIndex = 2
+        Me.TabM_Reportes.Text = "Reportes"
+        Me.TabM_Reportes.UseVisualStyleBackColor = True
+        '
+        'TabM_Ayuda
+        '
+        Me.TabM_Ayuda.Location = New System.Drawing.Point(4, 22)
+        Me.TabM_Ayuda.Name = "TabM_Ayuda"
+        Me.TabM_Ayuda.Size = New System.Drawing.Size(952, 90)
+        Me.TabM_Ayuda.TabIndex = 3
+        Me.TabM_Ayuda.Text = "Ayuda"
+        Me.TabM_Ayuda.UseVisualStyleBackColor = True
+        '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.Button17)
+        Me.Panel8.Controls.Add(Me.Label7)
+        Me.Panel8.Location = New System.Drawing.Point(107, 3)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(100, 87)
+        Me.Panel8.TabIndex = 2
+        '
+        'Button17
+        '
+        Me.Button17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button17.Location = New System.Drawing.Point(21, 0)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(54, 71)
+        Me.Button17.TabIndex = 1
+        Me.Button17.Text = "Nueva"
+        Me.Button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button17.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.Location = New System.Drawing.Point(1, 70)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(100, 14)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Cotización"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'fr_Main_2op
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -724,8 +759,9 @@ Partial Class fr_Main_2op
         Me.Panel3.ResumeLayout(False)
         Me.PM_CatCliente.ResumeLayout(False)
         Me.TabM_Proyecto.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -789,4 +825,7 @@ Partial Class fr_Main_2op
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Button20 As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Panel8 As System.Windows.Forms.Panel
+    Friend WithEvents Button17 As System.Windows.Forms.Button
+    Friend WithEvents Label7 As System.Windows.Forms.Label
 End Class

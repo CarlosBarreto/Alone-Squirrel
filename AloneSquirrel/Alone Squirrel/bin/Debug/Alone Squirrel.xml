@@ -6,23 +6,7 @@ AloneSquirrel
 </name>
 </assembly>
 <members>
-<member name="M:Alone_Squirrel.usr_TabPanel.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="T:Alone_Squirrel.usr_TabPanel">
-	<summary>
-usr_TabPanel
-</summary>
-</member><member name="M:Alone_Squirrel.usr_FormularioCliente.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="T:Alone_Squirrel.usr_FormularioCliente">
-	<summary>
-usr_FormularioCliente
-</summary>
-</member><member name="M:Alone_Squirrel.usr_FormClienteAgregar.CleanText">
+<member name="M:Alone_Squirrel.usr_FormClienteAgregar.CleanText">
 	<summary>
  Limpia los TextBox's del formulario
  </summary>
