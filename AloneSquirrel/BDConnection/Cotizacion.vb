@@ -47,7 +47,7 @@ Namespace BDConnection
 
             Return DT
         End Function
-
+        g
         Public Function GetCondicionesDeServicio() As DataTable
             Dim DT As DataTable
             Dim strSQL As New StringBuilder
