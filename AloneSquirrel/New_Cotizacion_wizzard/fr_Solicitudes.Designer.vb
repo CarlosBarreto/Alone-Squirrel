@@ -127,7 +127,7 @@ Partial Class fr_Solicitudes
         Me.Label1.Size = New System.Drawing.Size(292, 40)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Seleccione si desea partir de una Solicitud de Cotización o a partir de nuevos da" & _
-            "tos"
+    "tos"
         Me.Label1.UseCompatibleTextRendering = True
         '
         'Panel2
@@ -164,6 +164,7 @@ Partial Class fr_Solicitudes
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "fr_Solicitudes"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "fr_Solicitudes"
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

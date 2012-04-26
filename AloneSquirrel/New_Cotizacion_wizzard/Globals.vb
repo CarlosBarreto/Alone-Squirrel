@@ -45,6 +45,7 @@ Public Class Globals
     ''' </summary>
     ''' <remarks></remarks>
     Public Shared _Cliente As DatosCliente
+    Public Shared _EditableCliente As Boolean
 
     ''' <summary>
     ''' Rellena la estructura de los datos del cliente a partir de _SolicitudCotizacion
@@ -64,7 +65,9 @@ Public Class Globals
             .ct_ESTADO = DT.Rows(0)("Estado")
             .ct_TELEFONO = DT.Rows(0)("Telefono")
             .ct_RAMO = DT.Rows(0)("Ramo")
+            _NumeroDeCliente = DT.Rows(0)("NumeroDeCliente")
         End With
+
 
         Cotizacion.Dispose()
         Cotizacion = Nothing
@@ -90,6 +93,7 @@ Public Class Globals
     ''' </summary>
     ''' <remarks></remarks>
     Public Shared _Requisitor As DatosRequisitor
+    Public Shared _EditableRequisitor As Boolean
 
     Public Shared Sub fill_Requisitor()
         Dim DT As DataTable
@@ -103,6 +107,7 @@ Public Class Globals
             .rq_CELULAR = DT.Rows(0)("Celular")
             .rq_RADIO = DT.Rows(0)("Radio")
             .rq_CORREO = DT.Rows(0)("Correo")
+            _IDRequisitor = DT.Rows(0)("id_Requisitor")
         End With
 
         Cotizacion.Dispose()

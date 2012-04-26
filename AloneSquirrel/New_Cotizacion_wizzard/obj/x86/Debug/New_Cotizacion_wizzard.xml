@@ -6,7 +6,77 @@ New_Cotizacion_wizzard
 </name>
 </assembly>
 <members>
-<member name="M:New_Cotizacion_wizzard.Globals._CancelFc(System.String)">
+<member name="F:New_Cotizacion_wizzard.Globals._SolicitudCotizacion">
+	<summary>
+ Alamacena el numero de solicitud de cotizacion
+ </summary>
+	<remarks></remarks>
+</member><member name="F:New_Cotizacion_wizzard.Globals._NumeroCotizacion">
+	<summary>
+ Almacena el numero de cotizacion
+ </summary>
+	<remarks></remarks>
+</member><member name="F:New_Cotizacion_wizzard.Globals._NumeroDeCliente">
+	<summary>
+ Almacena el numero de Cliente
+ </summary>
+	<remarks></remarks>
+</member><member name="F:New_Cotizacion_wizzard.Globals._IDRequisitor">
+	<summary>
+ Almacena el ID del requisitor
+ </summary>
+	<remarks></remarks>
+</member><member name="T:New_Cotizacion_wizzard.Globals.DatosCliente">
+	<summary>
+ Estructura que almacena los datos del cliente
+ </summary>
+	<remarks></remarks>
+</member><member name="F:New_Cotizacion_wizzard.Globals._Cliente">
+	<summary>
+ Almacena la los datos del cliente 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:New_Cotizacion_wizzard.Globals.fill_Cliente">
+	<summary>
+ Rellena la estructura de los datos del cliente a partir de _SolicitudCotizacion
+ </summary>
+	<remarks></remarks>
+</member><member name="T:New_Cotizacion_wizzard.Globals.DatosRequisitor">
+	<summary>
+ Estructura que alamcena los datos del requisitor
+ </summary>
+	<remarks></remarks>
+</member><member name="F:New_Cotizacion_wizzard.Globals._Requisitor">
+	<summary>
+ Almacena los datos del requisitor
+ </summary>
+	<remarks></remarks>
+</member><member name="T:New_Cotizacion_wizzard.Globals.DatosServicio">
+	<summary>
+ Estructura que almacena los datos del servicio
+ </summary>
+	<remarks></remarks>
+</member><member name="F:New_Cotizacion_wizzard.Globals._Servicio">
+	<summary>
+ Almacena los datos del servicio
+ </summary>
+	<remarks></remarks>
+</member><member name="T:New_Cotizacion_wizzard.Globals.DatosEspecificacionServicios">
+	<summary>
+ Estructura que almacena los datos de la Especificacion de servicios
+ </summary>
+	<remarks></remarks>
+</member><member name="F:New_Cotizacion_wizzard.Globals._EspecificacionServicios">
+	<summary>
+ Almacena los datos de la especificacion
+ </summary>
+	<remarks></remarks>
+</member><member name="F:New_Cotizacion_wizzard.Globals._DT">
+	<summary>
+ Data table
+ </summary>
+	<remarks></remarks>
+</member><member name="M:New_Cotizacion_wizzard.Globals._CancelFc(System.String)">
 	<summary>
  Para cerrar la aplicacion
  </summary>

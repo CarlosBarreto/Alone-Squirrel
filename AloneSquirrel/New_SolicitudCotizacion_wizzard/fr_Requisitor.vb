@@ -42,7 +42,7 @@ Public Class fr_Requisitor
 
             If cb_Requisitor.Items.Count > 0 Then
                 _NewRequisitor = False
-                cb_Requisitor.SelectedItem = cb_Requisitor.Items(1)
+                'cb_Requisitor.SelectedItem = cb_Requisitor.Items(1)
                 cb_Requisitor.SelectedItem = cb_Requisitor.Items(0)
             Else
                 _NewRequisitor = True

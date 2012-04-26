@@ -31,8 +31,14 @@ Call migsa_Requisitor_Insertar ('CLI00004', 'Ermenegildo Lindo', '37939400', '00
 Call migsa_Requisitor_Insertar ('CLI00005', 'Juan de la Madrid', '37939500', '003', '3333629607', '**', 'correo7@live.com.mx');
 
 
+-- Agregar Condiciones de pago 
+INSERT INTO `migsa_`.`migsa_catalogocondicionespago` (`ID`, `Nombre`, `Anticipo`, `Resto`) VALUES (0, 'Anticipo 50%',50,50);
+INSERT INTO `migsa_`.`migsa_catalogocondicionespago` (`ID`, `Nombre`, `Anticipo`, `Resto`) VALUES (0, 'Anticipo 100%',100,0);
+INSERT INTO `migsa_`.`migsa_catalogocondicionespago` (`ID`, `Nombre`, `Anticipo`, `Resto`) VALUES (0, '100% a Contra Entrega',0,100);
+
 -- Limpiar tablas
 /*
+USE migsa_;
 DELETE FROM migsa_especificacionsolicitudcotizacion WHERE NumeroDeEspecificacion > 0;
 DELETE FROM migsa_solicitudcotizacion WHERE NumeroSolicitud = 'SOL00001';
 DELETE FROM migsa_solicitudcotizacion WHERE NumeroSolicitud = 'SOL00002';

@@ -16,6 +16,10 @@ Public Class fr_Solicitudes
         fr_SelectOption.Show()
         Me.Hide()
     End Sub
+    Private Sub bt_Siguiente_Click(sender As System.Object, e As System.EventArgs) Handles bt_Siguiente.Click
+        fr_Cliente.Show()
+        Me.Hide()
+    End Sub
 
     Private Sub fr_Solicitudes_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
         Dim DT As DataTable
@@ -29,10 +33,18 @@ Public Class fr_Solicitudes
     End Sub
 
     Private Sub DataGrid_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGrid.CellContentClick
+        _SolicitudCotizacion = ""
         'Determinar que celda fue la seleccionada
         MsgBox(DataGrid.Rows(e.RowIndex).Cells("NumeroSolicitud").Value.ToString)
         DataGrid.Rows(e.RowIndex).Selected = True
         _SolicitudCotizacion = DataGrid.Rows(e.RowIndex).Cells("NumeroSolicitud").Value.ToString
+
+        'Rellenar los datos de los clientes
+        If _SolicitudCotizacion <> "" Then
+            fill_Cliente()
+            fill_Requisitor()
+        End If
     End Sub
+
 
 End Class

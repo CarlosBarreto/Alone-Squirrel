@@ -22,8 +22,8 @@ Namespace BDConnection
             Dim DT As DataTable
             Dim strSQL As New StringBuilder
 
-            strSQL.Append("-- Seleccionar los datos del cliente a partir de la Solicitud de cotizacion ")
-            strSQL.Append("SELECT b.Empresa, b.Domicilio, b.Colonia, b.CP, b.Ciudad, b.Estado, b.Telefono, b.Ramo ")
+            'strSQL.Append("-- Seleccionar los datos del cliente a partir de la Solicitud de cotizacion ")
+            strSQL.Append("SELECT a.NumeroDeCliente, b.Empresa, b.Domicilio, b.Colonia, b.CP, b.Ciudad, b.Estado, b.Telefono, b.Ramo ")
             strSQL.Append("FROM migsa_.migsa_solicitudcotizacion AS a LEFT OUTER JOIN migsa_.migsa_catalogocliente AS b ")
             strSQL.Append("ON a.NumeroDeCliente = b.NumeroDeCliente ")
             strSQL.Append("WHERE a.NumeroSolicitud = '" & NumeroSolicitud & "'; ")
@@ -37,8 +37,8 @@ Namespace BDConnection
             Dim DT As DataTable
             Dim strSQL As New StringBuilder
 
-            strSQL.Append("-- Seleccionar los datos del requisitor a partir de la solicitud de cotizacion ")
-            strSQL.Append("SELECT b.NumeroDeCliente, b.Nombre, b.Telefono, b.Ext, b.Celular, b.Radio, b.Correo ")
+            'strSQL.Append("-- Seleccionar los datos del requisitor a partir de la solicitud de cotizacion ")
+            strSQL.Append("SELECT b.NumeroDeCliente, a.id_Requisitor, b.Nombre, b.Telefono, b.Ext, b.Celular, b.Radio, b.Correo ")
             strSQL.Append("FROM migsa_.migsa_solicitudcotizacion AS a LEFT OUTER JOIN migsa_.migsa_requisitor AS b ")
             strSQL.Append("ON a.id_Requisitor = b.id_Requisitor ")
             strSQL.Append("WHERE a.NumeroSolicitud = '" & NumeroSolicitud & "'; ")
@@ -47,7 +47,7 @@ Namespace BDConnection
 
             Return DT
         End Function
-        g
+
         Public Function GetCondicionesDeServicio() As DataTable
             Dim DT As DataTable
             Dim strSQL As New StringBuilder
