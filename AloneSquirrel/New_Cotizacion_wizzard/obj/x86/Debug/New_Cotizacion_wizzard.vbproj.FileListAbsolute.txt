@@ -15,3 +15,6 @@ C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\
 C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.exe
 C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.xml
 C:\Users\Carlos Barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.exe
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.xml
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.pdb
