@@ -35,3 +35,5 @@ C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\bin\
 C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.fr_Cliente.resources
 C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.fr_Requisitor.resources
 C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.fr_Servicio.resources
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.fr_CondicionesPago.resources
+C:\Users\carlos.barreto\Alone-Squirrel\AloneSquirrel\New_Cotizacion_wizzard\obj\x86\Debug\New_Cotizacion_wizzard.fr_EspecificacionesServicio.resources

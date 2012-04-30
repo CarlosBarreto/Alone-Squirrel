@@ -48,7 +48,43 @@ Namespace BDConnection
             Return DT
         End Function
 
-        Public Function GetCondicionesDeServicio() As DataTable
+        Public Function getDatosDelServicio(ByVal NumeroSolicitud As String) As DataTable
+            Dim DT As DataTable
+            Dim strSQL As New StringBuilder
+
+            strSQL.Append("SELECT Servicio, Solicitud, Entrega FROM migsa_.migsa_solicitudcotizacion ")
+            strSQL.Append("WHERE NumeroSolicitud = '" & NumeroSolicitud & "'; ")
+            DT = getDataTableQuery(strSQL.ToString)
+
+            Return DT
+        End Function
+
+        Public Function getDatosCondicionesDeServicio(ByVal NumeroSolicitud As String) As DataTable
+            Dim DT As DataTable
+            Dim strSQL As New StringBuilder
+
+            strSQL.Append("SELECT Anticipo, Resto, Credito, Contado, TiempoPago, Observaciones ")
+            strSQL.Append("FROM migsa_.migsa_solicitudcotizacion ")
+            strSQL.Append("WHERE NumeroSolicitud = '" & NumeroSolicitud & "'; ")
+            DT = getDataTableQuery(strSQL.ToString)
+
+            Return DT
+        End Function
+
+        Public Function getDatosEspecificacionesSolicitud(ByVal NumeroSolicitud As String) As DataTable
+            Dim DT As DataTable
+            Dim strSQL As New StringBuilder
+
+            strSQL.Append("SELECT Nombre, Descripcion, Material, Proceso, Tratamiento, Cantidad, PrecioUnitario, ")
+            strSQL.Append("PrecioObjetivo, CondicionEntrega, MaterialesProporcionados ")
+            strSQL.Append("FROM migsa_.migsa_especificacionsolicitudcotizacion ")
+            strSQL.Append("WHERE NumeroSolicitud = '" & NumeroSolicitud & "'; ")
+            DT = getDataTableQuery(strSQL.ToString)
+
+            Return DT
+        End Function
+
+        Public Function GetCondicionesDeServicio(ByVal NumeroSolicitud As String) As DataTable
             Dim DT As DataTable
             Dim strSQL As New StringBuilder
 

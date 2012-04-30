@@ -130,7 +130,24 @@ Public Class Globals
     ''' </summary>
     ''' <remarks></remarks>
     Public Shared _Servicio As DatosServicio
+    Public Shared _EditableServicio As Boolean
+    Public Shared Sub fill_Servicios()
+        Dim DT As DataTable
+        Dim Cotizacion As New Cotizacion
 
+        DT = Cotizacion.getDatosDelServicio(_SolicitudCotizacion)
+        With _Servicio
+            .Servicio = DT.Rows(0)("Servicio")
+            .Solicitud = DT.Rows(0)("Solicitud")
+            .Entrega = DT.Rows(0)("Entrega")
+        End With
+
+        Cotizacion.Dispose()
+        Cotizacion = Nothing
+        DT = Nothing
+    End Sub
+
+    'ADMINSITRACION DE LOS DATOS DE LA ESPECIFICACION DE SERVICIOS
     ''' <summary>
     ''' Estructura que almacena los datos de la Especificacion de servicios
     ''' </summary>
@@ -172,8 +189,22 @@ Public Class Globals
         _DT.Columns.Add("MaterialProporcionado")
     End Sub
 
+    Public Shared Sub fill_DTEspecificacionServicios()
+        Dim Cotizacion As New Cotizacion
+        _DT = Cotizacion.getDatosEspecificacionesSolicitud(_SolicitudCotizacion)
+
+        Cotizacion.Dispose()
+        Cotizacion = Nothing
+    End Sub
+
+    'ORECIO TOTAL
     Public Shared _PrecioTotal As Integer
 
+    'ADMINISTRACION DE LOS DATOS DE LAS CONDICIONES DE PAGO
+    ''' <summary>
+    ''' Estructura que almacena los datos de las condiciones de pago
+    ''' </summary>
+    ''' <remarks></remarks>
     Public Structure DatosCondicionesPago
         Public Anticipo As String
         Public Resto As String
@@ -184,7 +215,24 @@ Public Class Globals
     End Structure
     Public Shared _CondicionesPago As DatosCondicionesPago
 
+    Public Shared Sub fill_CondicionesPago()
+        Dim DT As DataTable
+        Dim Cotizacion As New Cotizacion
 
+        DT = Cotizacion.getDatosCondicionesDeServicio(_SolicitudCotizacion)
+        With _CondicionesPago
+            .Anticipo = DT.Rows(0)("Anticipo")
+            .Resto = DT.Rows(0)("Resto")
+            .Credito = DT.Rows(0)("Credito")
+            .Contado = DT.Rows(0)("Contado")
+            .TiempoPago = DT.Rows(0)("TiempoPago")
+            .Observaciones = DT.Rows(0)("Observaciones")
+        End With
+
+        Cotizacion.Dispose()
+        Cotizacion = Nothing
+        DT = Nothing
+    End Sub
 
     ''' <summary>
     ''' Para cerrar la aplicacion

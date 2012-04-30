@@ -43,6 +43,9 @@ Public Class fr_Solicitudes
         If _SolicitudCotizacion <> "" Then
             fill_Cliente()
             fill_Requisitor()
+            fill_Servicios()
+            fill_DTEspecificacionServicios()
+            fill_CondicionesPago()
         End If
     End Sub
 

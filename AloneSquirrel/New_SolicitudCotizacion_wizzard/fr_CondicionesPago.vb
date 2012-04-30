@@ -111,6 +111,8 @@ Public Class fr_CondicionesPago
 
         'Generar el documento PDF
 
+        'Cerrar aplicacion
+        End
     End Sub
 
     Private Sub fr_CondicionesPago_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -178,7 +180,4 @@ Public Class fr_CondicionesPago
         End If
     End Sub
 
-    Private Sub bt_Siguiente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bt_Siguiente.Click
-        
-    End Sub
 End Class

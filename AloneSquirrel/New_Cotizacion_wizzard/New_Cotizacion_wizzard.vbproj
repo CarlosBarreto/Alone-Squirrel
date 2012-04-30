@@ -78,6 +78,18 @@
     <Compile Include="fr_Cliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="fr_CondicionesPago.Designer.vb">
+      <DependentUpon>fr_CondicionesPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fr_CondicionesPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fr_EspecificacionesServicio.Designer.vb">
+      <DependentUpon>fr_EspecificacionesServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fr_EspecificacionesServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="fr_Presentacion.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +141,12 @@
   <ItemGroup>
     <EmbeddedResource Include="fr_Cliente.resx">
       <DependentUpon>fr_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fr_CondicionesPago.resx">
+      <DependentUpon>fr_CondicionesPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fr_EspecificacionesServicio.resx">
+      <DependentUpon>fr_EspecificacionesServicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fr_Presentacion.resx">
       <DependentUpon>fr_Presentacion.vb</DependentUpon>

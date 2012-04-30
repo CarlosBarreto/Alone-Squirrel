@@ -36,4 +36,9 @@ Public Class fr_Requisitor
         txt_IDRequisitor.Enabled = True
         txt_NumeroCliente.Enabled = True
     End Sub
+
+    Private Sub bt_Siguiente_Click(sender As System.Object, e As System.EventArgs) Handles bt_Siguiente.Click
+        fr_Servicio.Show()
+        Me.Hide()
+    End Sub
 End Class

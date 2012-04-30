@@ -76,6 +76,11 @@ New_Cotizacion_wizzard
  Data table
  </summary>
 	<remarks></remarks>
+</member><member name="T:New_Cotizacion_wizzard.Globals.DatosCondicionesPago">
+	<summary>
+ Estructura que almacena los datos de las condiciones de pago
+ </summary>
+	<remarks></remarks>
 </member><member name="M:New_Cotizacion_wizzard.Globals._CancelFc(System.String)">
 	<summary>
  Para cerrar la aplicacion
