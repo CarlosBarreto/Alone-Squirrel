@@ -316,6 +316,7 @@ Partial Class fr_Requisitor
         Me.cb_Requisitor.Name = "cb_Requisitor"
         Me.cb_Requisitor.Size = New System.Drawing.Size(346, 21)
         Me.cb_Requisitor.TabIndex = 1
+        Me.cb_Requisitor.Text = "---"
         '
         'txt_NumeroCliente
         '

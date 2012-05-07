@@ -35,19 +35,21 @@ Public Class fr_Requisitor
                 cb_Requisitor.Text = ""
             End If
 
+            If cb_Requisitor.Items.Count > 0 Then
+                _NewRequisitor = False
+                cb_Requisitor.SelectedItem = cb_Requisitor.Items.Count - 1
+                ' cb_Requisitor.SelectedItem = cb_Requisitor.Items(0)
+            Else
+                _NewRequisitor = True
+                ShowNewRequisitorForm()
+            End If
+
             'Limpiar los accesos a la base de datos
             BDCon.Dispose()
             BDCon = Nothing
             obDataTable = Nothing
 
-            If cb_Requisitor.Items.Count > 0 Then
-                _NewRequisitor = False
-                'cb_Requisitor.SelectedItem = cb_Requisitor.Items(1)
-                cb_Requisitor.SelectedItem = cb_Requisitor.Items(0)
-            Else
-                _NewRequisitor = True
-                ShowNewRequisitorForm()
-            End If
+
         End If
     End Sub
 
