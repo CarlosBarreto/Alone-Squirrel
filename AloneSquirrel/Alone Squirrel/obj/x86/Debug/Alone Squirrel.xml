@@ -6,7 +6,12 @@ AloneSquirrel
 </name>
 </assembly>
 <members>
-<member name="P:Alone_Squirrel.My.Resources.Resources.ResourceManager">
+<member name="M:Alone_Squirrel.usr_FormClienteAgregar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Alone_Squirrel.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -19,11 +24,6 @@ AloneSquirrel
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
-</member><member name="M:Alone_Squirrel.usr_FormClienteAgregar.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
 </member><member name="P:Alone_Squirrel.AloneSquirrel.Posicionamiento.PosX">
 	<summary>
  Posicion en X
