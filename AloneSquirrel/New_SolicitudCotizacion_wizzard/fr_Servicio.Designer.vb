@@ -32,9 +32,9 @@ Partial Class fr_Servicio
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.txt_Entrega = New System.Windows.Forms.TextBox()
+        Me.dt_Entrega = New System.Windows.Forms.DateTimePicker()
+        Me.dt_Solicitud = New System.Windows.Forms.DateTimePicker()
         Me.lb_Entrega = New System.Windows.Forms.Label()
-        Me.txt_Solicitud = New System.Windows.Forms.TextBox()
         Me.txt_Servicio = New System.Windows.Forms.TextBox()
         Me.lb_Servicio = New System.Windows.Forms.Label()
         Me.lb_Solicitud = New System.Windows.Forms.Label()
@@ -125,9 +125,9 @@ Partial Class fr_Servicio
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.txt_Entrega)
+        Me.Panel3.Controls.Add(Me.dt_Entrega)
+        Me.Panel3.Controls.Add(Me.dt_Solicitud)
         Me.Panel3.Controls.Add(Me.lb_Entrega)
-        Me.Panel3.Controls.Add(Me.txt_Solicitud)
         Me.Panel3.Controls.Add(Me.txt_Servicio)
         Me.Panel3.Controls.Add(Me.lb_Servicio)
         Me.Panel3.Controls.Add(Me.lb_Solicitud)
@@ -137,15 +137,25 @@ Partial Class fr_Servicio
         Me.Panel3.Size = New System.Drawing.Size(483, 298)
         Me.Panel3.TabIndex = 8
         '
-        'txt_Entrega
+        'dt_Entrega
         '
-        Me.txt_Entrega.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Entrega.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.txt_Entrega.ForeColor = System.Drawing.Color.Black
-        Me.txt_Entrega.Location = New System.Drawing.Point(317, 86)
-        Me.txt_Entrega.Name = "txt_Entrega"
-        Me.txt_Entrega.Size = New System.Drawing.Size(137, 26)
-        Me.txt_Entrega.TabIndex = 53
+        Me.dt_Entrega.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dt_Entrega.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dt_Entrega.Location = New System.Drawing.Point(317, 82)
+        Me.dt_Entrega.Name = "dt_Entrega"
+        Me.dt_Entrega.Size = New System.Drawing.Size(137, 26)
+        Me.dt_Entrega.TabIndex = 55
+        Me.dt_Entrega.Value = New Date(2012, 5, 7, 0, 0, 0, 0)
+        '
+        'dt_Solicitud
+        '
+        Me.dt_Solicitud.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dt_Solicitud.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dt_Solicitud.Location = New System.Drawing.Point(94, 82)
+        Me.dt_Solicitud.Name = "dt_Solicitud"
+        Me.dt_Solicitud.Size = New System.Drawing.Size(137, 26)
+        Me.dt_Solicitud.TabIndex = 54
+        Me.dt_Solicitud.Value = New Date(2012, 5, 7, 0, 0, 0, 0)
         '
         'lb_Entrega
         '
@@ -158,16 +168,6 @@ Partial Class fr_Servicio
         Me.lb_Entrega.Size = New System.Drawing.Size(63, 18)
         Me.lb_Entrega.TabIndex = 52
         Me.lb_Entrega.Text = "Entrega"
-        '
-        'txt_Solicitud
-        '
-        Me.txt_Solicitud.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Solicitud.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.txt_Solicitud.ForeColor = System.Drawing.Color.Black
-        Me.txt_Solicitud.Location = New System.Drawing.Point(94, 86)
-        Me.txt_Solicitud.Name = "txt_Solicitud"
-        Me.txt_Solicitud.Size = New System.Drawing.Size(137, 26)
-        Me.txt_Solicitud.TabIndex = 51
         '
         'txt_Servicio
         '
@@ -232,10 +232,10 @@ Partial Class fr_Servicio
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents txt_Solicitud As System.Windows.Forms.TextBox
     Friend WithEvents txt_Servicio As System.Windows.Forms.TextBox
     Friend WithEvents lb_Servicio As System.Windows.Forms.Label
     Friend WithEvents lb_Solicitud As System.Windows.Forms.Label
-    Friend WithEvents txt_Entrega As System.Windows.Forms.TextBox
     Friend WithEvents lb_Entrega As System.Windows.Forms.Label
+    Friend WithEvents dt_Solicitud As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dt_Entrega As System.Windows.Forms.DateTimePicker
 End Class

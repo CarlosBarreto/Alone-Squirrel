@@ -11,8 +11,10 @@ Public Class fr_Servicio
         'Guardar los datos del servicio
         With _Servicio
             .Servicio = txt_Servicio.Text
-            .Entrega = txt_Entrega.Text
-            .Solicitud = txt_Solicitud.Text
+            .Solicitud = dt_Solicitud.Text
+            .Entrega = dt_Entrega.Text
+            '.Entrega = txt_Entrega.Text
+            '.Solicitud = txt_Solicitud.Text
         End With
 
         'Cargar el siguiente formulario
@@ -27,5 +29,9 @@ Public Class fr_Servicio
     Private Sub fr_Servicio_Close(ByVal sender As Object, ByVal e As FormClosingEventArgs) Handles Me.Closing
         _CancelFc("Salir")
         e.Cancel = True
+    End Sub
+
+    Private Sub fr_Servicio_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        dt_Entrega.Value = DateAdd(DateInterval.Day, 1, Now())
     End Sub
 End Class
