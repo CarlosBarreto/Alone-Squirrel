@@ -72,12 +72,18 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.Designer.vb">
+      <DependentUpon>uc_FormularioDatosCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Data.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="fr_Main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="fr_Main.Designer.vb">
+      <DependentUpon>fr_Main.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,8 +103,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.resx">
+      <DependentUpon>uc_FormularioDatosCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fr_Main.resx">
+      <DependentUpon>fr_Main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -125,6 +134,7 @@
       <Name>DataSource</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

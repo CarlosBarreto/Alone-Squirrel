@@ -9,8 +9,8 @@ C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\DataSour
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\MySql.Data.dll
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\DataSource.pdb
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\DataSource.xml
-C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.Form1.resources
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.exe
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.xml
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.pdb
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\Main.exe.config
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.fr_Main.resources
