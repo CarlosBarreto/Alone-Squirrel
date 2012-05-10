@@ -6,7 +6,23 @@ Main
 </name>
 </assembly>
 <members>
-<member name="M:Main.AppMain.ApplicationData.#ctor">
+<member name="M:Main.uc_FormularioDatosCliente.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosCliente.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.fr_Main.KillForm">
+	<summary>
+ Para eliminar el objeto en uso actual
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.AppMain.ApplicationData.#ctor">
 	<summary>
  Constructor
  </summary>

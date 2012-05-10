@@ -72,10 +72,28 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controles\Catalogos\Clientes\uc_BuscarCliente.Designer.vb">
+      <DependentUpon>uc_BuscarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_BuscarCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.Designer.vb">
       <DependentUpon>uc_FormularioDatosCliente.vb</DependentUpon>
     </Compile>
     <Compile Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Generales\uc_PopUp.Designer.vb">
+      <DependentUpon>uc_PopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Generales\uc_PopUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Generales\uc_Title.Designer.vb">
+      <DependentUpon>uc_Title.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Generales\uc_Title.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Data.vb" />
@@ -103,8 +121,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_BuscarCliente.resx">
+      <DependentUpon>uc_BuscarCliente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.resx">
       <DependentUpon>uc_FormularioDatosCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Generales\uc_PopUp.resx">
+      <DependentUpon>uc_PopUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Generales\uc_Title.resx">
+      <DependentUpon>uc_Title.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fr_Main.resx">
       <DependentUpon>fr_Main.vb</DependentUpon>

@@ -246,7 +246,7 @@ Partial Class uc_FormularioDatosCliente
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(513, 34)
+        Me.Panel1.Size = New System.Drawing.Size(515, 34)
         Me.Panel1.TabIndex = 41
         '
         'bt_Cancelar
@@ -278,7 +278,6 @@ Partial Class uc_FormularioDatosCliente
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
-        Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_NumeroCliente)
@@ -299,7 +298,7 @@ Partial Class uc_FormularioDatosCliente
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Name = "uc_FormularioDatosCliente"
-        Me.Size = New System.Drawing.Size(513, 508)
+        Me.Size = New System.Drawing.Size(515, 510)
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
