@@ -71,6 +71,9 @@ Partial Class fr_Main_2op
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.TabM_Proyecto = New System.Windows.Forms.TabPage()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Button21 = New System.Windows.Forms.Button()
         Me.Button22 = New System.Windows.Forms.Button()
@@ -82,9 +85,6 @@ Partial Class fr_Main_2op
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TabM_Reportes = New System.Windows.Forms.TabPage()
         Me.TabM_Ayuda = New System.Windows.Forms.TabPage()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.panel_principal.SuspendLayout()
         Me.TabControl2.SuspendLayout()
@@ -96,9 +96,9 @@ Partial Class fr_Main_2op
         Me.Panel3.SuspendLayout()
         Me.PM_CatCliente.SuspendLayout()
         Me.TabM_Proyecto.SuspendLayout()
+        Me.Panel8.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel6.SuspendLayout()
-        Me.Panel8.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -117,72 +117,72 @@ Partial Class fr_Main_2op
         '
         Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarClienteToolStripMenuItem, Me.ActualizarClienteToolStripMenuItem, Me.BorrarClienteToolStripMenuItem, Me.ToolStripMenuItem1, Me.ListadoDeClientesToolStripMenuItem})
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(61, 19)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(65, 19)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'AgregarClienteToolStripMenuItem
         '
         Me.AgregarClienteToolStripMenuItem.Name = "AgregarClienteToolStripMenuItem"
-        Me.AgregarClienteToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.AgregarClienteToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.AgregarClienteToolStripMenuItem.Text = "Agregar Cliente"
         '
         'ActualizarClienteToolStripMenuItem
         '
         Me.ActualizarClienteToolStripMenuItem.Name = "ActualizarClienteToolStripMenuItem"
-        Me.ActualizarClienteToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.ActualizarClienteToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.ActualizarClienteToolStripMenuItem.Text = "Actualizar Cliente"
         '
         'BorrarClienteToolStripMenuItem
         '
         Me.BorrarClienteToolStripMenuItem.Name = "BorrarClienteToolStripMenuItem"
-        Me.BorrarClienteToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.BorrarClienteToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.BorrarClienteToolStripMenuItem.Text = "Borrar Cliente"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(170, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(178, 6)
         '
         'ListadoDeClientesToolStripMenuItem
         '
         Me.ListadoDeClientesToolStripMenuItem.Name = "ListadoDeClientesToolStripMenuItem"
-        Me.ListadoDeClientesToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.ListadoDeClientesToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.ListadoDeClientesToolStripMenuItem.Text = "Listado de Clientes"
         '
         'ProveedoresToolStripMenuItem
         '
         Me.ProveedoresToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarProveedorToolStripMenuItem, Me.ModificarProveedorToolStripMenuItem, Me.EliminarProveedorToolStripMenuItem, Me.ToolStripMenuItem2, Me.ListadoDeProveedoresToolStripMenuItem})
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(84, 19)
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(89, 19)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'AgregarProveedorToolStripMenuItem
         '
         Me.AgregarProveedorToolStripMenuItem.Name = "AgregarProveedorToolStripMenuItem"
-        Me.AgregarProveedorToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.AgregarProveedorToolStripMenuItem.Size = New System.Drawing.Size(205, 22)
         Me.AgregarProveedorToolStripMenuItem.Text = "Agregar Proveedor"
         '
         'ModificarProveedorToolStripMenuItem
         '
         Me.ModificarProveedorToolStripMenuItem.Name = "ModificarProveedorToolStripMenuItem"
-        Me.ModificarProveedorToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ModificarProveedorToolStripMenuItem.Size = New System.Drawing.Size(205, 22)
         Me.ModificarProveedorToolStripMenuItem.Text = "Modificar Proveedor"
         '
         'EliminarProveedorToolStripMenuItem
         '
         Me.EliminarProveedorToolStripMenuItem.Name = "EliminarProveedorToolStripMenuItem"
-        Me.EliminarProveedorToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.EliminarProveedorToolStripMenuItem.Size = New System.Drawing.Size(205, 22)
         Me.EliminarProveedorToolStripMenuItem.Text = "Eliminar Proveedor"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(193, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(202, 6)
         '
         'ListadoDeProveedoresToolStripMenuItem
         '
         Me.ListadoDeProveedoresToolStripMenuItem.Name = "ListadoDeProveedoresToolStripMenuItem"
-        Me.ListadoDeProveedoresToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.ListadoDeProveedoresToolStripMenuItem.Size = New System.Drawing.Size(205, 22)
         Me.ListadoDeProveedoresToolStripMenuItem.Text = "Listado de Proveedores"
         '
         'panel_principal
@@ -207,9 +207,9 @@ Partial Class fr_Main_2op
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.White
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 23)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(690, 424)
+        Me.TabPage1.Size = New System.Drawing.Size(690, 423)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Home"
         '
@@ -258,10 +258,10 @@ Partial Class fr_Main_2op
         Me.TabM_Catalogos.Controls.Add(Me.Panel3)
         Me.TabM_Catalogos.Controls.Add(Me.PM_CatCliente)
         Me.TabM_Catalogos.Controls.Add(Me.ShapeContainer1)
-        Me.TabM_Catalogos.Location = New System.Drawing.Point(4, 22)
+        Me.TabM_Catalogos.Location = New System.Drawing.Point(4, 23)
         Me.TabM_Catalogos.Name = "TabM_Catalogos"
         Me.TabM_Catalogos.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabM_Catalogos.Size = New System.Drawing.Size(952, 90)
+        Me.TabM_Catalogos.Size = New System.Drawing.Size(952, 89)
         Me.TabM_Catalogos.TabIndex = 0
         Me.TabM_Catalogos.Text = "Catalogos"
         Me.TabM_Catalogos.UseVisualStyleBackColor = True
@@ -560,7 +560,7 @@ Partial Class fr_Main_2op
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(946, 84)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(946, 83)
         Me.ShapeContainer1.TabIndex = 1
         Me.ShapeContainer1.TabStop = False
         '
@@ -577,13 +577,43 @@ Partial Class fr_Main_2op
         Me.TabM_Proyecto.Controls.Add(Me.Panel8)
         Me.TabM_Proyecto.Controls.Add(Me.Panel7)
         Me.TabM_Proyecto.Controls.Add(Me.Panel6)
-        Me.TabM_Proyecto.Location = New System.Drawing.Point(4, 22)
+        Me.TabM_Proyecto.Location = New System.Drawing.Point(4, 23)
         Me.TabM_Proyecto.Name = "TabM_Proyecto"
         Me.TabM_Proyecto.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabM_Proyecto.Size = New System.Drawing.Size(952, 90)
+        Me.TabM_Proyecto.Size = New System.Drawing.Size(952, 89)
         Me.TabM_Proyecto.TabIndex = 1
         Me.TabM_Proyecto.Text = "Proyecto"
         Me.TabM_Proyecto.UseVisualStyleBackColor = True
+        '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.Button17)
+        Me.Panel8.Controls.Add(Me.Label7)
+        Me.Panel8.Location = New System.Drawing.Point(107, 3)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(100, 87)
+        Me.Panel8.TabIndex = 2
+        '
+        'Button17
+        '
+        Me.Button17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(236, Byte), Integer))
+        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button17.Location = New System.Drawing.Point(21, 0)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(54, 71)
+        Me.Button17.TabIndex = 1
+        Me.Button17.Text = "Nueva"
+        Me.Button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button17.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.Location = New System.Drawing.Point(1, 70)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(100, 14)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Cotización"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel7
         '
@@ -689,51 +719,21 @@ Partial Class fr_Main_2op
         '
         'TabM_Reportes
         '
-        Me.TabM_Reportes.Location = New System.Drawing.Point(4, 22)
+        Me.TabM_Reportes.Location = New System.Drawing.Point(4, 23)
         Me.TabM_Reportes.Name = "TabM_Reportes"
-        Me.TabM_Reportes.Size = New System.Drawing.Size(952, 90)
+        Me.TabM_Reportes.Size = New System.Drawing.Size(952, 89)
         Me.TabM_Reportes.TabIndex = 2
         Me.TabM_Reportes.Text = "Reportes"
         Me.TabM_Reportes.UseVisualStyleBackColor = True
         '
         'TabM_Ayuda
         '
-        Me.TabM_Ayuda.Location = New System.Drawing.Point(4, 22)
+        Me.TabM_Ayuda.Location = New System.Drawing.Point(4, 23)
         Me.TabM_Ayuda.Name = "TabM_Ayuda"
-        Me.TabM_Ayuda.Size = New System.Drawing.Size(952, 90)
+        Me.TabM_Ayuda.Size = New System.Drawing.Size(952, 89)
         Me.TabM_Ayuda.TabIndex = 3
         Me.TabM_Ayuda.Text = "Ayuda"
         Me.TabM_Ayuda.UseVisualStyleBackColor = True
-        '
-        'Panel8
-        '
-        Me.Panel8.Controls.Add(Me.Button17)
-        Me.Panel8.Controls.Add(Me.Label7)
-        Me.Panel8.Location = New System.Drawing.Point(107, 3)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(100, 87)
-        Me.Panel8.TabIndex = 2
-        '
-        'Button17
-        '
-        Me.Button17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(236, Byte), Integer))
-        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button17.Location = New System.Drawing.Point(21, 0)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(54, 71)
-        Me.Button17.TabIndex = 1
-        Me.Button17.Text = "Nueva"
-        Me.Button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button17.UseVisualStyleBackColor = True
-        '
-        'Label7
-        '
-        Me.Label7.Location = New System.Drawing.Point(1, 70)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(100, 14)
-        Me.Label7.TabIndex = 1
-        Me.Label7.Text = "Cotización"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'fr_Main_2op
         '
@@ -759,9 +759,9 @@ Partial Class fr_Main_2op
         Me.Panel3.ResumeLayout(False)
         Me.PM_CatCliente.ResumeLayout(False)
         Me.TabM_Proyecto.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
-        Me.Panel8.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

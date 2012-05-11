@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DataSource
+</name>
+</assembly>
+<members>
+<member name="M:DataSource.DBDataSource.CadenaConexion">
+	<summary>
+ Genera una cadena de conexión / Make a new Connection String
+ </summary>
+	<returns>Connection String</returns>
+	<remarks>
+		<para>Mod1 - Modificada para utilizar MySQL</para>
+		<para>Mod2 - Modificada para utilizar App.Conf</para>
+ Modificada para utilizar MySQL</remarks>
+</member><member name="M:DataSource.DBDataSource.#ctor">
+	<summary>
+ Constructor 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DataSource.DBDataSource.Dispose">
+	<summary>
+ Destructor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DataSource.DBDataSource.getDatabases">
+	<summary>
+ Query preestablecido para la lectura de las Bases de Datos del servidor
+ </summary>
+	<returns>Retorna un MySqlDataReader con el resultado de la consulta</returns>
+	<remarks>La Base de datos del servidor debe ser MySql</remarks>
+</member><member name="M:DataSource.DBDataSource.showTables">
+	<summary>
+ Query preestablecido para la lectura de las tablas que componen la base de datos.
+ </summary>
+	<returns>Retorna un MySqlDataReader el resultado de la consulta</returns>
+	<remarks></remarks>
+</member><member name="M:DataSource.DBDataSource.changeDataBase(System.String)">
+	<summary>
+ Procedimiento para actualizar la Base de Datos a la que se esta conectado. Solo en tiempo de ejecución
+ </summary>
+	<param name="NewDataBase">Nombre de la Base de Datos</param>
+	<remarks></remarks>
+</member><member name="M:DataSource.DBDataSource.getDataTableQuery(System.String)">
+	<summary>
+ Procedimiento para ejecutar un Query y retonar un DataTable
+ </summary>
+	<param name="strQuery">String con el Query a ejecutar</param>
+	<returns>DataTable con el resultado del Query</returns>
+	<remarks></remarks>
+</member><member name="T:DataSource.DBDataSource">
+	<summary>
+ Clase utilizada para implementar conexiones a la Base de datos
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DataSource.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DataSource.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DataSource.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

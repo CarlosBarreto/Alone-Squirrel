@@ -1,0 +1,12 @@
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\bin\Debug\DataSource.dll.config
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\bin\Debug\DataSource.dll
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\bin\Debug\DataSource.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\bin\Debug\DataSource.xml
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\bin\Debug\MySql.Data.dll
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\obj\Debug\DataSource.Resources.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\obj\Debug\DataSource.dll
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\obj\Debug\DataSource.xml
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\DataSource\DataSource\obj\Debug\DataSource.pdb

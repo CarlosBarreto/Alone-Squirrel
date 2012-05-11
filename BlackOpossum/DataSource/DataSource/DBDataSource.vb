@@ -153,23 +153,3 @@ Public Class DBDataSource
 End Class
 
 
-
-Namespace BDConnection
-
-    ''' <summary>
-    ''' Clase que implemente la conexion a la base de datos
-    ''' </summary>
-    ''' <remarks></remarks>
-    Public Class BDConnection
-
-
-        
-
-
-  
-
-        
-    End Class
-End Namespace
-
-
