@@ -6,12 +6,28 @@ Main
 </name>
 </assembly>
 <members>
-<member name="M:Main.uc_FormularioDatosCliente.CleanText">
+<member name="T:Main.uc_ModificarDatosCliente.DatosCliente">
+	<summary>
+ Estructura que almacena los datos del cliente
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_ModificarDatosCliente.CleanText">
 	<summary>
  Limpia los TextBox's del formulario
  </summary>
 	<remarks></remarks>
-</member><member name="M:Main.uc_FormularioDatosCliente.IsEditing">
+</member><member name="M:Main.uc_ModificarDatosCliente.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_ModificarFormularioDatosCliente.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_ModificarFormularioDatosCliente.IsEditing">
 	<summary>
  Determina si se esta editando el formulario
  </summary>

@@ -84,6 +84,12 @@
     <Compile Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_ModificarDatosCliente.Designer.vb">
+      <DependentUpon>uc_ModificarDatosCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_ModificarDatosCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controles\Generales\uc_PopUp.Designer.vb">
       <DependentUpon>uc_PopUp.vb</DependentUpon>
     </Compile>
@@ -96,6 +102,24 @@
     <Compile Include="Controles\Generales\uc_Title.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.Designer.vb">
+      <DependentUpon>uc_CotizacionToolBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_NuevaCotizacion.Designer.vb">
+      <DependentUpon>uc_NuevaCotizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_NuevaCotizacion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\uc_NuevaSolicitudCotización.Designer.vb">
+      <DependentUpon>uc_NuevaSolicitudCotización.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\uc_NuevaSolicitudCotización.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Data.vb" />
     <Compile Include="fr_Main.vb">
       <SubType>Form</SubType>
@@ -104,6 +128,7 @@
       <DependentUpon>fr_Main.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FuncionesGlobales.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -127,11 +152,23 @@
     <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.resx">
       <DependentUpon>uc_FormularioDatosCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_ModificarDatosCliente.resx">
+      <DependentUpon>uc_ModificarDatosCliente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controles\Generales\uc_PopUp.resx">
       <DependentUpon>uc_PopUp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Generales\uc_Title.resx">
       <DependentUpon>uc_Title.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.resx">
+      <DependentUpon>uc_CotizacionToolBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Proyecto\Nueva Cotización\uc_NuevaCotizacion.resx">
+      <DependentUpon>uc_NuevaCotizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Proyecto\Nueva Solicitud\uc_NuevaSolicitudCotización.resx">
+      <DependentUpon>uc_NuevaSolicitudCotización.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fr_Main.resx">
       <DependentUpon>fr_Main.vb</DependentUpon>

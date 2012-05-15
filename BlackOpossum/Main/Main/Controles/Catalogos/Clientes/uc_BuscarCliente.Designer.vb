@@ -26,9 +26,10 @@ Partial Class uc_BuscarCliente
         Me.txt_NumeroCliente = New System.Windows.Forms.TextBox()
         Me.txt_Empresa = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.bt_Buscar = New System.Windows.Forms.Button()
+        Me.bt_Modificar = New System.Windows.Forms.Button()
         Me.bt_Options = New System.Windows.Forms.Button()
         Me.lb_Desc = New System.Windows.Forms.Label()
+        Me.bt_Eliminar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -73,14 +74,14 @@ Partial Class uc_BuscarCliente
         Me.Label2.TabIndex = 40
         Me.Label2.Text = "Empresa"
         '
-        'bt_Buscar
+        'bt_Modificar
         '
-        Me.bt_Buscar.Location = New System.Drawing.Point(427, 247)
-        Me.bt_Buscar.Name = "bt_Buscar"
-        Me.bt_Buscar.Size = New System.Drawing.Size(75, 23)
-        Me.bt_Buscar.TabIndex = 43
-        Me.bt_Buscar.Text = "Buscar"
-        Me.bt_Buscar.UseVisualStyleBackColor = True
+        Me.bt_Modificar.Location = New System.Drawing.Point(427, 247)
+        Me.bt_Modificar.Name = "bt_Modificar"
+        Me.bt_Modificar.Size = New System.Drawing.Size(75, 23)
+        Me.bt_Modificar.TabIndex = 43
+        Me.bt_Modificar.Text = "Modificar"
+        Me.bt_Modificar.UseVisualStyleBackColor = True
         '
         'bt_Options
         '
@@ -100,15 +101,26 @@ Partial Class uc_BuscarCliente
         Me.lb_Desc.TabIndex = 45
         Me.lb_Desc.Text = "Buscar el cliente a modificar"
         '
+        'bt_Eliminar
+        '
+        Me.bt_Eliminar.Location = New System.Drawing.Point(346, 247)
+        Me.bt_Eliminar.Name = "bt_Eliminar"
+        Me.bt_Eliminar.Size = New System.Drawing.Size(75, 23)
+        Me.bt_Eliminar.TabIndex = 46
+        Me.bt_Eliminar.Text = "Eliminar"
+        Me.bt_Eliminar.UseVisualStyleBackColor = True
+        Me.bt_Eliminar.Visible = False
+        '
         'uc_BuscarCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Controls.Add(Me.bt_Eliminar)
         Me.Controls.Add(Me.lb_Desc)
         Me.Controls.Add(Me.bt_Options)
-        Me.Controls.Add(Me.bt_Buscar)
+        Me.Controls.Add(Me.bt_Modificar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_NumeroCliente)
         Me.Controls.Add(Me.txt_Empresa)
@@ -123,8 +135,9 @@ Partial Class uc_BuscarCliente
     Friend WithEvents txt_NumeroCliente As System.Windows.Forms.TextBox
     Friend WithEvents txt_Empresa As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents bt_Buscar As System.Windows.Forms.Button
+    Friend WithEvents bt_Modificar As System.Windows.Forms.Button
     Friend WithEvents bt_Options As System.Windows.Forms.Button
     Friend WithEvents lb_Desc As System.Windows.Forms.Label
+    Friend WithEvents bt_Eliminar As System.Windows.Forms.Button
 
 End Class

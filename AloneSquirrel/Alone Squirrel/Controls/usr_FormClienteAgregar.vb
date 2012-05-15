@@ -7,21 +7,7 @@ Public Class usr_FormClienteAgregar
     End Sub
 
 
-    ''' <summary>
-    ''' Limpia los TextBox's del formulario
-    ''' </summary>
-    ''' <remarks></remarks>
-    Protected Sub CleanText()
-        txt_NumeroCliente.Text = ""
-        txt_Empresa.Text = ""
-        txt_Domicilio.Text = ""
-        txt_Colonia.Text = ""
-        txt_CP.Text = ""
-        txt_Ciudad.Text = ""
-        txt_Estado.Text = ""
-        txt_Telefono.Text = ""
-        txt_Ramo.Text = ""
-    End Sub
+    
 
     Private Sub usr_FormClienteAgregar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim usrControlPoint As New Point(0, 0)

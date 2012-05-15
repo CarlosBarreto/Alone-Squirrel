@@ -1,7 +1,7 @@
 ﻿Imports DataSource
 Imports System.Text
 
-Public Class uc_FormularioDatosCliente
+Public Class uc_ModificarFormularioDatosCliente
     Protected DB As DBDataSource
 
     'Botones

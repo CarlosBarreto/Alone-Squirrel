@@ -1,5 +1,6 @@
 ﻿Imports System.Data
 Imports DataSource
+Imports System.Text
 
 Namespace AppMain
     Public Class ApplicationData
@@ -15,6 +16,11 @@ Namespace AppMain
             _DataSource = New DBDataSource
         End Sub
 
+        Public Sub Dispose()
+            _DataSource.Dispose()
+            _DataSource = Nothing
+            _DataTable = Nothing
+        End Sub
         ''' <summary>
         ''' Funcion que lee de la Base de Datos, el menú de opciones
         ''' </summary>
@@ -25,5 +31,8 @@ Namespace AppMain
             DT = _DataSource.getDataTableQuery("Select * from sys_optionmenu;")
             Return DT
         End Function
+
+
+
     End Class
 End Namespace
