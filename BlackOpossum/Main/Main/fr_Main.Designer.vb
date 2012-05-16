@@ -36,7 +36,7 @@ Partial Class fr_Main
         Me.PasteToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.HelpToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.Menu = New System.Windows.Forms.MenuStrip()
+        Me.Menu_principal = New System.Windows.Forms.MenuStrip()
         Me.CatalogosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -67,7 +67,7 @@ Partial Class fr_Main
         Me.Panel_Menu_Principal.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
-        Me.Menu.SuspendLayout()
+        Me.Menu_principal.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -92,7 +92,7 @@ Partial Class fr_Main
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.ToolStrip1)
-        Me.Panel1.Controls.Add(Me.Menu)
+        Me.Panel1.Controls.Add(Me.Menu_principal)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(804, 57)
@@ -177,15 +177,15 @@ Partial Class fr_Main
         Me.HelpToolStripButton.Size = New System.Drawing.Size(23, 22)
         Me.HelpToolStripButton.Text = "He&lp"
         '
-        'Menu
+        'Menu_principal
         '
-        Me.Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CatalogosToolStripMenuItem, Me.ProyectoToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.AyudaToolStripMenuItem})
-        Me.Menu.Location = New System.Drawing.Point(0, 0)
-        Me.Menu.Name = "Menu"
-        Me.Menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.Menu.Size = New System.Drawing.Size(804, 24)
-        Me.Menu.TabIndex = 0
-        Me.Menu.Text = "Menu"
+        Me.Menu_principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CatalogosToolStripMenuItem, Me.ProyectoToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.AyudaToolStripMenuItem})
+        Me.Menu_principal.Location = New System.Drawing.Point(0, 0)
+        Me.Menu_principal.Name = "Menu_principal"
+        Me.Menu_principal.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
+        Me.Menu_principal.Size = New System.Drawing.Size(804, 24)
+        Me.Menu_principal.TabIndex = 0
+        Me.Menu_principal.Text = "Menu"
         '
         'CatalogosToolStripMenuItem
         '
@@ -363,7 +363,7 @@ Partial Class fr_Main
         Me.ClientSize = New System.Drawing.Size(998, 612)
         Me.Controls.Add(Me.Panel_Menu_Principal)
         Me.Controls.Add(Me.StatusStrip1)
-        Me.MainMenuStrip = Me.Menu
+        Me.MainMenuStrip = Me.Menu_principal
         Me.Name = "fr_Main"
         Me.Text = "fr_"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -372,8 +372,8 @@ Partial Class fr_Main
         Me.Panel1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        Me.Menu.ResumeLayout(False)
-        Me.Menu.PerformLayout()
+        Me.Menu_principal.ResumeLayout(False)
+        Me.Menu_principal.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -383,7 +383,7 @@ Partial Class fr_Main
     Friend WithEvents Panel_Menu_Principal As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Menu As System.Windows.Forms.MenuStrip
+    Friend WithEvents Menu_principal As System.Windows.Forms.MenuStrip
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripComboBox1 As System.Windows.Forms.ToolStripComboBox

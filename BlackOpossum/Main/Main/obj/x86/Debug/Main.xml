@@ -6,7 +6,52 @@ Main
 </name>
 </assembly>
 <members>
-<member name="M:Main.uc_ModificarFormularioDatosCliente.CleanText">
+<member name="T:Main.NuevaSolicitud.DatosCliente">
+	<summary>
+ Estructura que almacena los datos del cliente
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Main.NuevaSolicitud._Cliente">
+	<summary>
+ Almacena la los datos del cliente 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Main.NuevaSolicitud.DatosRequisitor">
+	<summary>
+ Estructura que alamcena los datos del requisitor
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Main.NuevaSolicitud._Requisitor">
+	<summary>
+ Almacena los datos del requisitor
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Main.NuevaSolicitud.DatosServicio">
+	<summary>
+ Estructura que almacena los datos del servicio
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Main.NuevaSolicitud._Servicio">
+	<summary>
+ Almacena los datos del servicio
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Main.NuevaSolicitud._DT">
+	<summary>
+ Data table
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Main.NuevaSolicitud.DatosCondicionesPago">
+	<summary>
+ Estructura que almacena los datos de las condiciones de pago
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.NuevaSolicitud.fill_Cliente">
+	<summary>
+ Rellena la estructura de los datos del cliente a partir de _SolicitudCotizacion
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_ModificarFormularioDatosCliente.CleanText">
 	<summary>
  Limpia los TextBox's del formulario
  </summary>

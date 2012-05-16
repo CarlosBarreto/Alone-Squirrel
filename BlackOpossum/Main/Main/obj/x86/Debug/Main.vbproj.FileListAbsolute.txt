@@ -22,3 +22,7 @@ C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_NuevaSolicitudCotización.resources
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_NuevaCotizacion.resources
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_SolicitudToolBar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\PDFUtility.dll
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\itextsharp.dll
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\PDFUtility.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\PDFUtility.xml

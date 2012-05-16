@@ -1,6 +1,6 @@
 ﻿Imports DataSource
+Imports Main.NuevaSolicitud
 Imports System.Text
-
 
 Public Class uc_SolicitudToolBar
     Public UC As uc_NuevaSolicitudCotización
@@ -8,6 +8,11 @@ Public Class uc_SolicitudToolBar
     Private DB As DBDataSource
     Public _DT As DataTable
 
+    '----------------------------------------------------------
+    
+
+
+    '---------------------------------------------------------
     Public Sub New(ByRef frMain As fr_Main)
         ' This call is required by the designer.
         InitializeComponent()
@@ -18,6 +23,10 @@ Public Class uc_SolicitudToolBar
     End Sub
 
     Private Sub tb_Guardar_Click(sender As System.Object, e As System.EventArgs) Handles tb_Guardar.Click
+        Dim _NumeroCotizacion As String
+        Dim DT As DataTable
+        Dim strSQL As StringBuilder
+
         With UC
             ' Comporbar los valores minimos necesarios para guardar una solicitud
             If .txt_NumeroCliente.Text = "" Then
@@ -45,9 +54,7 @@ Public Class uc_SolicitudToolBar
 
         'Guardar solicitud
         Try
-            Dim DT As DataTable
-            Dim strSQL As New StringBuilder
-
+            strSQL = New StringBuilder
             DB = New DBDataSource
             strSQL.Append("CALL migsa_SolicitudCotizacion_Insertar(")
             strSQL.Append("'" & UC.txt_NumeroCliente.Text & "', ")
@@ -63,51 +70,44 @@ Public Class uc_SolicitudToolBar
             strSQL.Append("'" & UC.txt_Observaciones.Text & "'); ") 'Observaciones
 
             DT = DB.getDataTableQuery(strSQL.ToString)
+            _NumeroCotizacion = DT.Rows(0)("_NumeroSolicitud").ToString
             strSQL = Nothing
-        Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Critical, "MIGSA")
-            'Exit Sub
-        End Try
 
-        'Guardar Especificaciones
-        Try
-            Dim strSQL As New StringBuilder
+            _DT = UC._DT
+
+            strSQL = New StringBuilder
             For i As Integer = 0 To _DT.Rows.Count - 1
                 strSQL.Append("call migsa_EspecificacionSolicitudCotizacion_Insertar(")
-                strSQL.Append("'" & NumeroSolicitud & "', ")
-                strSQL.Append("'" & Nombre & "', ")
-                strSQL.Append("'" & Descripcion & "', ")
-                strSQL.Append("'" & Material & "', ")
-                strSQL.Append("'" & Proceso & "', ")
-                strSQL.Append("'" & Tratamiento & "', ")
-                strSQL.Append("'" & Cantidad & "', ")
-                strSQL.Append("'" & PrecioUnitario & "', ")
-                strSQL.Append("'" & PrecioObjetivo & "', ")
-                strSQL.Append("'" & CondicionesEntrega & "', ")
-                strSQL.Append("'" & Material & "'); ")
+                strSQL.Append("'" & _NumeroCotizacion & "', ")
+                strSQL.Append("'" & _DT.Rows(i)("Nombre") & "', ")
+                strSQL.Append("'" & _DT.Rows(i)("Descripcion") & "', ")
+                strSQL.Append("'" & _DT.Rows(i)("Material") & "', ")
+                strSQL.Append("'" & _DT.Rows(i)("Proceso") & "', ")
+                strSQL.Append("'" & _DT.Rows(i)("Tratamiento") & "', ")
+                strSQL.Append("'" & _DT.Rows(i)("Cantidad") & "', ")
+                strSQL.Append("'" & _DT.Rows(i)("PrecioUnitario") & "', ")
+                strSQL.Append("'" & _DT.Rows(i)("PrecioObjetivo") & "', ")
+                strSQL.Append("'" & _DT.Rows(i)("CondicionesEntrega") & "', ")
+                strSQL.Append("'" & _DT.Rows(i)("MaterialProporcionado") & "'); ")
 
                 DT = DB.getDataTableQuery(strSQL.ToString)
             Next
 
-            Dim BDEspecificacion As New SolicitudCotizacion
-
-            BDEspecificacion.GuardarEspecificacionSolicitudCotizacion(_NumeroCotizacion, _DT.Rows(i)("Nombre"), _
-                                                                      _DT.Rows(i)("Descripcion"), _DT.Rows(i)("Material"), _
-                                                                      _DT.Rows(i)("Proceso"), _DT.Rows(i)("Tratamiento"), _
-                                                                      _DT.Rows(i)("Cantidad"), _DT.Rows(i)("PrecioUnitario"), _
-                                                                      _DT.Rows(i)("PrecioObjetivo"), _DT.Rows(i)("CondicionesEntrega"), _
-                                                                      _DT.Rows(i)("MaterialProporcionado"))
-
-
-            BDEspecificacion.Dispose()
-            BDEspecificacion = Nothing
-
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, "MIGSA")
-            Exit Sub
+            'Exit Sub
+        Finally
+            DB.Dispose()
+            DB = Nothing
+            DT = Nothing
         End Try
 
         'Generar el documento PDF
+        Dim PDFFile As New NuevaSolicitud
+        Select Case _DT.Rows.Count
+            Case 1
+                PDFFile.pdf_Solicitud1P(_NumeroCotizacion)
+        End Select
     End Sub
 
     Private Sub tb_Cancelar_Click(sender As System.Object, e As System.EventArgs) Handles tb_Cancelar.Click
@@ -168,13 +168,4 @@ Public Class uc_SolicitudToolBar
         End With
     End Sub
 
-
-
-
-    Public Sub GuardarEspecificacionSolicitudCotizacion(ByVal NumeroSolicitud As String, ByVal Nombre As String, ByVal Descripcion As String, _
-                                                        ByVal Material As String, ByVal Proceso As String, ByVal Tratamiento As String, ByVal Cantidad As Integer, _
-                                                        ByVal PrecioUnitario As Integer, ByVal PrecioObjetivo As Integer, ByVal CondicionesEntrega As String, ByVal MaterialProporcionado As String)
-        Dim DT As DataTable
-        
-    End Sub
 End Class
