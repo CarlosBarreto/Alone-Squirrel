@@ -102,10 +102,10 @@
     <Compile Include="Controles\Generales\uc_Title.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.Designer.vb">
-      <DependentUpon>uc_CotizacionToolBar.vb</DependentUpon>
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\uc_SolicitudToolBar.Designer.vb">
+      <DependentUpon>uc_SolicitudToolBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.vb">
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\uc_SolicitudToolBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controles\Proyecto\Nueva Cotización\uc_NuevaCotizacion.Designer.vb">
@@ -161,8 +161,8 @@
     <EmbeddedResource Include="Controles\Generales\uc_Title.resx">
       <DependentUpon>uc_Title.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.resx">
-      <DependentUpon>uc_CotizacionToolBar.vb</DependentUpon>
+    <EmbeddedResource Include="Controles\Proyecto\Nueva Solicitud\uc_SolicitudToolBar.resx">
+      <DependentUpon>uc_SolicitudToolBar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Proyecto\Nueva Cotización\uc_NuevaCotizacion.resx">
       <DependentUpon>uc_NuevaCotizacion.vb</DependentUpon>

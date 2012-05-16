@@ -95,7 +95,7 @@ Public Class fr_Main
         Form.Width = Me.Width
         Me.Controls.Add(Form)
 
-        FormTool = New uc_CotizacionToolBar
+        FormTool = New uc_SolicitudToolBar(Me)
         Point_.X = 0
         Point_.Y = 110
         FormTool.Location = Point_
