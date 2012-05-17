@@ -75,8 +75,9 @@ Public Class uc_SolicitudToolBar
 
             _DT = UC._DT
 
-            strSQL = New StringBuilder
+
             For i As Integer = 0 To _DT.Rows.Count - 1
+                strSQL = New StringBuilder
                 strSQL.Append("call migsa_EspecificacionSolicitudCotizacion_Insertar(")
                 strSQL.Append("'" & _NumeroCotizacion & "', ")
                 strSQL.Append("'" & _DT.Rows(i)("Nombre") & "', ")
@@ -91,6 +92,7 @@ Public Class uc_SolicitudToolBar
                 strSQL.Append("'" & _DT.Rows(i)("MaterialProporcionado") & "'); ")
 
                 DT = DB.getDataTableQuery(strSQL.ToString)
+                strSQL = Nothing
             Next
 
         Catch ex As Exception
@@ -107,6 +109,17 @@ Public Class uc_SolicitudToolBar
         Select Case _DT.Rows.Count
             Case 1
                 PDFFile.pdf_Solicitud1P(_NumeroCotizacion)
+            Case 2
+                PDFFile.pdf_Solicitud2p(_NumeroCotizacion)
+            Case 3
+                'Obtener los datos del cliente
+                Dim Utility As New PDFUtility.PDFUtility
+                Utility.PDFSourceFile = "C:\MIGSA\RES\PDF\solicitud de cotizacion h1 2p.pdf"
+                MsgBox(Utility.ListFieldNames())
+
+                Utility.PDFSourceFile = "C:\MIGSA\RES\PDF\solicitud de cotizacion h2 +fs.pdf"
+                MsgBox(Utility.ListFieldNames())
+
         End Select
     End Sub
 
