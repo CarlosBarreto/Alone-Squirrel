@@ -1,0 +1,8 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" appbase="C:\Users\carlos.barreto\Alone-Squirrel\CrazyRat" />
+  <Config name="Debug" binpathtype="Auto">
+    <assembly path="..\..\CrazyRat\CRTest\bin\Release\CRTest.dll" />
+    <assembly path="CRTest\bin\Debug\CRTest.dll" />
+  </Config>
+  <Config name="Release" binpathtype="Auto" />
+</NUnitProject>

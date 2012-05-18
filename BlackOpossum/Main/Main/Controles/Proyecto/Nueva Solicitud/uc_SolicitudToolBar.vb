@@ -121,6 +121,8 @@ Public Class uc_SolicitudToolBar
                 MsgBox(Utility.ListFieldNames())
 
         End Select
+        fr_Main = Me.Parent
+        fr_Main.KillForm()
     End Sub
 
     Private Sub tb_Cancelar_Click(sender As System.Object, e As System.EventArgs) Handles tb_Cancelar.Click

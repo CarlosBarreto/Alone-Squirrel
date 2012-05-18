@@ -486,6 +486,10 @@ Public Class NuevaSolicitud
         AddDocument(temp2)
         Merge(RespPath & "FILES\SOLICITUDES\" & _NumeroSolicitud & ".pdf")
 
+        'Borrar archivos temporales
+        My.Computer.FileSystem.DeleteFile(temp1, FileIO.UIOption.OnlyErrorDialogs, FileIO.RecycleOption.SendToRecycleBin, FileIO.UICancelOption.DoNothing)
+        My.Computer.FileSystem.DeleteFile(temp2, FileIO.UIOption.OnlyErrorDialogs, FileIO.RecycleOption.SendToRecycleBin, FileIO.UICancelOption.DoNothing)
+
 
     End Sub
 
