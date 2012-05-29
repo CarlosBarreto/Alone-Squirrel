@@ -26,3 +26,4 @@ C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\PDFUtili
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\itextsharp.dll
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\PDFUtility.pdb
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\PDFUtility.xml
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.TextBoxExt.resources

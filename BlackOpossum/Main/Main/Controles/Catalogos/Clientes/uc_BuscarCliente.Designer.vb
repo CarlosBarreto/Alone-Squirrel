@@ -23,7 +23,7 @@ Partial Class uc_BuscarCliente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_NumeroCliente = New System.Windows.Forms.TextBox()
+        Me.txt_NumeroCliente = New TextBoxExt 'System.Windows.Forms.TextBox()
         Me.txt_Empresa = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.bt_Modificar = New System.Windows.Forms.Button()
@@ -45,6 +45,7 @@ Partial Class uc_BuscarCliente
         '
         'txt_NumeroCliente
         '
+        Me.txt_NumeroCliente.Type = "Alpha"
         Me.txt_NumeroCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_NumeroCliente.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_NumeroCliente.ForeColor = System.Drawing.Color.Black
@@ -132,7 +133,7 @@ Partial Class uc_BuscarCliente
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txt_NumeroCliente As System.Windows.Forms.TextBox
+    Friend WithEvents txt_NumeroCliente As TextBoxExt 'System.Windows.Forms.TextBox
     Friend WithEvents txt_Empresa As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents bt_Modificar As System.Windows.Forms.Button

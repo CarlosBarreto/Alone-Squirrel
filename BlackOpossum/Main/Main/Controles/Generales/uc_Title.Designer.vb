@@ -47,6 +47,6 @@ Partial Class uc_Title
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
 
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

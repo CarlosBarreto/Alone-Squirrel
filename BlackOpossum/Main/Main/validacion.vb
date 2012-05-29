@@ -1,3 +1,4 @@
-﻿Public Class validacion
+﻿
+Public Class validacion
 
 End Class

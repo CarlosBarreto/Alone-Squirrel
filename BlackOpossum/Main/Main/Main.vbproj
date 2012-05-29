@@ -95,6 +95,12 @@
     <Compile Include="Controles\Catalogos\Clientes\uc_ModificarDatosCliente.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controles\Generales\TextBoxExt.Designer.vb">
+      <DependentUpon>TextBoxExt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Generales\TextBoxExt.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controles\Generales\uc_PopUp.Designer.vb">
       <DependentUpon>uc_PopUp.vb</DependentUpon>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_ModificarDatosCliente.resx">
       <DependentUpon>uc_ModificarDatosCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Generales\TextBoxExt.resx">
+      <DependentUpon>TextBoxExt.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Generales\uc_PopUp.resx">
       <DependentUpon>uc_PopUp.vb</DependentUpon>
