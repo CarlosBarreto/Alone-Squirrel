@@ -26,19 +26,19 @@ Partial Class uc_ModificarDatosCliente
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.bt_Guardar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_NumeroCliente = New System.Windows.Forms.TextBox()
-        Me.txt_Ramo = New System.Windows.Forms.TextBox()
-        Me.txt_Telefono = New System.Windows.Forms.TextBox()
-        Me.txt_Estado = New System.Windows.Forms.TextBox()
-        Me.txt_Ciudad = New System.Windows.Forms.TextBox()
-        Me.txt_CP = New System.Windows.Forms.TextBox()
-        Me.txt_Colonia = New System.Windows.Forms.TextBox()
-        Me.txt_Domicilio = New System.Windows.Forms.TextBox()
+        Me.txt_NumeroCliente = New Main.TextBoxExt()
+        Me.txt_Ramo = New Main.TextBoxExt()
+        Me.txt_Telefono = New Main.TextBoxExt()
+        Me.txt_Estado = New Main.TextBoxExt()
+        Me.txt_Ciudad = New Main.TextBoxExt()
+        Me.txt_CP = New Main.TextBoxExt()
+        Me.txt_Colonia = New Main.TextBoxExt()
+        Me.txt_Domicilio = New Main.TextBoxExt()
+        Me.txt_Empresa = New Main.TextBoxExt()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txt_Empresa = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -103,6 +103,7 @@ Partial Class uc_ModificarDatosCliente
         Me.txt_NumeroCliente.Name = "txt_NumeroCliente"
         Me.txt_NumeroCliente.Size = New System.Drawing.Size(132, 22)
         Me.txt_NumeroCliente.TabIndex = 59
+        Me.txt_NumeroCliente.Type = TextBoxExt.ValidType.Alpha
         Me.txt_NumeroCliente.Visible = False
         '
         'txt_Ramo
@@ -114,6 +115,7 @@ Partial Class uc_ModificarDatosCliente
         Me.txt_Ramo.Name = "txt_Ramo"
         Me.txt_Ramo.Size = New System.Drawing.Size(348, 22)
         Me.txt_Ramo.TabIndex = 58
+        Me.txt_Ramo.Type = TextBoxExt.ValidType.Text
         '
         'txt_Telefono
         '
@@ -124,6 +126,7 @@ Partial Class uc_ModificarDatosCliente
         Me.txt_Telefono.Name = "txt_Telefono"
         Me.txt_Telefono.Size = New System.Drawing.Size(348, 22)
         Me.txt_Telefono.TabIndex = 57
+        Me.txt_Telefono.Type = TextBoxExt.ValidType.Alpha
         '
         'txt_Estado
         '
@@ -134,6 +137,7 @@ Partial Class uc_ModificarDatosCliente
         Me.txt_Estado.Name = "txt_Estado"
         Me.txt_Estado.Size = New System.Drawing.Size(348, 22)
         Me.txt_Estado.TabIndex = 56
+        Me.txt_Estado.Type = TextBoxExt.ValidType.Text
         '
         'txt_Ciudad
         '
@@ -144,6 +148,7 @@ Partial Class uc_ModificarDatosCliente
         Me.txt_Ciudad.Name = "txt_Ciudad"
         Me.txt_Ciudad.Size = New System.Drawing.Size(348, 22)
         Me.txt_Ciudad.TabIndex = 55
+        Me.txt_Ciudad.Type = TextBoxExt.ValidType.Text
         '
         'txt_CP
         '
@@ -154,6 +159,7 @@ Partial Class uc_ModificarDatosCliente
         Me.txt_CP.Name = "txt_CP"
         Me.txt_CP.Size = New System.Drawing.Size(91, 22)
         Me.txt_CP.TabIndex = 54
+        Me.txt_CP.Type = TextBoxExt.ValidType.Number
         '
         'txt_Colonia
         '
@@ -164,6 +170,7 @@ Partial Class uc_ModificarDatosCliente
         Me.txt_Colonia.Name = "txt_Colonia"
         Me.txt_Colonia.Size = New System.Drawing.Size(200, 22)
         Me.txt_Colonia.TabIndex = 53
+        Me.txt_Colonia.Type = TextBoxExt.ValidType.Text
         '
         'txt_Domicilio
         '
@@ -174,6 +181,18 @@ Partial Class uc_ModificarDatosCliente
         Me.txt_Domicilio.Name = "txt_Domicilio"
         Me.txt_Domicilio.Size = New System.Drawing.Size(348, 22)
         Me.txt_Domicilio.TabIndex = 52
+        Me.txt_Domicilio.Type = TextBoxExt.ValidType.Alpha
+        '
+        'txt_Empresa
+        '
+        Me.txt_Empresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Empresa.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Empresa.ForeColor = System.Drawing.Color.Black
+        Me.txt_Empresa.Location = New System.Drawing.Point(137, 79)
+        Me.txt_Empresa.Name = "txt_Empresa"
+        Me.txt_Empresa.Size = New System.Drawing.Size(348, 22)
+        Me.txt_Empresa.TabIndex = 51
+        Me.txt_Empresa.Type = TextBoxExt.ValidType.Text
         '
         'Label7
         '
@@ -218,16 +237,6 @@ Partial Class uc_ModificarDatosCliente
         Me.Label4.Size = New System.Drawing.Size(62, 18)
         Me.Label4.TabIndex = 45
         Me.Label4.Text = "Colonia"
-        '
-        'txt_Empresa
-        '
-        Me.txt_Empresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Empresa.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Empresa.ForeColor = System.Drawing.Color.Black
-        Me.txt_Empresa.Location = New System.Drawing.Point(137, 79)
-        Me.txt_Empresa.Name = "txt_Empresa"
-        Me.txt_Empresa.Size = New System.Drawing.Size(348, 22)
-        Me.txt_Empresa.TabIndex = 51
         '
         'Label9
         '
@@ -304,23 +313,26 @@ Partial Class uc_ModificarDatosCliente
         Me.PerformLayout()
 
     End Sub
+
     Friend WithEvents bt_Cancelar As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents bt_Guardar As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txt_NumeroCliente As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Ramo As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Telefono As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Estado As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Ciudad As System.Windows.Forms.TextBox
-    Friend WithEvents txt_CP As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Colonia As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Domicilio As System.Windows.Forms.TextBox
+
+    Friend WithEvents txt_NumeroCliente As TextBoxExt ' System.Windows.Forms.TextBox
+    Friend WithEvents txt_Ramo As TextBoxExt ' System.Windows.Forms.TextBox
+    Friend WithEvents txt_Telefono As TextBoxExt ' System.Windows.Forms.TextBox
+    Friend WithEvents txt_Estado As TextBoxExt ' System.Windows.Forms.TextBox
+    Friend WithEvents txt_Ciudad As TextBoxExt ' System.Windows.Forms.TextBox
+    Friend WithEvents txt_CP As TextBoxExt ' System.Windows.Forms.TextBox
+    Friend WithEvents txt_Colonia As TextBoxExt ' System.Windows.Forms.TextBox
+    Friend WithEvents txt_Domicilio As TextBoxExt ' System.Windows.Forms.TextBox
+    Friend WithEvents txt_Empresa As TextBoxExt ' System.Windows.Forms.TextBox
+
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents txt_Empresa As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label

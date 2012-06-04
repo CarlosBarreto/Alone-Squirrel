@@ -29,14 +29,14 @@ Partial Class uc_NuevaSolicitudCotización
         Me.lb_Desc = New System.Windows.Forms.Label()
         Me.bt_Options = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txt_NumeroCliente = New System.Windows.Forms.TextBox()
-        Me.txt_Empresa = New System.Windows.Forms.TextBox()
+        Me.txt_NumeroCliente = New Main.TextBoxExt()
+        Me.txt_Empresa = New Main.TextBoxExt()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.tbc_Servicio = New System.Windows.Forms.TabPage()
         Me.dt_Entrega = New System.Windows.Forms.DateTimePicker()
         Me.dt_Solicitud = New System.Windows.Forms.DateTimePicker()
         Me.lb_Entrega = New System.Windows.Forms.Label()
-        Me.txt_Servicio = New System.Windows.Forms.TextBox()
+        Me.txt_Servicio = New Main.TextBoxExt()
         Me.lb_Servicio = New System.Windows.Forms.Label()
         Me.lb_Solicitud = New System.Windows.Forms.Label()
         Me.tbc_Especificacion = New System.Windows.Forms.TabPage()
@@ -46,33 +46,33 @@ Partial Class uc_NuevaSolicitudCotización
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.opt_Empresa = New System.Windows.Forms.RadioButton()
         Me.opt_Cliente = New System.Windows.Forms.RadioButton()
-        Me.txt_CondicionesEntrega = New System.Windows.Forms.TextBox()
-        Me.txt_PrecioUnitario = New System.Windows.Forms.TextBox()
-        Me.txt_Cantidad = New System.Windows.Forms.TextBox()
-        Me.txt_PrecioObjetivo = New System.Windows.Forms.TextBox()
-        Me.txt_Proceso = New System.Windows.Forms.TextBox()
-        Me.txt_Descripcion = New System.Windows.Forms.TextBox()
+        Me.txt_CondicionesEntrega = New Main.TextBoxExt()
+        Me.txt_PrecioUnitario = New Main.TextBoxExt()
+        Me.txt_Cantidad = New Main.TextBoxExt()
+        Me.txt_PrecioObjetivo = New Main.TextBoxExt()
+        Me.txt_Proceso = New Main.TextBoxExt()
+        Me.txt_Descripcion = New Main.TextBoxExt()
         Me.lb_CondicionesEntrega = New System.Windows.Forms.Label()
         Me.lb_PrecioUnitario = New System.Windows.Forms.Label()
         Me.lb_PrecioObjetivo = New System.Windows.Forms.Label()
         Me.lb_Proceso = New System.Windows.Forms.Label()
         Me.lb_Tratamiento = New System.Windows.Forms.Label()
         Me.lb_Cantidad = New System.Windows.Forms.Label()
-        Me.txt_Material = New System.Windows.Forms.TextBox()
+        Me.txt_Material = New Main.TextBoxExt()
         Me.lb_Material = New System.Windows.Forms.Label()
-        Me.txt_Tratamiento = New System.Windows.Forms.TextBox()
-        Me.txt_Nombre = New System.Windows.Forms.TextBox()
+        Me.txt_Tratamiento = New Main.TextBoxExt()
+        Me.txt_Nombre = New Main.TextBoxExt()
         Me.lb_Nombre = New System.Windows.Forms.Label()
         Me.lb_Descripcion = New System.Windows.Forms.Label()
         Me.tbc_Condiciones = New System.Windows.Forms.TabPage()
         Me.cb_Condiciones = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_Observaciones = New System.Windows.Forms.TextBox()
-        Me.txt_TipoPago = New System.Windows.Forms.TextBox()
-        Me.txt_Contado = New System.Windows.Forms.TextBox()
-        Me.txt_Credito = New System.Windows.Forms.TextBox()
-        Me.txt_Resto = New System.Windows.Forms.TextBox()
-        Me.txt_Anticipo = New System.Windows.Forms.TextBox()
+        Me.txt_Observaciones = New Main.TextBoxExt()
+        Me.txt_TipoPago = New Main.TextBoxExt()
+        Me.txt_Contado = New Main.TextBoxExt()
+        Me.txt_Credito = New Main.TextBoxExt()
+        Me.txt_Resto = New Main.TextBoxExt()
+        Me.txt_Anticipo = New Main.TextBoxExt()
         Me.lb_Correo = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lb_Telefono = New System.Windows.Forms.Label()
@@ -182,6 +182,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_NumeroCliente.Name = "txt_NumeroCliente"
         Me.txt_NumeroCliente.Size = New System.Drawing.Size(132, 22)
         Me.txt_NumeroCliente.TabIndex = 49
+        Me.txt_NumeroCliente.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'txt_Empresa
         '
@@ -192,6 +193,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Empresa.Name = "txt_Empresa"
         Me.txt_Empresa.Size = New System.Drawing.Size(348, 22)
         Me.txt_Empresa.TabIndex = 48
+        Me.txt_Empresa.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'Label4
         '
@@ -261,6 +263,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Servicio.Name = "txt_Servicio"
         Me.txt_Servicio.Size = New System.Drawing.Size(360, 22)
         Me.txt_Servicio.TabIndex = 58
+        Me.txt_Servicio.Type = Main.TextBoxExt.ValidType.Text
         '
         'lb_Servicio
         '
@@ -389,6 +392,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_CondicionesEntrega.Name = "txt_CondicionesEntrega"
         Me.txt_CondicionesEntrega.Size = New System.Drawing.Size(402, 22)
         Me.txt_CondicionesEntrega.TabIndex = 88
+        Me.txt_CondicionesEntrega.Type = Main.TextBoxExt.ValidType.Text
         '
         'txt_PrecioUnitario
         '
@@ -399,6 +403,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_PrecioUnitario.Name = "txt_PrecioUnitario"
         Me.txt_PrecioUnitario.Size = New System.Drawing.Size(195, 22)
         Me.txt_PrecioUnitario.TabIndex = 87
+        Me.txt_PrecioUnitario.Type = Main.TextBoxExt.ValidType.Number
         '
         'txt_Cantidad
         '
@@ -409,6 +414,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Cantidad.Name = "txt_Cantidad"
         Me.txt_Cantidad.Size = New System.Drawing.Size(195, 22)
         Me.txt_Cantidad.TabIndex = 86
+        Me.txt_Cantidad.Type = Main.TextBoxExt.ValidType.Number
         '
         'txt_PrecioObjetivo
         '
@@ -419,6 +425,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_PrecioObjetivo.Name = "txt_PrecioObjetivo"
         Me.txt_PrecioObjetivo.Size = New System.Drawing.Size(195, 22)
         Me.txt_PrecioObjetivo.TabIndex = 85
+        Me.txt_PrecioObjetivo.Type = Main.TextBoxExt.ValidType.Text
         '
         'txt_Proceso
         '
@@ -429,6 +436,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Proceso.Name = "txt_Proceso"
         Me.txt_Proceso.Size = New System.Drawing.Size(195, 22)
         Me.txt_Proceso.TabIndex = 84
+        Me.txt_Proceso.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'txt_Descripcion
         '
@@ -439,6 +447,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Descripcion.Name = "txt_Descripcion"
         Me.txt_Descripcion.Size = New System.Drawing.Size(517, 22)
         Me.txt_Descripcion.TabIndex = 83
+        Me.txt_Descripcion.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'lb_CondicionesEntrega
         '
@@ -521,6 +530,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Material.Name = "txt_Material"
         Me.txt_Material.Size = New System.Drawing.Size(195, 22)
         Me.txt_Material.TabIndex = 76
+        Me.txt_Material.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'lb_Material
         '
@@ -543,6 +553,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Tratamiento.Name = "txt_Tratamiento"
         Me.txt_Tratamiento.Size = New System.Drawing.Size(195, 22)
         Me.txt_Tratamiento.TabIndex = 74
+        Me.txt_Tratamiento.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'txt_Nombre
         '
@@ -553,6 +564,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Nombre.Name = "txt_Nombre"
         Me.txt_Nombre.Size = New System.Drawing.Size(517, 22)
         Me.txt_Nombre.TabIndex = 73
+        Me.txt_Nombre.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'lb_Nombre
         '
@@ -633,6 +645,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Observaciones.Name = "txt_Observaciones"
         Me.txt_Observaciones.Size = New System.Drawing.Size(388, 86)
         Me.txt_Observaciones.TabIndex = 65
+        Me.txt_Observaciones.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'txt_TipoPago
         '
@@ -643,6 +656,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_TipoPago.Name = "txt_TipoPago"
         Me.txt_TipoPago.Size = New System.Drawing.Size(388, 22)
         Me.txt_TipoPago.TabIndex = 64
+        Me.txt_TipoPago.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'txt_Contado
         '
@@ -653,6 +667,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Contado.Name = "txt_Contado"
         Me.txt_Contado.Size = New System.Drawing.Size(388, 22)
         Me.txt_Contado.TabIndex = 63
+        Me.txt_Contado.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'txt_Credito
         '
@@ -663,6 +678,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Credito.Name = "txt_Credito"
         Me.txt_Credito.Size = New System.Drawing.Size(388, 22)
         Me.txt_Credito.TabIndex = 62
+        Me.txt_Credito.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'txt_Resto
         '
@@ -673,6 +689,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Resto.Name = "txt_Resto"
         Me.txt_Resto.Size = New System.Drawing.Size(150, 22)
         Me.txt_Resto.TabIndex = 61
+        Me.txt_Resto.Type = Main.TextBoxExt.ValidType.Text
         '
         'txt_Anticipo
         '
@@ -683,6 +700,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_Anticipo.Name = "txt_Anticipo"
         Me.txt_Anticipo.Size = New System.Drawing.Size(150, 22)
         Me.txt_Anticipo.TabIndex = 60
+        Me.txt_Anticipo.Type = Main.TextBoxExt.ValidType.Text
         '
         'lb_Correo
         '
@@ -780,6 +798,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.ResumeLayout(False)
 
     End Sub
+
     Friend WithEvents TabControl As System.Windows.Forms.TabControl
     Friend WithEvents tbc_Cliente As System.Windows.Forms.TabPage
     Friend WithEvents tbc_Servicio As System.Windows.Forms.TabPage
@@ -788,7 +807,25 @@ Partial Class uc_NuevaSolicitudCotización
     Friend WithEvents dt_Entrega As System.Windows.Forms.DateTimePicker
     Friend WithEvents dt_Solicitud As System.Windows.Forms.DateTimePicker
     Friend WithEvents lb_Entrega As System.Windows.Forms.Label
-    Friend WithEvents txt_Servicio As System.Windows.Forms.TextBox
+
+    Friend WithEvents txt_Servicio As TextBoxExt ' System.Windows.Forms.TextBox
+    Friend WithEvents txt_CondicionesEntrega As TextBoxExt ' System.Windows.Forms.TextBox
+    Friend WithEvents txt_PrecioUnitario As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Cantidad As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_PrecioObjetivo As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Proceso As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Descripcion As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Material As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_NumeroCliente As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Empresa As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Observaciones As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_TipoPago As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Contado As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Credito As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Resto As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Anticipo As TextBoxExt 'System.Windows.Forms.TextBox
+    Friend WithEvents txt_Nombre As TextBoxExt 'System.Windows.Forms.TextBox
+
     Friend WithEvents lb_Servicio As System.Windows.Forms.Label
     Friend WithEvents lb_Solicitud As System.Windows.Forms.Label
     Friend WithEvents bt_Limpiar As System.Windows.Forms.Button
@@ -797,32 +834,21 @@ Partial Class uc_NuevaSolicitudCotización
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents opt_Empresa As System.Windows.Forms.RadioButton
     Friend WithEvents opt_Cliente As System.Windows.Forms.RadioButton
-    Friend WithEvents txt_CondicionesEntrega As System.Windows.Forms.TextBox
-    Friend WithEvents txt_PrecioUnitario As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Cantidad As System.Windows.Forms.TextBox
-    Friend WithEvents txt_PrecioObjetivo As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Proceso As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Descripcion As System.Windows.Forms.TextBox
+
     Friend WithEvents lb_CondicionesEntrega As System.Windows.Forms.Label
     Friend WithEvents lb_PrecioUnitario As System.Windows.Forms.Label
     Friend WithEvents lb_PrecioObjetivo As System.Windows.Forms.Label
     Friend WithEvents lb_Proceso As System.Windows.Forms.Label
     Friend WithEvents lb_Tratamiento As System.Windows.Forms.Label
     Friend WithEvents lb_Cantidad As System.Windows.Forms.Label
-    Friend WithEvents txt_Material As System.Windows.Forms.TextBox
+
     Friend WithEvents lb_Material As System.Windows.Forms.Label
-    Friend WithEvents txt_Tratamiento As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Nombre As System.Windows.Forms.TextBox
+
     Friend WithEvents lb_Nombre As System.Windows.Forms.Label
     Friend WithEvents lb_Descripcion As System.Windows.Forms.Label
     Friend WithEvents cb_Condiciones As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txt_Observaciones As System.Windows.Forms.TextBox
-    Friend WithEvents txt_TipoPago As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Contado As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Credito As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Resto As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Anticipo As System.Windows.Forms.TextBox
+
     Friend WithEvents lb_Correo As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents lb_Telefono As System.Windows.Forms.Label
@@ -832,10 +858,10 @@ Partial Class uc_NuevaSolicitudCotización
     Friend WithEvents lb_Desc As System.Windows.Forms.Label
     Friend WithEvents bt_Options As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txt_NumeroCliente As System.Windows.Forms.TextBox
-    Friend WithEvents txt_Empresa As System.Windows.Forms.TextBox
+
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents lb_Requisitor As System.Windows.Forms.Label
     Friend WithEvents cb_Requisitor As System.Windows.Forms.ComboBox
+    Friend WithEvents txt_Tratamiento As Main.TextBoxExt
 
 End Class

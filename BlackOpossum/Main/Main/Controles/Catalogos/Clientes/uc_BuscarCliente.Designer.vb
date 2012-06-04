@@ -23,8 +23,8 @@ Partial Class uc_BuscarCliente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_NumeroCliente = New TextBoxExt 'System.Windows.Forms.TextBox()
-        Me.txt_Empresa = New System.Windows.Forms.TextBox()
+        Me.txt_NumeroCliente = New Main.TextBoxExt()
+        Me.txt_Empresa = New Main.TextBoxExt 'System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.bt_Modificar = New System.Windows.Forms.Button()
         Me.bt_Options = New System.Windows.Forms.Button()
@@ -39,13 +39,12 @@ Partial Class uc_BuscarCliente
         Me.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label1.Location = New System.Drawing.Point(35, 191)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(124, 18)
+        Me.Label1.Size = New System.Drawing.Size(121, 18)
         Me.Label1.TabIndex = 39
         Me.Label1.Text = "Número de Cliente"
         '
         'txt_NumeroCliente
         '
-        Me.txt_NumeroCliente.Type = "Alpha"
         Me.txt_NumeroCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_NumeroCliente.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_NumeroCliente.ForeColor = System.Drawing.Color.Black
@@ -53,6 +52,7 @@ Partial Class uc_BuscarCliente
         Me.txt_NumeroCliente.Name = "txt_NumeroCliente"
         Me.txt_NumeroCliente.Size = New System.Drawing.Size(132, 22)
         Me.txt_NumeroCliente.TabIndex = 42
+        Me.txt_NumeroCliente.Type = TextBoxExt.ValidType.Alpha
         '
         'txt_Empresa
         '
@@ -63,6 +63,7 @@ Partial Class uc_BuscarCliente
         Me.txt_Empresa.Name = "txt_Empresa"
         Me.txt_Empresa.Size = New System.Drawing.Size(348, 22)
         Me.txt_Empresa.TabIndex = 41
+        Me.txt_Empresa.Type = TextBoxExt.ValidType.Alpha
         '
         'Label2
         '
@@ -122,19 +123,20 @@ Partial Class uc_BuscarCliente
         Me.Controls.Add(Me.lb_Desc)
         Me.Controls.Add(Me.bt_Options)
         Me.Controls.Add(Me.bt_Modificar)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_NumeroCliente)
         Me.Controls.Add(Me.txt_Empresa)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Name = "uc_BuscarCliente"
         Me.Size = New System.Drawing.Size(536, 431)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txt_NumeroCliente As TextBoxExt 'System.Windows.Forms.TextBox
-    Friend WithEvents txt_Empresa As System.Windows.Forms.TextBox
+    Friend WithEvents txt_Empresa As TextBoxExt 'System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents bt_Modificar As System.Windows.Forms.Button
     Friend WithEvents bt_Options As System.Windows.Forms.Button
