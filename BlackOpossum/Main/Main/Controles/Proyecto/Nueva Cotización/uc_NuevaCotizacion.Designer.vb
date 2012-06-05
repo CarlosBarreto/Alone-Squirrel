@@ -24,15 +24,13 @@ Partial Class uc_NuevaCotizacion
     Private Sub InitializeComponent()
         Me.TabControl = New System.Windows.Forms.TabControl()
         Me.tbc_Nueva = New System.Windows.Forms.TabPage()
-        Me.tbc_SelectSolicitud = New System.Windows.Forms.TabPage()
-        Me.tbc_Cliente = New System.Windows.Forms.TabPage()
-        Me.tbc_Servicio = New System.Windows.Forms.TabPage()
-        Me.tbc_Especificaciones = New System.Windows.Forms.TabPage()
         Me.Opt_NuevosDatos = New System.Windows.Forms.RadioButton()
         Me.Opt_Solicitud = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.tbc_SelectSolicitud = New System.Windows.Forms.TabPage()
         Me.DataGrid = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.tbc_Cliente = New System.Windows.Forms.TabPage()
         Me.lb_Desc = New System.Windows.Forms.Label()
         Me.bt_Options = New System.Windows.Forms.Button()
         Me.bt_Modificar = New System.Windows.Forms.Button()
@@ -40,13 +38,15 @@ Partial Class uc_NuevaCotizacion
         Me.txt_NumeroCliente = New System.Windows.Forms.TextBox()
         Me.txt_Empresa = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.tbc_Servicio = New System.Windows.Forms.TabPage()
+        Me.dt_Entrega = New System.Windows.Forms.DateTimePicker()
+        Me.dt_Solicitud = New System.Windows.Forms.DateTimePicker()
         Me.bt_Editar = New System.Windows.Forms.Button()
         Me.lb_Entrega = New System.Windows.Forms.Label()
         Me.txt_Servicio = New System.Windows.Forms.TextBox()
         Me.lb_Servicio = New System.Windows.Forms.Label()
         Me.lb_Solicitud = New System.Windows.Forms.Label()
-        Me.dt_Entrega = New System.Windows.Forms.DateTimePicker()
-        Me.dt_Solicitud = New System.Windows.Forms.DateTimePicker()
+        Me.tbc_Especificaciones = New System.Windows.Forms.TabPage()
         Me.bt_Limpiar = New System.Windows.Forms.Button()
         Me.bt_Agregar = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -74,10 +74,10 @@ Partial Class uc_NuevaCotizacion
         Me.TabControl.SuspendLayout()
         Me.tbc_Nueva.SuspendLayout()
         Me.tbc_SelectSolicitud.SuspendLayout()
+        CType(Me.DataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbc_Cliente.SuspendLayout()
         Me.tbc_Servicio.SuspendLayout()
         Me.tbc_Especificaciones.SuspendLayout()
-        CType(Me.DataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -108,80 +108,6 @@ Partial Class uc_NuevaCotizacion
         Me.tbc_Nueva.Size = New System.Drawing.Size(872, 476)
         Me.tbc_Nueva.TabIndex = 0
         Me.tbc_Nueva.Text = "Nueva"
-        '
-        'tbc_SelectSolicitud
-        '
-        Me.tbc_SelectSolicitud.BackColor = System.Drawing.Color.White
-        Me.tbc_SelectSolicitud.Controls.Add(Me.DataGrid)
-        Me.tbc_SelectSolicitud.Controls.Add(Me.Label2)
-        Me.tbc_SelectSolicitud.Location = New System.Drawing.Point(4, 25)
-        Me.tbc_SelectSolicitud.Name = "tbc_SelectSolicitud"
-        Me.tbc_SelectSolicitud.Size = New System.Drawing.Size(872, 476)
-        Me.tbc_SelectSolicitud.TabIndex = 1
-        Me.tbc_SelectSolicitud.Text = "Select Solicitud"
-        '
-        'tbc_Cliente
-        '
-        Me.tbc_Cliente.BackColor = System.Drawing.Color.White
-        Me.tbc_Cliente.Controls.Add(Me.lb_Desc)
-        Me.tbc_Cliente.Controls.Add(Me.bt_Options)
-        Me.tbc_Cliente.Controls.Add(Me.bt_Modificar)
-        Me.tbc_Cliente.Controls.Add(Me.Label3)
-        Me.tbc_Cliente.Controls.Add(Me.txt_NumeroCliente)
-        Me.tbc_Cliente.Controls.Add(Me.txt_Empresa)
-        Me.tbc_Cliente.Controls.Add(Me.Label4)
-        Me.tbc_Cliente.Location = New System.Drawing.Point(4, 25)
-        Me.tbc_Cliente.Name = "tbc_Cliente"
-        Me.tbc_Cliente.Size = New System.Drawing.Size(872, 476)
-        Me.tbc_Cliente.TabIndex = 2
-        Me.tbc_Cliente.Text = "Cliente / Requisitor"
-        '
-        'tbc_Servicio
-        '
-        Me.tbc_Servicio.BackColor = System.Drawing.Color.White
-        Me.tbc_Servicio.Controls.Add(Me.dt_Entrega)
-        Me.tbc_Servicio.Controls.Add(Me.dt_Solicitud)
-        Me.tbc_Servicio.Controls.Add(Me.bt_Editar)
-        Me.tbc_Servicio.Controls.Add(Me.lb_Entrega)
-        Me.tbc_Servicio.Controls.Add(Me.txt_Servicio)
-        Me.tbc_Servicio.Controls.Add(Me.lb_Servicio)
-        Me.tbc_Servicio.Controls.Add(Me.lb_Solicitud)
-        Me.tbc_Servicio.Location = New System.Drawing.Point(4, 25)
-        Me.tbc_Servicio.Name = "tbc_Servicio"
-        Me.tbc_Servicio.Size = New System.Drawing.Size(872, 476)
-        Me.tbc_Servicio.TabIndex = 4
-        Me.tbc_Servicio.Text = "Servicio"
-        '
-        'tbc_Especificaciones
-        '
-        Me.tbc_Especificaciones.BackColor = System.Drawing.Color.White
-        Me.tbc_Especificaciones.Controls.Add(Me.bt_Limpiar)
-        Me.tbc_Especificaciones.Controls.Add(Me.bt_Agregar)
-        Me.tbc_Especificaciones.Controls.Add(Me.DataGridView1)
-        Me.tbc_Especificaciones.Controls.Add(Me.GroupBox1)
-        Me.tbc_Especificaciones.Controls.Add(Me.txt_CondicionesEntrega)
-        Me.tbc_Especificaciones.Controls.Add(Me.txt_PrecioUnitario)
-        Me.tbc_Especificaciones.Controls.Add(Me.txt_Cantidad)
-        Me.tbc_Especificaciones.Controls.Add(Me.txt_PrecioObjetivo)
-        Me.tbc_Especificaciones.Controls.Add(Me.txt_Proceso)
-        Me.tbc_Especificaciones.Controls.Add(Me.txt_Descripcion)
-        Me.tbc_Especificaciones.Controls.Add(Me.lb_CondicionesEntrega)
-        Me.tbc_Especificaciones.Controls.Add(Me.lb_PrecioUnitario)
-        Me.tbc_Especificaciones.Controls.Add(Me.lb_PrecioObjetivo)
-        Me.tbc_Especificaciones.Controls.Add(Me.lb_Proceso)
-        Me.tbc_Especificaciones.Controls.Add(Me.lb_Tratamiento)
-        Me.tbc_Especificaciones.Controls.Add(Me.lb_Cantidad)
-        Me.tbc_Especificaciones.Controls.Add(Me.txt_Material)
-        Me.tbc_Especificaciones.Controls.Add(Me.lb_Material)
-        Me.tbc_Especificaciones.Controls.Add(Me.txt_Tratamiento)
-        Me.tbc_Especificaciones.Controls.Add(Me.txt_Nombre)
-        Me.tbc_Especificaciones.Controls.Add(Me.lb_Nombre)
-        Me.tbc_Especificaciones.Controls.Add(Me.lb_Descripcion)
-        Me.tbc_Especificaciones.Location = New System.Drawing.Point(4, 25)
-        Me.tbc_Especificaciones.Name = "tbc_Especificaciones"
-        Me.tbc_Especificaciones.Size = New System.Drawing.Size(872, 476)
-        Me.tbc_Especificaciones.TabIndex = 5
-        Me.tbc_Especificaciones.Text = "Especificaciones de Servicio"
         '
         'Opt_NuevosDatos
         '
@@ -219,6 +145,17 @@ Partial Class uc_NuevaCotizacion
     "tos"
         Me.Label1.UseCompatibleTextRendering = True
         '
+        'tbc_SelectSolicitud
+        '
+        Me.tbc_SelectSolicitud.BackColor = System.Drawing.Color.White
+        Me.tbc_SelectSolicitud.Controls.Add(Me.DataGrid)
+        Me.tbc_SelectSolicitud.Controls.Add(Me.Label2)
+        Me.tbc_SelectSolicitud.Location = New System.Drawing.Point(4, 25)
+        Me.tbc_SelectSolicitud.Name = "tbc_SelectSolicitud"
+        Me.tbc_SelectSolicitud.Size = New System.Drawing.Size(872, 476)
+        Me.tbc_SelectSolicitud.TabIndex = 1
+        Me.tbc_SelectSolicitud.Text = "Select Solicitud"
+        '
         'DataGrid
         '
         Me.DataGrid.AllowUserToAddRows = False
@@ -240,6 +177,22 @@ Partial Class uc_NuevaCotizacion
         Me.Label2.Text = "Seleccione si desea partir de una Solicitud de Cotización o a partir de nuevos da" & _
     "tos"
         Me.Label2.UseCompatibleTextRendering = True
+        '
+        'tbc_Cliente
+        '
+        Me.tbc_Cliente.BackColor = System.Drawing.Color.White
+        Me.tbc_Cliente.Controls.Add(Me.lb_Desc)
+        Me.tbc_Cliente.Controls.Add(Me.bt_Options)
+        Me.tbc_Cliente.Controls.Add(Me.bt_Modificar)
+        Me.tbc_Cliente.Controls.Add(Me.Label3)
+        Me.tbc_Cliente.Controls.Add(Me.txt_NumeroCliente)
+        Me.tbc_Cliente.Controls.Add(Me.txt_Empresa)
+        Me.tbc_Cliente.Controls.Add(Me.Label4)
+        Me.tbc_Cliente.Location = New System.Drawing.Point(4, 25)
+        Me.tbc_Cliente.Name = "tbc_Cliente"
+        Me.tbc_Cliente.Size = New System.Drawing.Size(872, 476)
+        Me.tbc_Cliente.TabIndex = 2
+        Me.tbc_Cliente.Text = "Cliente / Requisitor"
         '
         'lb_Desc
         '
@@ -310,6 +263,42 @@ Partial Class uc_NuevaCotizacion
         Me.Label4.TabIndex = 54
         Me.Label4.Text = "Empresa"
         '
+        'tbc_Servicio
+        '
+        Me.tbc_Servicio.BackColor = System.Drawing.Color.White
+        Me.tbc_Servicio.Controls.Add(Me.dt_Entrega)
+        Me.tbc_Servicio.Controls.Add(Me.dt_Solicitud)
+        Me.tbc_Servicio.Controls.Add(Me.bt_Editar)
+        Me.tbc_Servicio.Controls.Add(Me.lb_Entrega)
+        Me.tbc_Servicio.Controls.Add(Me.txt_Servicio)
+        Me.tbc_Servicio.Controls.Add(Me.lb_Servicio)
+        Me.tbc_Servicio.Controls.Add(Me.lb_Solicitud)
+        Me.tbc_Servicio.Location = New System.Drawing.Point(4, 25)
+        Me.tbc_Servicio.Name = "tbc_Servicio"
+        Me.tbc_Servicio.Size = New System.Drawing.Size(872, 476)
+        Me.tbc_Servicio.TabIndex = 4
+        Me.tbc_Servicio.Text = "Servicio"
+        '
+        'dt_Entrega
+        '
+        Me.dt_Entrega.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dt_Entrega.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dt_Entrega.Location = New System.Drawing.Point(355, 192)
+        Me.dt_Entrega.Name = "dt_Entrega"
+        Me.dt_Entrega.Size = New System.Drawing.Size(137, 22)
+        Me.dt_Entrega.TabIndex = 63
+        Me.dt_Entrega.Value = New Date(2012, 5, 7, 0, 0, 0, 0)
+        '
+        'dt_Solicitud
+        '
+        Me.dt_Solicitud.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dt_Solicitud.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dt_Solicitud.Location = New System.Drawing.Point(132, 192)
+        Me.dt_Solicitud.Name = "dt_Solicitud"
+        Me.dt_Solicitud.Size = New System.Drawing.Size(137, 22)
+        Me.dt_Solicitud.TabIndex = 62
+        Me.dt_Solicitud.Value = New Date(2012, 5, 7, 0, 0, 0, 0)
+        '
         'bt_Editar
         '
         Me.bt_Editar.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -367,25 +356,36 @@ Partial Class uc_NuevaCotizacion
         Me.lb_Solicitud.TabIndex = 55
         Me.lb_Solicitud.Text = "Solicitud"
         '
-        'dt_Entrega
+        'tbc_Especificaciones
         '
-        Me.dt_Entrega.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dt_Entrega.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dt_Entrega.Location = New System.Drawing.Point(355, 192)
-        Me.dt_Entrega.Name = "dt_Entrega"
-        Me.dt_Entrega.Size = New System.Drawing.Size(137, 22)
-        Me.dt_Entrega.TabIndex = 63
-        Me.dt_Entrega.Value = New Date(2012, 5, 7, 0, 0, 0, 0)
-        '
-        'dt_Solicitud
-        '
-        Me.dt_Solicitud.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dt_Solicitud.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dt_Solicitud.Location = New System.Drawing.Point(132, 192)
-        Me.dt_Solicitud.Name = "dt_Solicitud"
-        Me.dt_Solicitud.Size = New System.Drawing.Size(137, 22)
-        Me.dt_Solicitud.TabIndex = 62
-        Me.dt_Solicitud.Value = New Date(2012, 5, 7, 0, 0, 0, 0)
+        Me.tbc_Especificaciones.BackColor = System.Drawing.Color.White
+        Me.tbc_Especificaciones.Controls.Add(Me.bt_Limpiar)
+        Me.tbc_Especificaciones.Controls.Add(Me.bt_Agregar)
+        Me.tbc_Especificaciones.Controls.Add(Me.DataGridView1)
+        Me.tbc_Especificaciones.Controls.Add(Me.GroupBox1)
+        Me.tbc_Especificaciones.Controls.Add(Me.txt_CondicionesEntrega)
+        Me.tbc_Especificaciones.Controls.Add(Me.txt_PrecioUnitario)
+        Me.tbc_Especificaciones.Controls.Add(Me.txt_Cantidad)
+        Me.tbc_Especificaciones.Controls.Add(Me.txt_PrecioObjetivo)
+        Me.tbc_Especificaciones.Controls.Add(Me.txt_Proceso)
+        Me.tbc_Especificaciones.Controls.Add(Me.txt_Descripcion)
+        Me.tbc_Especificaciones.Controls.Add(Me.lb_CondicionesEntrega)
+        Me.tbc_Especificaciones.Controls.Add(Me.lb_PrecioUnitario)
+        Me.tbc_Especificaciones.Controls.Add(Me.lb_PrecioObjetivo)
+        Me.tbc_Especificaciones.Controls.Add(Me.lb_Proceso)
+        Me.tbc_Especificaciones.Controls.Add(Me.lb_Tratamiento)
+        Me.tbc_Especificaciones.Controls.Add(Me.lb_Cantidad)
+        Me.tbc_Especificaciones.Controls.Add(Me.txt_Material)
+        Me.tbc_Especificaciones.Controls.Add(Me.lb_Material)
+        Me.tbc_Especificaciones.Controls.Add(Me.txt_Tratamiento)
+        Me.tbc_Especificaciones.Controls.Add(Me.txt_Nombre)
+        Me.tbc_Especificaciones.Controls.Add(Me.lb_Nombre)
+        Me.tbc_Especificaciones.Controls.Add(Me.lb_Descripcion)
+        Me.tbc_Especificaciones.Location = New System.Drawing.Point(4, 25)
+        Me.tbc_Especificaciones.Name = "tbc_Especificaciones"
+        Me.tbc_Especificaciones.Size = New System.Drawing.Size(872, 476)
+        Me.tbc_Especificaciones.TabIndex = 5
+        Me.tbc_Especificaciones.Text = "Especificaciones de Servicio"
         '
         'bt_Limpiar
         '
@@ -658,13 +658,13 @@ Partial Class uc_NuevaCotizacion
         Me.tbc_Nueva.ResumeLayout(False)
         Me.tbc_Nueva.PerformLayout()
         Me.tbc_SelectSolicitud.ResumeLayout(False)
+        CType(Me.DataGrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbc_Cliente.ResumeLayout(False)
         Me.tbc_Cliente.PerformLayout()
         Me.tbc_Servicio.ResumeLayout(False)
         Me.tbc_Servicio.PerformLayout()
         Me.tbc_Especificaciones.ResumeLayout(False)
         Me.tbc_Especificaciones.PerformLayout()
-        CType(Me.DataGrid, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

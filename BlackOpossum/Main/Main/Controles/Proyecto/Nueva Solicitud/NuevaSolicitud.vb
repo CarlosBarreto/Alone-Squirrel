@@ -493,9 +493,8 @@ Public Class NuevaSolicitud
 
     End Sub
 
-
     
-
+    'Funciones para el manejo del PDF
     Public Property BaseFont As BaseFont
         Get
             Return _BaseFont

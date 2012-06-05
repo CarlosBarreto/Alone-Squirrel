@@ -10,6 +10,12 @@ Public Class PDFUtility
     Private _PDFSourceFile As String
     Private _PDFPATH As String
 
+    ''' <summary>
+    ''' Archivo de plantilla PDF a utilizar
+    ''' </summary>
+    ''' <value></value>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
     Public Property PDFSourceFile As String
         Get
             Return _PDFSourceFile
@@ -18,6 +24,13 @@ Public Class PDFUtility
             _PDFSourceFile = value
         End Set
     End Property
+
+    ''' <summary>
+    ''' Path donde se guardaran los archivos
+    ''' </summary>
+    ''' <value></value>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
     Public Property PDFPATH As String
         Get
             Return _PDFPATH

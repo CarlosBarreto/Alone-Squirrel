@@ -6,7 +6,21 @@ PDFUtility
 </name>
 </assembly>
 <members>
-<member name="M:PDFUtility.PDFUtility.ListFieldNames">
+<member name="P:PDFUtility.PDFUtility.PDFSourceFile">
+	<summary>
+ Archivo de plantilla PDF a utilizar
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:PDFUtility.PDFUtility.PDFPATH">
+	<summary>
+ Path donde se guardaran los archivos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PDFUtility.PDFUtility.ListFieldNames">
 	<summary>
  Lista todos los elementos del formulario en una Cadena.The
  form fields identified can be used to map each of 

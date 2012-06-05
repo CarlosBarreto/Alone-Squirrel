@@ -95,6 +95,24 @@ Public Class uc_SolicitudToolBar
                 strSQL = Nothing
             Next
 
+            'Generar el documento PDF
+            Dim PDFFile As New NuevaSolicitud
+            Select Case _DT.Rows.Count
+                Case 1
+                    PDFFile.pdf_Solicitud1P(_NumeroCotizacion)
+                Case 2
+                    PDFFile.pdf_Solicitud2p(_NumeroCotizacion)
+                Case 3
+                    'Obtener los datos del cliente
+                    Dim Utility As New PDFUtility.PDFUtility
+                    Utility.PDFSourceFile = "C:\MIGSA\RES\PDF\solicitud de cotizacion h1 2p.pdf"
+                    MsgBox(Utility.ListFieldNames())
+
+                    Utility.PDFSourceFile = "C:\MIGSA\RES\PDF\solicitud de cotizacion h2 +fs.pdf"
+                    MsgBox(Utility.ListFieldNames())
+
+            End Select
+
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, "MIGSA")
             'Exit Sub
@@ -102,27 +120,11 @@ Public Class uc_SolicitudToolBar
             DB.Dispose()
             DB = Nothing
             DT = Nothing
+
+            'Cerrar el formulario
+            fr_Main = Me.Parent
+            fr_Main.KillForm()
         End Try
-
-        'Generar el documento PDF
-        Dim PDFFile As New NuevaSolicitud
-        Select Case _DT.Rows.Count
-            Case 1
-                PDFFile.pdf_Solicitud1P(_NumeroCotizacion)
-            Case 2
-                PDFFile.pdf_Solicitud2p(_NumeroCotizacion)
-            Case 3
-                'Obtener los datos del cliente
-                Dim Utility As New PDFUtility.PDFUtility
-                Utility.PDFSourceFile = "C:\MIGSA\RES\PDF\solicitud de cotizacion h1 2p.pdf"
-                MsgBox(Utility.ListFieldNames())
-
-                Utility.PDFSourceFile = "C:\MIGSA\RES\PDF\solicitud de cotizacion h2 +fs.pdf"
-                MsgBox(Utility.ListFieldNames())
-
-        End Select
-        fr_Main = Me.Parent
-        fr_Main.KillForm()
     End Sub
 
     Private Sub tb_Cancelar_Click(sender As System.Object, e As System.EventArgs) Handles tb_Cancelar.Click
