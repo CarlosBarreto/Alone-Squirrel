@@ -121,4 +121,16 @@ Public Class fr_Main
     End Sub
 
 
+    Private Sub AgregarToolStripMenuItem1_Click(sender As System.Object, e As System.EventArgs) Handles AgregarToolStripMenuItem1.Click
+        KillForm()
+        AddTitle("Agregar Nuevo Proveedor")
+
+        Form = New uc_FormularioDatosProveedores
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+
+    End Sub
 End Class

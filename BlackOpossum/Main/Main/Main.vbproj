@@ -95,6 +95,18 @@
     <Compile Include="Controles\Catalogos\Clientes\uc_ModificarDatosCliente.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controles\Catalogos\Proveedores\uc_FormularioDatosProveedores.Designer.vb">
+      <DependentUpon>uc_FormularioDatosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proveedores\uc_FormularioDatosProveedores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proveedores\uc_ModificarDatosProveedores.Designer.vb">
+      <DependentUpon>uc_ModificarDatosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proveedores\uc_ModificarDatosProveedores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controles\Generales\TextBoxExt.Designer.vb">
       <DependentUpon>TextBoxExt.vb</DependentUpon>
     </Compile>
@@ -165,6 +177,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_ModificarDatosCliente.resx">
       <DependentUpon>uc_ModificarDatosCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Proveedores\uc_FormularioDatosProveedores.resx">
+      <DependentUpon>uc_FormularioDatosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Proveedores\uc_ModificarDatosProveedores.resx">
+      <DependentUpon>uc_ModificarDatosProveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Generales\TextBoxExt.resx">
       <DependentUpon>TextBoxExt.vb</DependentUpon>

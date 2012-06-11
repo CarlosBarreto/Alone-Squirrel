@@ -198,7 +198,7 @@ Partial Class fr_Main
         '
         Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem, Me.ModificarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.ToolStripMenuItem1, Me.ListadoDeClientesToolStripMenuItem})
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'AgregarToolStripMenuItem
@@ -234,7 +234,7 @@ Partial Class fr_Main
         '
         Me.ProveedoresToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem1, Me.ModificarToolStripMenuItem1, Me.EliminarToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ListadoDeProveedoresToolStripMenuItem})
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'AgregarToolStripMenuItem1
@@ -269,14 +269,14 @@ Partial Class fr_Main
         'MaterialesToolStripMenuItem
         '
         Me.MaterialesToolStripMenuItem.Name = "MaterialesToolStripMenuItem"
-        Me.MaterialesToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.MaterialesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.MaterialesToolStripMenuItem.Text = "Materiales"
         '
         'ServiciosToolStripMenuItem
         '
         Me.ServiciosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem2, Me.ModificarToolStripMenuItem2, Me.EliminarToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ListadoDeServiciosToolStripMenuItem})
         Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
-        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ServiciosToolStripMenuItem.Text = "Servicios"
         '
         'AgregarToolStripMenuItem2

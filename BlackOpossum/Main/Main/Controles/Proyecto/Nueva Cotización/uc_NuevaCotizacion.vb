@@ -9,6 +9,7 @@ Public Class uc_NuevaCotizacion
 
     Private Sub tbc_SelectSolicitud_Click(sender As System.Object, e As System.EventArgs) Handles tbc_SelectSolicitud.Click
         IniciarConexion()
+        SeleccionarSolicitudesPendientes()
         DataGrid.DataSource = DT
         TerminarConexion()
     End Sub
@@ -31,7 +32,6 @@ Public Class uc_NuevaCotizacion
     End Sub
     Private Sub TerminarConexion()
         DB.Dispose()
-        DT.Clear()
 
         DB = Nothing
         DT = Nothing
