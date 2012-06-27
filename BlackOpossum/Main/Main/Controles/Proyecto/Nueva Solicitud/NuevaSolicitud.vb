@@ -12,7 +12,7 @@ Imports iTextSharp.text.xml
 Public Class NuevaSolicitud
     '-- VARIABLES --
     Private DB As DBDataSource
-    Private _SolicitudCotizacion As String
+    Public _SolicitudCotizacion As String
 
     '---
     Private _BaseFont As BaseFont
@@ -61,7 +61,7 @@ Public Class NuevaSolicitud
     ''' Almacena los datos del requisitor
     ''' </summary>
     ''' <remarks></remarks>
-    Public Shared _Requisitor As DatosRequisitor
+    Public _Requisitor As DatosRequisitor
 
     'ADMINISTRACION DE LOS DATOS DE SERVICIO
     ''' <summary>
@@ -77,15 +77,15 @@ Public Class NuevaSolicitud
     ''' Almacena los datos del servicio
     ''' </summary>
     ''' <remarks></remarks>
-    Public Shared _Servicio As DatosServicio
+    Public _Servicio As DatosServicio
 
     'ADMINSITRACION DE LOS DATOS DE LA ESPECIFICACION DE SERVICIOS
     ''' <summary>
     ''' Data table
     ''' </summary>
     ''' <remarks></remarks>
-    Public Shared _DT As DataTable
-    Public Shared Sub CreateDT()
+    Public _DT As DataTable
+    Public Sub CreateDT()
         _DT = New DataTable
         _DT.Columns.Add("Nombre")
         _DT.Columns.Add("Descripcion")

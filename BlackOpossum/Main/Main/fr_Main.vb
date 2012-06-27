@@ -113,6 +113,13 @@ Public Class fr_Main
         Form.Location = Point_
         Form.Width = Me.Width
         Me.Controls.Add(Form)
+
+        FormTool = New uc_CotizacionToolBar(Me)
+        Point_.X = 0
+        Point_.Y = 110
+        FormTool.Location = Point_
+        FormTool.Width = Me.Width
+        Me.Controls.Add(FormTool)
     End Sub
     '------------------------------------
     Private Sub fr_Main_Resize(sender As Object, e As System.EventArgs) Handles Me.Resize
@@ -133,4 +140,29 @@ Public Class fr_Main
         Me.Controls.Add(Form)
 
     End Sub
+
+    Private Sub AgregarToolStripMenuItem2_Click(sender As System.Object, e As System.EventArgs) Handles AgregarToolStripMenuItem2.Click
+        KillForm()
+        AddTitle("Agregar Nuevo Servicio")
+
+        Form = New uc_FormularioDatosServicio
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub AgregarToolStripMenuItem3_Click(sender As System.Object, e As System.EventArgs) Handles AgregarToolStripMenuItem3.Click
+        KillForm()
+        AddTitle("Agregar Nuevo Tratamiento")
+
+        Form = New uc_FormularioDatosTratamiento
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
 End Class

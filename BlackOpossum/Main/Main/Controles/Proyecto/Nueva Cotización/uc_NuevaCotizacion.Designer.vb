@@ -49,7 +49,7 @@ Partial Class uc_NuevaCotizacion
         Me.tbc_Especificaciones = New System.Windows.Forms.TabPage()
         Me.bt_Limpiar = New System.Windows.Forms.Button()
         Me.bt_Agregar = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DG_Especificacion = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.opt_Empresa = New System.Windows.Forms.RadioButton()
         Me.opt_Cliente = New System.Windows.Forms.RadioButton()
@@ -78,7 +78,7 @@ Partial Class uc_NuevaCotizacion
         Me.tbc_Cliente.SuspendLayout()
         Me.tbc_Servicio.SuspendLayout()
         Me.tbc_Especificaciones.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DG_Especificacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -361,7 +361,7 @@ Partial Class uc_NuevaCotizacion
         Me.tbc_Especificaciones.BackColor = System.Drawing.Color.White
         Me.tbc_Especificaciones.Controls.Add(Me.bt_Limpiar)
         Me.tbc_Especificaciones.Controls.Add(Me.bt_Agregar)
-        Me.tbc_Especificaciones.Controls.Add(Me.DataGridView1)
+        Me.tbc_Especificaciones.Controls.Add(Me.DG_Especificacion)
         Me.tbc_Especificaciones.Controls.Add(Me.GroupBox1)
         Me.tbc_Especificaciones.Controls.Add(Me.txt_CondicionesEntrega)
         Me.tbc_Especificaciones.Controls.Add(Me.txt_PrecioUnitario)
@@ -407,13 +407,13 @@ Partial Class uc_NuevaCotizacion
         Me.bt_Agregar.Text = "Agregar"
         Me.bt_Agregar.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'DG_Especificacion
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(31, 237)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(788, 202)
-        Me.DataGridView1.TabIndex = 112
+        Me.DG_Especificacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DG_Especificacion.Location = New System.Drawing.Point(31, 237)
+        Me.DG_Especificacion.Name = "DG_Especificacion"
+        Me.DG_Especificacion.Size = New System.Drawing.Size(788, 202)
+        Me.DG_Especificacion.TabIndex = 112
         '
         'GroupBox1
         '
@@ -665,7 +665,7 @@ Partial Class uc_NuevaCotizacion
         Me.tbc_Servicio.PerformLayout()
         Me.tbc_Especificaciones.ResumeLayout(False)
         Me.tbc_Especificaciones.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DG_Especificacion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -698,7 +698,7 @@ Partial Class uc_NuevaCotizacion
     Friend WithEvents dt_Solicitud As System.Windows.Forms.DateTimePicker
     Friend WithEvents bt_Limpiar As System.Windows.Forms.Button
     Friend WithEvents bt_Agregar As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents DG_Especificacion As System.Windows.Forms.DataGridView
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents opt_Empresa As System.Windows.Forms.RadioButton
     Friend WithEvents opt_Cliente As System.Windows.Forms.RadioButton

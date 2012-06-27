@@ -51,12 +51,29 @@ Partial Class fr_Main
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ListadoDeProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MaterialesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ListadoDeMaterialesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripSeparator()
         Me.ListadoDeServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TratamientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ListadoDeTratamientosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CondicionesDePagoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ElimanarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ListadoDeCondicionesDePagoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProyectoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevaSolicitudToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevaCotizaciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -189,7 +206,7 @@ Partial Class fr_Main
         '
         'CatalogosToolStripMenuItem
         '
-        Me.CatalogosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.MaterialesToolStripMenuItem, Me.ServiciosToolStripMenuItem})
+        Me.CatalogosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.MaterialesToolStripMenuItem, Me.ServiciosToolStripMenuItem, Me.TratamientoToolStripMenuItem, Me.CondicionesDePagoToolStripMenuItem})
         Me.CatalogosToolStripMenuItem.Name = "CatalogosToolStripMenuItem"
         Me.CatalogosToolStripMenuItem.Size = New System.Drawing.Size(76, 20)
         Me.CatalogosToolStripMenuItem.Text = "Catalogos"
@@ -198,7 +215,7 @@ Partial Class fr_Main
         '
         Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem, Me.ModificarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.ToolStripMenuItem1, Me.ListadoDeClientesToolStripMenuItem})
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'AgregarToolStripMenuItem
@@ -234,7 +251,7 @@ Partial Class fr_Main
         '
         Me.ProveedoresToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem1, Me.ModificarToolStripMenuItem1, Me.EliminarToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ListadoDeProveedoresToolStripMenuItem})
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'AgregarToolStripMenuItem1
@@ -268,15 +285,45 @@ Partial Class fr_Main
         '
         'MaterialesToolStripMenuItem
         '
+        Me.MaterialesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem4, Me.ModificarToolStripMenuItem4, Me.EliminarToolStripMenuItem4, Me.ToolStripMenuItem5, Me.ListadoDeMaterialesToolStripMenuItem})
         Me.MaterialesToolStripMenuItem.Name = "MaterialesToolStripMenuItem"
-        Me.MaterialesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MaterialesToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
         Me.MaterialesToolStripMenuItem.Text = "Materiales"
+        '
+        'AgregarToolStripMenuItem4
+        '
+        Me.AgregarToolStripMenuItem4.Name = "AgregarToolStripMenuItem4"
+        Me.AgregarToolStripMenuItem4.Size = New System.Drawing.Size(194, 22)
+        Me.AgregarToolStripMenuItem4.Text = "Agregar"
+        '
+        'ModificarToolStripMenuItem4
+        '
+        Me.ModificarToolStripMenuItem4.Name = "ModificarToolStripMenuItem4"
+        Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(194, 22)
+        Me.ModificarToolStripMenuItem4.Text = "Modificar"
+        '
+        'EliminarToolStripMenuItem4
+        '
+        Me.EliminarToolStripMenuItem4.Name = "EliminarToolStripMenuItem4"
+        Me.EliminarToolStripMenuItem4.Size = New System.Drawing.Size(194, 22)
+        Me.EliminarToolStripMenuItem4.Text = "Eliminar"
+        '
+        'ToolStripMenuItem5
+        '
+        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(191, 6)
+        '
+        'ListadoDeMaterialesToolStripMenuItem
+        '
+        Me.ListadoDeMaterialesToolStripMenuItem.Name = "ListadoDeMaterialesToolStripMenuItem"
+        Me.ListadoDeMaterialesToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.ListadoDeMaterialesToolStripMenuItem.Text = "Listado de materiales"
         '
         'ServiciosToolStripMenuItem
         '
         Me.ServiciosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem2, Me.ModificarToolStripMenuItem2, Me.EliminarToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ListadoDeServiciosToolStripMenuItem})
         Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
-        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
         Me.ServiciosToolStripMenuItem.Text = "Servicios"
         '
         'AgregarToolStripMenuItem2
@@ -307,6 +354,78 @@ Partial Class fr_Main
         Me.ListadoDeServiciosToolStripMenuItem.Name = "ListadoDeServiciosToolStripMenuItem"
         Me.ListadoDeServiciosToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
         Me.ListadoDeServiciosToolStripMenuItem.Text = "Listado de Servicios"
+        '
+        'TratamientoToolStripMenuItem
+        '
+        Me.TratamientoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem3, Me.ModificarToolStripMenuItem3, Me.EliminarToolStripMenuItem3, Me.ToolStripMenuItem4, Me.ListadoDeTratamientosToolStripMenuItem})
+        Me.TratamientoToolStripMenuItem.Name = "TratamientoToolStripMenuItem"
+        Me.TratamientoToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
+        Me.TratamientoToolStripMenuItem.Text = "Tratamiento"
+        '
+        'AgregarToolStripMenuItem3
+        '
+        Me.AgregarToolStripMenuItem3.Name = "AgregarToolStripMenuItem3"
+        Me.AgregarToolStripMenuItem3.Size = New System.Drawing.Size(208, 22)
+        Me.AgregarToolStripMenuItem3.Text = "Agregar"
+        '
+        'ModificarToolStripMenuItem3
+        '
+        Me.ModificarToolStripMenuItem3.Name = "ModificarToolStripMenuItem3"
+        Me.ModificarToolStripMenuItem3.Size = New System.Drawing.Size(208, 22)
+        Me.ModificarToolStripMenuItem3.Text = "Modificar"
+        '
+        'EliminarToolStripMenuItem3
+        '
+        Me.EliminarToolStripMenuItem3.Name = "EliminarToolStripMenuItem3"
+        Me.EliminarToolStripMenuItem3.Size = New System.Drawing.Size(208, 22)
+        Me.EliminarToolStripMenuItem3.Text = "Eliminar"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(205, 6)
+        '
+        'ListadoDeTratamientosToolStripMenuItem
+        '
+        Me.ListadoDeTratamientosToolStripMenuItem.Name = "ListadoDeTratamientosToolStripMenuItem"
+        Me.ListadoDeTratamientosToolStripMenuItem.Size = New System.Drawing.Size(208, 22)
+        Me.ListadoDeTratamientosToolStripMenuItem.Text = "Listado de Tratamientos"
+        '
+        'CondicionesDePagoToolStripMenuItem
+        '
+        Me.CondicionesDePagoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem5, Me.ModificarToolStripMenuItem5, Me.ElimanarToolStripMenuItem, Me.ToolStripMenuItem6, Me.ListadoDeCondicionesDePagoToolStripMenuItem})
+        Me.CondicionesDePagoToolStripMenuItem.Name = "CondicionesDePagoToolStripMenuItem"
+        Me.CondicionesDePagoToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
+        Me.CondicionesDePagoToolStripMenuItem.Text = "Condiciones de pago"
+        '
+        'AgregarToolStripMenuItem5
+        '
+        Me.AgregarToolStripMenuItem5.Name = "AgregarToolStripMenuItem5"
+        Me.AgregarToolStripMenuItem5.Size = New System.Drawing.Size(250, 22)
+        Me.AgregarToolStripMenuItem5.Text = "Agregar"
+        '
+        'ModificarToolStripMenuItem5
+        '
+        Me.ModificarToolStripMenuItem5.Name = "ModificarToolStripMenuItem5"
+        Me.ModificarToolStripMenuItem5.Size = New System.Drawing.Size(250, 22)
+        Me.ModificarToolStripMenuItem5.Text = "Modificar"
+        '
+        'ElimanarToolStripMenuItem
+        '
+        Me.ElimanarToolStripMenuItem.Name = "ElimanarToolStripMenuItem"
+        Me.ElimanarToolStripMenuItem.Size = New System.Drawing.Size(250, 22)
+        Me.ElimanarToolStripMenuItem.Text = "Eliminar"
+        '
+        'ToolStripMenuItem6
+        '
+        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(247, 6)
+        '
+        'ListadoDeCondicionesDePagoToolStripMenuItem
+        '
+        Me.ListadoDeCondicionesDePagoToolStripMenuItem.Name = "ListadoDeCondicionesDePagoToolStripMenuItem"
+        Me.ListadoDeCondicionesDePagoToolStripMenuItem.Size = New System.Drawing.Size(250, 22)
+        Me.ListadoDeCondicionesDePagoToolStripMenuItem.Text = "Listado de condiciones de pago"
         '
         'ProyectoToolStripMenuItem
         '
@@ -420,5 +539,22 @@ Partial Class fr_Main
     Friend WithEvents SolicitudesPendientesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AgregarToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EliminarToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem5 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ListadoDeMaterialesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TratamientoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AgregarToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EliminarToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem4 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ListadoDeTratamientosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CondicionesDePagoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AgregarToolStripMenuItem5 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarToolStripMenuItem5 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ElimanarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem6 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ListadoDeCondicionesDePagoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

@@ -6,14 +6,8 @@ Public Class uc_NuevaCotizacion
     Private DT As DataTable
     Private strSQL As StringBuilder
     Private DB As DBDataSource
-
-    Private Sub tbc_SelectSolicitud_Click(sender As System.Object, e As System.EventArgs) Handles tbc_SelectSolicitud.Click
-        IniciarConexion()
-        SeleccionarSolicitudesPendientes()
-        DataGrid.DataSource = DT
-        TerminarConexion()
-    End Sub
-
+    Protected _OrigenDatos As String
+    Protected _ObjSolicitud As NuevaSolicitud
 
     'Funciones usando la base de datos
     Private Sub SeleccionarSolicitudesPendientes()
@@ -36,5 +30,54 @@ Public Class uc_NuevaCotizacion
         DB = Nothing
         DT = Nothing
         strSQL = Nothing
+    End Sub
+
+
+    Private Sub TabControl_SelectedIndexChanged(sender As Object, e As System.EventArgs) Handles TabControl.SelectedIndexChanged
+
+        'Cuando se pierde el foco, determinar si se trata de obtener los datos desde una solicitud de cotización ya establecida o se crean nuevos datos
+        If Opt_Solicitud.Checked Then
+            MsgBox("A partir de una solicitud")
+            _OrigenDatos = "SOLICITUD"
+        Else
+            MsgBox("Nuevos datos")
+            _OrigenDatos = "NUEVOS"
+        End If
+
+        Select Case TabControl.SelectedIndex
+            Case 1
+                If _OrigenDatos = "SOLICITUD" Then
+                    IniciarConexion()
+                    SeleccionarSolicitudesPendientes()
+                    DataGrid.DataSource = DT
+                    TerminarConexion()
+                End If
+        End Select
+    End Sub
+
+    Private Sub DataGrid_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGrid.CellContentClick
+        _ObjSolicitud = New NuevaSolicitud
+        _ObjSolicitud._SolicitudCotizacion = ""
+
+        'Determinar que celda fue la seleccionada
+        MsgBox(DataGrid.Rows(e.RowIndex).Cells("NumeroSolicitud").Value.ToString)
+        DataGrid.Rows(e.RowIndex).Selected = True
+        _ObjSolicitud._SolicitudCotizacion = DataGrid.Rows(e.RowIndex).Cells("NumeroSolicitud").Value.ToString
+
+        'Rellenar los datos de los clientes
+        If _ObjSolicitud._SolicitudCotizacion <> "" Then
+            _ObjSolicitud.FillNuevaSolicitud()
+
+            'Rellenar los campos
+            '-- Clientes
+            txt_NumeroCliente.Text = _ObjSolicitud._Cliente.ct_NUMERODECLIENTE
+            txt_Empresa.Text = _ObjSolicitud._Cliente.ct_EMPRESA
+
+            txt_Servicio.Text = _ObjSolicitud._Servicio.Servicio
+            dt_Entrega.Text = _ObjSolicitud._Servicio.Entrega
+            dt_Solicitud.Text = _ObjSolicitud._Servicio.Solicitud
+
+            DG_Especificacion.DataSource = _ObjSolicitud._DT
+        End If
     End Sub
 End Class

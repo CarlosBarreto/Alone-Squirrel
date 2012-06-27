@@ -1,5 +1,10 @@
-﻿Public Class uc_FormularioDatosProveedores
+﻿Imports DataSource
+Imports System.Text
 
+Public Class uc_FormularioDatosServicio
+    Protected DB As DBDataSource
+
+    'Funciones de los botones
     Private Sub bt_Cancelar_Click(sender As System.Object, e As System.EventArgs) Handles bt_Cancelar.Click
         Dim x As fr_Main
         Dim op As Integer
@@ -15,24 +20,27 @@
         x.KillForm()
     End Sub
 
+    Private Sub bt_Guardar_Click(sender As System.Object, e As System.EventArgs) Handles bt_Guardar.Click
+        Dim x As fr_Main
+        DB = New DBDataSource
+        GuardarServicio(txt_Nombre.Text, txt_Descripcion.Text)
+        DB.Dispose()
+        DB = Nothing
+
+        CleanText()
+        x = Me.Parent
+        x.KillForm()
+    End Sub
+
     'Funciones del formulario
     ''' <summary>
     ''' Limpia los TextBox's del formulario
     ''' </summary>
     ''' <remarks></remarks>
     Protected Sub CleanText()
-        txt_IDProveedor.Text = ""
         txt_Nombre.Text = ""
-        txt_Domicilio.Text = ""
-        txt_Colonia.Text = ""
-        txt_CP.Text = ""
-        txt_Ciudad.Text = ""
-        txt_Estado.Text = ""
-        txt_Telefono.Text = ""
-        txt_RFC.Text = ""
-        txt_NombreRepresentante.Text = ""
-        txt_CargoRepresentante.Text = ""
-        txt_EmailRepresentante.Text = ""
+        txt_Fecha.Text = ""
+        txt_Descripcion.Text = ""
     End Sub
 
     ''' <summary>
@@ -42,24 +50,23 @@
     ''' <remarks></remarks>
     Protected Function IsEditing() As Boolean
         Dim Response As Boolean = False
-
-        If txt_IDProveedor.Text <> "" Or _
-            txt_Nombre.Text <> "" Or _
-            txt_Domicilio.Text <> "" Or _
-            txt_Colonia.Text <> "" Or _
-            txt_CP.Text <> "" Or _
-            txt_Ciudad.Text <> "" Or _
-            txt_Estado.Text <> "" Or _
-            txt_Telefono.Text <> "" Or _
-            txt_RFC.Text <> "" Or _
-            txt_NombreRepresentante.Text <> "" Or _
-            txt_CargoRepresentante.Text <> "" Or _
-            txt_EmailRepresentante.Text <> "" Then
-
+        If txt_Nombre.Text <> "" Or txt_Fecha.Text <> "" Or txt_Descripcion.Text <> "" Then
             Response = True
         End If
 
         Return Response
     End Function
 
+    'Funciones con las Bases de Datos
+    Public Function GuardarServicio(ByVal Nombre As String, ByVal Descripcion As String) As DataTable
+        Dim DT As DataTable
+        Dim strSQL As New StringBuilder
+
+        strSQL.Append("CALL migsa_CatalogoServicios_Insertar(")
+        strSQL.Append("'" & Nombre & "', ")
+        strSQL.Append("'" & Descripcion & "');")
+
+        DT = DB.getDataTableQuery(strSQL.ToString)
+        Return DT
+    End Function
 End Class

@@ -37,8 +37,8 @@ Partial Class uc_CotizacionToolBar
         Me.CotizacionTool.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tb_Guardar, Me.tb_Cancelar, Me.tb_Siguiente, Me.tb_Anterior, Me.tb_Imprimir})
         Me.CotizacionTool.Location = New System.Drawing.Point(0, 0)
         Me.CotizacionTool.Name = "CotizacionTool"
-        Me.CotizacionTool.Size = New System.Drawing.Size(548, 25)
-        Me.CotizacionTool.TabIndex = 0
+        Me.CotizacionTool.Size = New System.Drawing.Size(634, 25)
+        Me.CotizacionTool.TabIndex = 1
         Me.CotizacionTool.Text = "ToolStrip1"
         '
         'tb_Guardar
@@ -90,9 +90,10 @@ Partial Class uc_CotizacionToolBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Transparent
         Me.Controls.Add(Me.CotizacionTool)
         Me.Name = "uc_CotizacionToolBar"
-        Me.Size = New System.Drawing.Size(548, 29)
+        Me.Size = New System.Drawing.Size(634, 32)
         Me.CotizacionTool.ResumeLayout(False)
         Me.CotizacionTool.PerformLayout()
         Me.ResumeLayout(False)

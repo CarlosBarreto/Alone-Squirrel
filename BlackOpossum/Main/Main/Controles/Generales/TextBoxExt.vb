@@ -43,9 +43,9 @@
             Case ValidType.Alpha '"Alpha"
                 e.Handled = ValidarAlpha(e.KeyChar)
             Case ValidType.DateTime
-                e.Handled = ValidarAlpha(e.KeyChar)
+                e.Handled = ValidarDateTime(e.KeyChar)
             Case ValidType.Mon
-                e.Handled = ValidarAlpha(e.KeyChar)
+                e.Handled = ValidarMon(e.KeyChar)
         End Select
     End Sub
 
@@ -90,6 +90,42 @@
         If Asc(_CHAR) >= 48 And Asc(_CHAR) <= 57 Then
             Response = False
         ElseIf Asc(UCase(_CHAR)) >= 65 And Asc(UCase(_CHAR)) <= 90 Then
+            Response = False
+        ElseIf caracteres.Contains(_CHAR) Then
+            Response = False
+        Else
+            Response = True
+        End If
+
+        Return Response
+    End Function
+
+    Protected Function ValidarDateTime(ByVal _CHAR As Char) As Boolean
+        Dim Response As Boolean
+        Dim caracteres() As Char = {"/"c, "-"c, " "c, ":"c, Chr(8)}
+
+        Response = True
+        '_CHAR = UCase(_CHAR) 'Convertir a mayusculas
+        'Verificar que sean solo letras mayusculas
+        If Asc(_CHAR) >= 48 And Asc(_CHAR) <= 57 Then
+            Response = False
+        ElseIf caracteres.Contains(_CHAR) Then
+            Response = False
+        Else
+            Response = True
+        End If
+
+        Return Response
+    End Function
+
+    Protected Function ValidarMon(ByVal _CHAR As Char) As Boolean
+        Dim Response As Boolean
+        Dim caracteres() As Char = {"$"c, "-"c, " "c, "."c, ","c, Chr(8)}
+
+        Response = True
+        '_CHAR = UCase(_CHAR) 'Convertir a mayusculas
+        'Verificar que sean solo letras mayusculas
+        If Asc(_CHAR) >= 48 And Asc(_CHAR) <= 57 Then
             Response = False
         ElseIf caracteres.Contains(_CHAR) Then
             Response = False

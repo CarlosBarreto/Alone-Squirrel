@@ -29,3 +29,8 @@ C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\PDFUtili
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.TextBoxExt.resources
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_FormularioDatosProveedores.resources
 C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_ModificarDatosProveedores.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_FormularioDatosServicio.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_ModificarDatosServicios.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_FormularioDatosTratamiento.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_ModificarDatosTratamiento.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_CotizacionToolBar.resources

@@ -107,6 +107,30 @@
     <Compile Include="Controles\Catalogos\Proveedores\uc_ModificarDatosProveedores.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controles\Catalogos\Servicios\uc_FormularioDatosServicio.Designer.vb">
+      <DependentUpon>uc_FormularioDatosServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Servicios\uc_FormularioDatosServicio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Servicios\uc_ModificarDatosServicios.Designer.vb">
+      <DependentUpon>uc_ModificarDatosServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Servicios\uc_ModificarDatosServicios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_FormularioDatosTratamiento.Designer.vb">
+      <DependentUpon>uc_FormularioDatosTratamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_FormularioDatosTratamiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_ModificarDatosTratamiento.Designer.vb">
+      <DependentUpon>uc_ModificarDatosTratamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_ModificarDatosTratamiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controles\Generales\TextBoxExt.Designer.vb">
       <DependentUpon>TextBoxExt.vb</DependentUpon>
     </Compile>
@@ -123,6 +147,12 @@
       <DependentUpon>uc_Title.vb</DependentUpon>
     </Compile>
     <Compile Include="Controles\Generales\uc_Title.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.Designer.vb">
+      <DependentUpon>uc_CotizacionToolBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controles\Proyecto\Nueva Solicitud\NuevaSolicitud.vb" />
@@ -184,6 +214,18 @@
     <EmbeddedResource Include="Controles\Catalogos\Proveedores\uc_ModificarDatosProveedores.resx">
       <DependentUpon>uc_ModificarDatosProveedores.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Servicios\uc_FormularioDatosServicio.resx">
+      <DependentUpon>uc_FormularioDatosServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Servicios\uc_ModificarDatosServicios.resx">
+      <DependentUpon>uc_ModificarDatosServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_FormularioDatosTratamiento.resx">
+      <DependentUpon>uc_FormularioDatosTratamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_ModificarDatosTratamiento.resx">
+      <DependentUpon>uc_ModificarDatosTratamiento.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controles\Generales\TextBoxExt.resx">
       <DependentUpon>TextBoxExt.vb</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Generales\uc_Title.resx">
       <DependentUpon>uc_Title.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.resx">
+      <DependentUpon>uc_CotizacionToolBar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Proyecto\Nueva Solicitud\uc_SolicitudToolBar.resx">
       <DependentUpon>uc_SolicitudToolBar.vb</DependentUpon>

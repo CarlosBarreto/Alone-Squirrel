@@ -6,7 +6,29 @@ Main
 </name>
 </assembly>
 <members>
-<member name="T:Main.NuevaSolicitud.DatosCliente">
+<member name="M:Main.uc_FormularioDatosProveedores.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosProveedores.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosTratamiento.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosTratamiento.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="T:Main.NuevaSolicitud.DatosCliente">
 	<summary>
  Estructura que almacena los datos del cliente
  </summary>
@@ -82,6 +104,17 @@ Main
 	<summary>
  Para eliminar el objeto en uso actual
  </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosServicio.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosServicio.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
 	<remarks></remarks>
 </member><member name="M:Main.AppMain.ApplicationData.#ctor">
 	<summary>
