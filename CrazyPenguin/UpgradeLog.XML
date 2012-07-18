@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CrazyPenguin">
+</Property><Property Name="Solution File" Value="C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\CrazyPenguin.sln">
+</Property><Property Name="User Options File" Value="C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\CrazyPenguin.suo">
+</Property><Property Name="Date" Value="miércoles, 18 de julio de 2012">
+</Property><Property Name="Time" Value="17:23 p.m.">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="CrazyPenguin.sln" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin.sln">
+</Event><Event ErrorLevel="0" Project="" Source="CrazyPenguin.suo" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin.suo">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\CrazyPenguin.vbproj" Description="Project file successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\CrazyPenguin.vbproj">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\Cliente.vb" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\Cliente.vb">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\EspecificacionSolicitud.vb" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\EspecificacionSolicitud.vb">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\Form1.vb" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\Form1.vb">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\Form1.Designer.vb" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\Form1.Designer.vb">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\My Project\AssemblyInfo.vb" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\My Project\Application.Designer.vb" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\My Project\Resources.Designer.vb" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\My Project\Settings.Designer.vb" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\Requisitor.vb" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\Requisitor.vb">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\SolicitudCotizacion.vb" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\SolicitudCotizacion.vb">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\ClasesMigsa.cd" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\ClasesMigsa.cd">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\My Project\Application.myapp" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\My Project\Settings.settings" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\My Project\Resources.resx" Description="File successfully backed up as C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin\Backup\CrazyPenguin\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\CrazyPenguin.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CrazyPenguin" Source="CrazyPenguin\CrazyPenguin.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CrazyPenguin.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CrazyPenguin.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CrazyPenguin" Source="CrazyPenguin\CrazyPenguin.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
