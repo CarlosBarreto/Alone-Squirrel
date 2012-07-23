@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class uc_ListarClientes
+Partial Class uc_ListaClientesRequisitores
     Inherits System.Windows.Forms.UserControl
 
     'UserControl reemplaza a Dispose para limpiar la lista de componentes.
@@ -95,7 +95,7 @@ Partial Class uc_ListarClientes
         Me.Label1.TabIndex = 45
         Me.Label1.Text = "Número de Cliente"
         '
-        'uc_ListarClientes
+        'uc_ListaClientesRequisitores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -107,7 +107,7 @@ Partial Class uc_ListarClientes
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGrid)
-        Me.Name = "uc_ListarClientes"
+        Me.Name = "uc_ListaClientesRequisitores"
         Me.Size = New System.Drawing.Size(570, 315)
         CType(Me.DataGrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

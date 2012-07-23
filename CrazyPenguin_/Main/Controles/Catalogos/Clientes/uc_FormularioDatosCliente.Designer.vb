@@ -53,7 +53,7 @@ Partial Class uc_ModificarFormularioDatosCliente
         Me.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label1.Location = New System.Drawing.Point(33, 66)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(113, 18)
+        Me.Label1.Size = New System.Drawing.Size(123, 18)
         Me.Label1.TabIndex = 21
         Me.Label1.Text = "Número de Cliente"
         Me.Label1.Visible = False
@@ -288,7 +288,6 @@ Partial Class uc_ModificarFormularioDatosCliente
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_NumeroCliente)
         Me.Controls.Add(Me.txt_Ramo)
         Me.Controls.Add(Me.txt_Telefono)
@@ -306,6 +305,7 @@ Partial Class uc_ModificarFormularioDatosCliente
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Name = "uc_ModificarFormularioDatosCliente"
         Me.Size = New System.Drawing.Size(515, 510)
         Me.Panel1.ResumeLayout(False)

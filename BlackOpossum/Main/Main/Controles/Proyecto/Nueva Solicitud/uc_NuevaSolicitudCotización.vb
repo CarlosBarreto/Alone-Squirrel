@@ -202,4 +202,8 @@ Public Class uc_NuevaSolicitudCotización
     Private Sub cb_Condiciones_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_Condiciones.SelectedIndexChanged
         CalcularValores()
     End Sub
+
+    Private Sub tbc_Cliente_Click(sender As System.Object, e As System.EventArgs) Handles tbc_Cliente.Click
+
+    End Sub
 End Class

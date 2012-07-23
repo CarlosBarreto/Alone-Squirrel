@@ -6,7 +6,20 @@ DataSource
 </name>
 </assembly>
 <members>
-<member name="M:DataSource.DBDataSource.CadenaConexion">
+<member name="P:DataSource.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DataSource.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DataSource.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:DataSource.DBDataSource.CadenaConexion">
 	<summary>
  Genera una cadena de conexión / Make a new Connection String
  </summary>
@@ -55,19 +68,6 @@ DataSource
  Clase utilizada para implementar conexiones a la Base de datos
  </summary>
 	<remarks></remarks>
-</member><member name="P:DataSource.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:DataSource.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:DataSource.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
 </member>
 </members>
 </doc>

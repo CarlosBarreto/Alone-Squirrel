@@ -71,3 +71,45 @@ C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_L
 C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_ListarClientesEliminar.resources
 C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_MostrarDatosEliminar.resources
 C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_ListadoClientes.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\bin\Debug\Main.exe.config
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.exe
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.xml
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\bin\Debug\Main.exe
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\bin\Debug\Main.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\bin\Debug\Main.xml
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\bin\Debug\DataSource.dll
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\bin\Debug\PDFUtility.dll
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\bin\Debug\DataSource.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\bin\Debug\DataSource.xml
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\bin\Debug\PDFUtility.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\bin\Debug\PDFUtility.xml
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListadoClientes.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListarClientesEliminar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ModificarFormularioDatosCliente.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListaClientesRequisitores.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ModificarDatosCliente.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_MostrarDatosEliminar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_FormularioDatosProveedores.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ModificarDatosProveedores.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_GuardarRequisitor.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ModificarRequisitor.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_RequisitorCliente.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_FormularioDatosServicio.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ModificarDatosServicios.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_FormularioDatosTratamiento.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ModificarDatosTratamiento.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.TextBoxExt.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_PopUp.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Title.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_CotizacionToolBar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_SolicitudToolBar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_NuevaCotizacion.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_NuevaSolicitudCotización.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.fr_Main.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.Resources.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_EliminarRequisitor.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListadoRequisitores.resources

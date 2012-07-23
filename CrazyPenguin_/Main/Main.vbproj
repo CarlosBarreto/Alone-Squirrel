@@ -114,6 +114,68 @@
     <Compile Include="Controles\Catalogos\Clientes\uc_MostrarDatosEliminar.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controles\Catalogos\CondicionesPago\CondicionesPago.vb" />
+    <Compile Include="Controles\Catalogos\CondicionesPago\uc_CondicionesPago_Eliminar.Designer.vb">
+      <DependentUpon>uc_CondicionesPago_Eliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\CondicionesPago\uc_CondicionesPago_Eliminar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\CondicionesPago\uc_CondicionesPago_Insertar.Designer.vb">
+      <DependentUpon>uc_CondicionesPago_Insertar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\CondicionesPago\uc_CondicionesPago_Insertar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\CondicionesPago\uc_CondicionesPago_Modificar.Designer.vb">
+      <DependentUpon>uc_CondicionesPago_Modificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\CondicionesPago\uc_CondicionesPago_Modificar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\CondicionesPago\uc_ListadoCondicionesPago.Designer.vb">
+      <DependentUpon>uc_ListadoCondicionesPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\CondicionesPago\uc_ListadoCondicionesPago.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\CondicionesPago\uc_ListarCondicionesPago.Designer.vb">
+      <DependentUpon>uc_ListarCondicionesPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\CondicionesPago\uc_ListarCondicionesPago.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\ListadoProceso.Designer.vb">
+      <DependentUpon>ListadoProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\ListadoProceso.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\ListarProceso.Designer.vb">
+      <DependentUpon>ListarProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\ListarProceso.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\Proceso.vb" />
+    <Compile Include="Controles\Catalogos\Proceso\uc_Proceso_Eliminar.Designer.vb">
+      <DependentUpon>uc_Proceso_Eliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\uc_Proceso_Eliminar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\uc_Proceso_Insertar.Designer.vb">
+      <DependentUpon>uc_Proceso_Insertar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\uc_Proceso_Insertar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\uc_Proceso_Modificar.Designer.vb">
+      <DependentUpon>uc_Proceso_Modificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\uc_Proceso_Modificar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controles\Catalogos\Proveedores\uc_FormularioDatosProveedores.Designer.vb">
       <DependentUpon>uc_FormularioDatosProveedores.vb</DependentUpon>
     </Compile>
@@ -124,6 +186,37 @@
       <DependentUpon>uc_ModificarDatosProveedores.vb</DependentUpon>
     </Compile>
     <Compile Include="Controles\Catalogos\Proveedores\uc_ModificarDatosProveedores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Requisitores\Requisitor.vb" />
+    <Compile Include="Controles\Catalogos\Requisitores\uc_ListadoRequisitores.Designer.vb">
+      <DependentUpon>uc_ListadoRequisitores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Requisitores\uc_ListadoRequisitores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Requisitores\uc_EliminarRequisitor.Designer.vb">
+      <DependentUpon>uc_EliminarRequisitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Requisitores\uc_EliminarRequisitor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Requisitores\uc_GuardarRequisitor.Designer.vb">
+      <DependentUpon>uc_GuardarRequisitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Requisitores\uc_GuardarRequisitor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Requisitores\uc_ModificarRequisitor.Designer.vb">
+      <DependentUpon>uc_ModificarRequisitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Requisitores\uc_ModificarRequisitor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Requisitores\uc_RequisitorCliente.Designer.vb">
+      <DependentUpon>uc_RequisitorCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Requisitores\uc_RequisitorCliente.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controles\Catalogos\Servicios\uc_FormularioDatosServicio.Designer.vb">
@@ -138,16 +231,41 @@
     <Compile Include="Controles\Catalogos\Servicios\uc_ModificarDatosServicios.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\Tratamiento.vb" />
     <Compile Include="Controles\Catalogos\Tratamiento\uc_FormularioDatosTratamiento.Designer.vb">
       <DependentUpon>uc_FormularioDatosTratamiento.vb</DependentUpon>
     </Compile>
     <Compile Include="Controles\Catalogos\Tratamiento\uc_FormularioDatosTratamiento.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controles\Catalogos\Tratamiento\uc_ModificarDatosTratamiento.Designer.vb">
-      <DependentUpon>uc_ModificarDatosTratamiento.vb</DependentUpon>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_ListadoTratamiento.Designer.vb">
+      <DependentUpon>uc_ListadoTratamiento.vb</DependentUpon>
     </Compile>
-    <Compile Include="Controles\Catalogos\Tratamiento\uc_ModificarDatosTratamiento.vb">
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_ListadoTratamiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_ListarTratamiento.Designer.vb">
+      <DependentUpon>uc_ListarTratamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_ListarTratamiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_Tratamiento_Eliminar.Designer.vb">
+      <DependentUpon>uc_Tratamiento_Eliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_Tratamiento_Eliminar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_Tratamiento_Insertar.Designer.vb">
+      <DependentUpon>uc_Tratamiento_Insertar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_Tratamiento_Insertar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_Tratamiento_Modificar.Designer.vb">
+      <DependentUpon>uc_Tratamiento_Modificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_Tratamiento_Modificar.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controles\Generales\TextBoxExt.Designer.vb">
@@ -236,11 +354,44 @@
     <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_MostrarDatosEliminar.resx">
       <DependentUpon>uc_MostrarDatosEliminar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\CondicionesPago\uc_CondicionesPago_Eliminar.resx">
+      <DependentUpon>uc_CondicionesPago_Eliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\CondicionesPago\uc_CondicionesPago_Insertar.resx">
+      <DependentUpon>uc_CondicionesPago_Insertar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\CondicionesPago\uc_CondicionesPago_Modificar.resx">
+      <DependentUpon>uc_CondicionesPago_Modificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\CondicionesPago\uc_ListadoCondicionesPago.resx">
+      <DependentUpon>uc_ListadoCondicionesPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\CondicionesPago\uc_ListarCondicionesPago.resx">
+      <DependentUpon>uc_ListarCondicionesPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Proceso\uc_Proceso_Insertar.resx">
+      <DependentUpon>uc_Proceso_Insertar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controles\Catalogos\Proveedores\uc_FormularioDatosProveedores.resx">
       <DependentUpon>uc_FormularioDatosProveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Catalogos\Proveedores\uc_ModificarDatosProveedores.resx">
       <DependentUpon>uc_ModificarDatosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Requisitores\uc_EliminarRequisitor.resx">
+      <DependentUpon>uc_EliminarRequisitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Requisitores\uc_GuardarRequisitor.resx">
+      <DependentUpon>uc_GuardarRequisitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Requisitores\uc_ListadoRequisitores.resx">
+      <DependentUpon>uc_ListadoRequisitores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Requisitores\uc_ModificarRequisitor.resx">
+      <DependentUpon>uc_ModificarRequisitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Requisitores\uc_RequisitorCliente.resx">
+      <DependentUpon>uc_RequisitorCliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Catalogos\Servicios\uc_FormularioDatosServicio.resx">
       <DependentUpon>uc_FormularioDatosServicio.vb</DependentUpon>
@@ -251,8 +402,20 @@
     <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_FormularioDatosTratamiento.resx">
       <DependentUpon>uc_FormularioDatosTratamiento.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_ModificarDatosTratamiento.resx">
-      <DependentUpon>uc_ModificarDatosTratamiento.vb</DependentUpon>
+    <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_ListadoTratamiento.resx">
+      <DependentUpon>uc_ListadoTratamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_ListarTratamiento.resx">
+      <DependentUpon>uc_ListarTratamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_Tratamiento_Eliminar.resx">
+      <DependentUpon>uc_Tratamiento_Eliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_Tratamiento_Insertar.resx">
+      <DependentUpon>uc_Tratamiento_Insertar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_Tratamiento_Modificar.resx">
+      <DependentUpon>uc_Tratamiento_Modificar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Generales\TextBoxExt.resx">
       <DependentUpon>TextBoxExt.vb</DependentUpon>

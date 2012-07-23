@@ -1,6 +1,6 @@
 ﻿Imports DataSource
 
-Public Class uc_ListarClientes
+Public Class uc_ListaClientesRequisitores
     Private DT As New DataTable
 
     Private Sub uc_ListarClientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -45,8 +45,5 @@ Public Class uc_ListarClientes
             .Controls.Add(Form)
             .Form = Form
         End With
-        'ParentObject.ppResponse(_SelectedRowValue, _SelectedRowValue2)
-        'Me.Dispose()
-        ' Me.Close()
     End Sub
 End Class

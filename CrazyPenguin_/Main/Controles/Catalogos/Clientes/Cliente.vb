@@ -110,19 +110,6 @@ Public Class Cliente
         strSQl = Nothing
     End Sub
 
-    Public Sub Insertar()
-
-    End Sub
-    Public Sub Modificar()
-
-    End Sub
-    Public Sub Eliminar()
-
-    End Sub
-    Public Sub Listar()
-
-    End Sub
-
     ''' <summary>
     ''' Guarda un registro del nuevo cliente
     ''' </summary>
@@ -228,41 +215,12 @@ Public Class Cliente
 
     End Sub
 
-    Public Function GuardarNuevoRequisitor(ByVal NumeroDeCliente As String, ByVal Nombre As String, ByVal Telefono As String, ByVal Ext As String, ByVal Celular As String, _
-                                      ByVal Radio As String, ByVal Correo As String) As DataTable
-        Dim DT As DataTable
-        Dim strSQL As New StringBuilder
-
-        strSQL.Append("CALL migsa_Requisitor_Insertar (")
-        strSQL.Append("'" & NumeroDeCliente & "');")
-        strSQL.Append("'" & Nombre & "');")
-        strSQL.Append("'" & Telefono & "');")
-        strSQL.Append("'" & Ext & "');")
-        strSQL.Append("'" & Celular & "');")
-        strSQL.Append("'" & Radio & "');")
-        strSQL.Append("'" & Correo & "');")
-
-        DT = DB.getDataTableQuery(strSQL.ToString)
-        Return DT
-    End Function
-
     Public Function ClientesAutoFill(ByVal NumeroDeCliente As String) As DataTable
         Dim DT As DataTable
         Dim strSQL As New StringBuilder
 
         strSQL.Append("CALL migsa_ClientesAutofill(")
         strSQL.Append("'" & NumeroDeCliente & "')")
-
-        DT = DB.getDataTableQuery(strSQL.ToString)
-        Return DT
-    End Function
-
-    Public Function RequisitoresPorCliente(ByVal NumeroDeCliente As String) As DataTable
-        Dim DT As DataTable
-        Dim strSQL As New StringBuilder
-
-        strSQL.Append("CALL migsa_RequisitoresXClientes(")
-        strSQL.Append("'" & NumeroDeCliente & "');")
 
         DT = DB.getDataTableQuery(strSQL.ToString)
         Return DT

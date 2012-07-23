@@ -53,7 +53,7 @@ Public Class fr_Main
         KillForm()
         AddTitle("Modificar Un Cliente")
 
-        Form = New uc_ListarClientes 'uc_BuscarCliente
+        Form = New uc_ListaClientesRequisitores 'uc_BuscarCliente
         Point_.X = 0
         Point_.Y = 130
         Form.Location = Point_
@@ -162,6 +162,54 @@ Public Class fr_Main
         AddTitle("Listado de clientes")
 
         Form = New uc_ListadoClientes
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub AgregarToolStripMenuItem6_Click(sender As System.Object, e As System.EventArgs) Handles AgregarToolStripMenuItem6.Click
+        KillForm()
+        AddTitle("Seleccionar un cliente")
+
+        Form = New uc_RequisitorCliente("Guardar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ModificarToolStripMenuItem6_Click(sender As System.Object, e As System.EventArgs) Handles ModificarToolStripMenuItem6.Click
+        KillForm()
+        AddTitle("Seleccionar un cliente")
+
+        Form = New uc_RequisitorCliente("Modificar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub EliminarToolStripMenuItem5_Click(sender As System.Object, e As System.EventArgs) Handles EliminarToolStripMenuItem5.Click
+        KillForm()
+        AddTitle("Seleccionar un cliente")
+
+        Form = New uc_RequisitorCliente("Eliminar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ListarToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ListarToolStripMenuItem.Click
+        KillForm()
+        AddTitle("Seleccionar un cliente")
+
+        Form = New uc_ListadoRequisitores
         Point_.X = 0
         Point_.Y = 140
         Form.Location = Point_

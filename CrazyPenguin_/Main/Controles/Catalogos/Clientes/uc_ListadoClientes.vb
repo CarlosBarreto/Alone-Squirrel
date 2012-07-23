@@ -17,5 +17,4 @@ Public Class uc_ListadoClientes
         x = Me.Parent
         x.KillForm()
     End Sub
-
 End Class

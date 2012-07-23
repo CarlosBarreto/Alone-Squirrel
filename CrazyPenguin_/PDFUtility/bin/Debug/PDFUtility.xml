@@ -6,7 +6,20 @@ PDFUtility
 </name>
 </assembly>
 <members>
-<member name="P:PDFUtility.PDFUtility.PDFSourceFile">
+<member name="P:PDFUtility.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:PDFUtility.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:PDFUtility.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:PDFUtility.PDFUtility.PDFSourceFile">
 	<summary>
  Archivo de plantilla PDF a utilizar
  </summary>
@@ -28,19 +41,6 @@ PDFUtility
  </summary>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="P:PDFUtility.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:PDFUtility.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:PDFUtility.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
 </member>
 </members>
 </doc>
