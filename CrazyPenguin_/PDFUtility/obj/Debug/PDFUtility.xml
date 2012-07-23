@@ -1,0 +1,46 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PDFUtility
+</name>
+</assembly>
+<members>
+<member name="P:PDFUtility.PDFUtility.PDFSourceFile">
+	<summary>
+ Archivo de plantilla PDF a utilizar
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:PDFUtility.PDFUtility.PDFPATH">
+	<summary>
+ Path donde se guardaran los archivos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PDFUtility.PDFUtility.ListFieldNames">
+	<summary>
+ Lista todos los elementos del formulario en una Cadena.The
+ form fields identified can be used to map each of 
+ fields in a PDF
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:PDFUtility.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:PDFUtility.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:PDFUtility.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

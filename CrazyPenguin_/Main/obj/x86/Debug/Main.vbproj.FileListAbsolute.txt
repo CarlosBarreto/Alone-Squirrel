@@ -1,0 +1,73 @@
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.Resources.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\Main.exe
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\Main.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\Main.xml
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\DataSource.dll
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\MySql.Data.dll
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\DataSource.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\DataSource.xml
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.exe
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.xml
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\Main.exe.config
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.fr_Main.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_Title.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_BuscarCliente.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_PopUp.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_ModificarFormularioDatosCliente.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_ModificarDatosCliente.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_NuevaSolicitudCotización.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_NuevaCotizacion.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_SolicitudToolBar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\PDFUtility.dll
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\itextsharp.dll
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\PDFUtility.pdb
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\bin\Debug\PDFUtility.xml
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.TextBoxExt.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_FormularioDatosProveedores.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_ModificarDatosProveedores.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_FormularioDatosServicio.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_ModificarDatosServicios.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_FormularioDatosTratamiento.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_ModificarDatosTratamiento.resources
+C:\Users\carlos.barreto\Alone-Squirrel\BlackOpossum\Main\Main\obj\x86\Debug\Main.uc_CotizacionToolBar.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\bin\Debug\Main.exe.config
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.exe
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_ModificarFormularioDatosCliente.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_ModificarDatosCliente.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_FormularioDatosProveedores.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_ModificarDatosProveedores.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_FormularioDatosServicio.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_ModificarDatosServicios.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_FormularioDatosTratamiento.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_ModificarDatosTratamiento.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.TextBoxExt.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_PopUp.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_Title.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_CotizacionToolBar.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_SolicitudToolBar.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_NuevaCotizacion.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_NuevaSolicitudCotización.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.fr_Main.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.Resources.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\bin\Debug\Main.exe
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\bin\Debug\Main.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\bin\Debug\Main.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\bin\Debug\DataSource.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\bin\Debug\PDFUtility.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\bin\Debug\DataSource.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\bin\Debug\DataSource.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\bin\Debug\PDFUtility.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\bin\Debug\PDFUtility.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_ListarClientes.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_ListarClientesEliminar.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_MostrarDatosEliminar.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin\Main\obj\x86\Debug\Main.uc_ListadoClientes.resources

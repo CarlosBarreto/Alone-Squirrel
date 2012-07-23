@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61392913-6220-494F-8340-764B01E19AEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Main.My.MyApplication</StartupObject>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Main.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Main.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.2.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AloneSquirrel\Bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controles\Catalogos\Clientes\Cliente.vb" />
+    <Compile Include="Controles\Catalogos\Clientes\uc_ListadoClientes.Designer.vb">
+      <DependentUpon>uc_ListadoClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_ListadoClientes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_ListarClientesEliminar.Designer.vb">
+      <DependentUpon>uc_ListarClientesEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_ListarClientesEliminar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.Designer.vb">
+      <DependentUpon>uc_FormularioDatosCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_ListarClientes.Designer.vb">
+      <DependentUpon>uc_ListarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_ListarClientes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_ModificarDatosCliente.Designer.vb">
+      <DependentUpon>uc_ModificarDatosCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_ModificarDatosCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_MostrarDatosEliminar.Designer.vb">
+      <DependentUpon>uc_MostrarDatosEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Clientes\uc_MostrarDatosEliminar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proveedores\uc_FormularioDatosProveedores.Designer.vb">
+      <DependentUpon>uc_FormularioDatosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proveedores\uc_FormularioDatosProveedores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proveedores\uc_ModificarDatosProveedores.Designer.vb">
+      <DependentUpon>uc_ModificarDatosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proveedores\uc_ModificarDatosProveedores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Servicios\uc_FormularioDatosServicio.Designer.vb">
+      <DependentUpon>uc_FormularioDatosServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Servicios\uc_FormularioDatosServicio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Servicios\uc_ModificarDatosServicios.Designer.vb">
+      <DependentUpon>uc_ModificarDatosServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Servicios\uc_ModificarDatosServicios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_FormularioDatosTratamiento.Designer.vb">
+      <DependentUpon>uc_FormularioDatosTratamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_FormularioDatosTratamiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_ModificarDatosTratamiento.Designer.vb">
+      <DependentUpon>uc_ModificarDatosTratamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Tratamiento\uc_ModificarDatosTratamiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Generales\TextBoxExt.Designer.vb">
+      <DependentUpon>TextBoxExt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Generales\TextBoxExt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\Generales\uc_PopUp.Designer.vb">
+      <DependentUpon>uc_PopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Generales\uc_PopUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Generales\uc_Title.Designer.vb">
+      <DependentUpon>uc_Title.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Generales\uc_Title.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.Designer.vb">
+      <DependentUpon>uc_CotizacionToolBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\NuevaSolicitud.vb" />
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\uc_SolicitudToolBar.Designer.vb">
+      <DependentUpon>uc_SolicitudToolBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\uc_SolicitudToolBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_NuevaCotizacion.Designer.vb">
+      <DependentUpon>uc_NuevaCotizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Cotización\uc_NuevaCotizacion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\uc_NuevaSolicitudCotización.Designer.vb">
+      <DependentUpon>uc_NuevaSolicitudCotización.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\uc_NuevaSolicitudCotización.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataBase.vb" />
+    <Compile Include="fr_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fr_Main.Designer.vb">
+      <DependentUpon>fr_Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_ListadoClientes.resx">
+      <DependentUpon>uc_ListadoClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_ListarClientesEliminar.resx">
+      <DependentUpon>uc_ListarClientesEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_FormularioDatosCliente.resx">
+      <DependentUpon>uc_FormularioDatosCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_ListarClientes.resx">
+      <DependentUpon>uc_ListarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_ModificarDatosCliente.resx">
+      <DependentUpon>uc_ModificarDatosCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Clientes\uc_MostrarDatosEliminar.resx">
+      <DependentUpon>uc_MostrarDatosEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Proveedores\uc_FormularioDatosProveedores.resx">
+      <DependentUpon>uc_FormularioDatosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Proveedores\uc_ModificarDatosProveedores.resx">
+      <DependentUpon>uc_ModificarDatosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Servicios\uc_FormularioDatosServicio.resx">
+      <DependentUpon>uc_FormularioDatosServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Servicios\uc_ModificarDatosServicios.resx">
+      <DependentUpon>uc_ModificarDatosServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_FormularioDatosTratamiento.resx">
+      <DependentUpon>uc_FormularioDatosTratamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Tratamiento\uc_ModificarDatosTratamiento.resx">
+      <DependentUpon>uc_ModificarDatosTratamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Generales\TextBoxExt.resx">
+      <DependentUpon>TextBoxExt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Generales\uc_PopUp.resx">
+      <DependentUpon>uc_PopUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Generales\uc_Title.resx">
+      <DependentUpon>uc_Title.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.resx">
+      <DependentUpon>uc_CotizacionToolBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Proyecto\Nueva Solicitud\uc_SolicitudToolBar.resx">
+      <DependentUpon>uc_SolicitudToolBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Proyecto\Nueva Cotización\uc_NuevaCotizacion.resx">
+      <DependentUpon>uc_NuevaCotizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Proyecto\Nueva Solicitud\uc_NuevaSolicitudCotización.resx">
+      <DependentUpon>uc_NuevaSolicitudCotización.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fr_Main.resx">
+      <DependentUpon>fr_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataSource\DataSource\DataSource.vbproj">
+      <Project>{93B5FD22-B732-460F-8234-BD83DAA4EEF5}</Project>
+      <Name>DataSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PDFUtility\PDFUtility.vbproj">
+      <Project>{A77CD0C2-F8D5-4B92-8D24-67C5C52FD3DC}</Project>
+      <Name>PDFUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

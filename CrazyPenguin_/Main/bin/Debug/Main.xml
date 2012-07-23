@@ -1,0 +1,204 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Main
+</name>
+</assembly>
+<members>
+<member name="M:Main.uc_MostrarDatosEliminar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_MostrarDatosEliminar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.DataBase.getSeqNo(System.String)">
+	<summary>
+ Retorna el numero consecutivo correspondiente al tipo
+ </summary>
+	<param name="SecType">Tipo de numero consecutivo</param>
+	<returns>Numero consecutivo</returns>
+	<remarks></remarks>
+</member><member name="M:Main.DataBase.SaveTransactionLog(System.String,System.String,System.String)">
+	<summary>
+ Guarda un registro en el trnsactions Log de la aplicacion
+ </summary>
+	<param name="Type">Tipo de registro que será guardado</param>
+	<param name="Reference">Referencia, puede ser una clave o valor proporcionado</param>
+	<param name="Description">registra el tipo de transaccion que se a guardado</param>
+	<remarks></remarks>
+</member><member name="M:Main.Cliente.#ctor">
+	<summary>
+ Constructor 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.Cliente.Dispose">
+	<summary>
+ Destructor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.Cliente.GuardarNuevoCliente">
+	<summary>
+ Guarda un registro del nuevo cliente
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Main.Cliente.ModificarCliente">
+	<summary>
+ Modifica los datos de un Cliente
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.Cliente.EliminarCliente">
+	<summary>
+ Elimina a un Cliente
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.Cliente.ListaDeClientes">
+	<summary>
+ Mustra una lista con los Clientes
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Main.Cliente.ListadoClientes">
+	<summary>
+ Lista todos los clientes
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Main.Cliente.BuscarClientes(System.String)">
+	<summary>
+ Lista lo datos de un cliente en especifico
+ </summary>
+	<param name="NumeroCliente">Numero de cliente a buscar</param>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosServicio.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosServicio.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="T:Main.NuevaSolicitud.DatosCliente">
+	<summary>
+ Estructura que almacena los datos del cliente
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Main.NuevaSolicitud._Cliente">
+	<summary>
+ Almacena la los datos del cliente 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Main.NuevaSolicitud.DatosRequisitor">
+	<summary>
+ Estructura que alamcena los datos del requisitor
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Main.NuevaSolicitud._Requisitor">
+	<summary>
+ Almacena los datos del requisitor
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Main.NuevaSolicitud.DatosServicio">
+	<summary>
+ Estructura que almacena los datos del servicio
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Main.NuevaSolicitud._Servicio">
+	<summary>
+ Almacena los datos del servicio
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Main.NuevaSolicitud._DT">
+	<summary>
+ Data table
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Main.NuevaSolicitud.DatosCondicionesPago">
+	<summary>
+ Estructura que almacena los datos de las condiciones de pago
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.NuevaSolicitud.fill_Cliente">
+	<summary>
+ Rellena la estructura de los datos del cliente a partir de _SolicitudCotizacion
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosProveedores.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosProveedores.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosTratamiento.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosTratamiento.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.fr_Main.KillForm">
+	<summary>
+ Para eliminar el objeto en uso actual
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_ModificarFormularioDatosCliente.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_ModificarFormularioDatosCliente.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="P:Main.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Main.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Main.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Main.uc_ModificarDatosCliente.DatosCliente">
+	<summary>
+ Estructura que almacena los datos del cliente
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_ModificarDatosCliente.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_ModificarDatosCliente.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
