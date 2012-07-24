@@ -323,7 +323,9 @@
     <Compile Include="Controles\Proyecto\Nueva Cotización\uc_CotizacionToolBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\EspecificacionSolicitud.vb" />
     <Compile Include="Controles\Proyecto\Nueva Solicitud\NuevaSolicitud.vb" />
+    <Compile Include="Controles\Proyecto\Nueva Solicitud\SolicitudCotizacion.vb" />
     <Compile Include="Controles\Proyecto\Nueva Solicitud\uc_SolicitudToolBar.Designer.vb">
       <DependentUpon>uc_SolicitudToolBar.vb</DependentUpon>
     </Compile>

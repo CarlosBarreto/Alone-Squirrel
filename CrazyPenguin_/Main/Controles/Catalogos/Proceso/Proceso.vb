@@ -96,7 +96,7 @@ Public Class Proceso
 
         strSQl.Append("UPDATE `appmigsa`.`proceso` ")
         strSQl.Append("SET `Nombre` = '" & _Nombre & "',`Descripcion` = '" & _Descripcion & "',`CostoUnitario` = '" & _CostoUnitario & "',`Fecha` = '" & _Fecha & "'")
-        strSQl.Append("WHERE `ProcesoID` = '" & _ProcesoID & "');")
+        strSQl.Append("WHERE `ProcesoID` = '" & _ProcesoID & "';")
 
         DT = DB.getDataTableQuery(strSQl.ToString)
 
@@ -107,7 +107,7 @@ Public Class Proceso
         strSQl = New StringBuilder
 
         strSQl.Append("DELETE FROM `appmigsa`.`proceso` ")
-        strSQl.Append("WHERE `ProcesoID` = '" & _ProcesoID & "');")
+        strSQl.Append("WHERE `ProcesoID` = '" & _ProcesoID & "';")
 
         DT = DB.getDataTableQuery(strSQl.ToString)
 
@@ -120,8 +120,6 @@ Public Class Proceso
         strSQl.Append("SELECT `ProcesoID`, `Nombre`  FROM `appmigsa`.`proceso`;")
 
         DT = DB.getDataTableQuery(strSQl.ToString)
-
-        DB.SaveTransactionLog("DELETE", _ProcesoID, "Se ha Eliminado un Proceso - " & _ProcesoID)
 
         Return DT
     End Function
@@ -140,10 +138,12 @@ Public Class Proceso
         strSQl = New StringBuilder
 
         strSQl.Append("SELECT *  FROM `appmigsa`.`proceso` ")
-        strSQl.Append("WHERE `ProcesoID` = '" & _ProcesoID & "');")
+        strSQl.Append("WHERE `ProcesoID` = '" & Proceso & "';")
 
         DT = DB.getDataTableQuery(strSQl.ToString)
 
         Return DT
     End Function
+
+    
 End Class

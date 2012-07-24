@@ -213,4 +213,6 @@ Public Class Material
         DT = DB.getDataTableQuery(strSQl.ToString)
         Return DT
     End Function
+
+    
 End Class

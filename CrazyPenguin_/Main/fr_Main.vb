@@ -145,17 +145,7 @@ Public Class fr_Main
         Me.Controls.Add(Form)
     End Sub
 
-    Private Sub AgregarToolStripMenuItem3_Click(sender As System.Object, e As System.EventArgs) Handles AgregarToolStripMenuItem3.Click
-        KillForm()
-        AddTitle("Agregar Nuevo Tratamiento")
-
-        Form = New uc_FormularioDatosTratamiento
-        Point_.X = 0
-        Point_.Y = 140
-        Form.Location = Point_
-        Form.Width = Me.Width
-        Me.Controls.Add(Form)
-    End Sub
+   
 
     Private Sub ListadoDeClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListadoDeClientesToolStripMenuItem.Click
         KillForm()
@@ -335,6 +325,80 @@ Public Class fr_Main
         AddTitle("Modificar un  Proceso")
 
         Form = New uc_ListarProceso("Modificar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub EliminarToolStripMenuItem6_Click(sender As System.Object, e As System.EventArgs) Handles EliminarToolStripMenuItem6.Click
+        KillForm()
+        AddTitle("Eliminar un  Proceso")
+
+        Form = New uc_ListarProceso("Eliminar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ListadoDeProcesosToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ListadoDeProcesosToolStripMenuItem.Click
+        KillForm()
+        AddTitle("Listado de Procesos")
+
+        Form = New uc_ListadoProceso
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+    '----- PROCESOS --End 
+
+    '----- TRATAMIENTO -- Begin
+    Private Sub AgregarToolStripMenuItem3_Click(sender As System.Object, e As System.EventArgs) Handles AgregarToolStripMenuItem3.Click
+        KillForm()
+        AddTitle("Agregar Nuevo Tratamiento")
+
+        Form = New uc_Tratamiento_Insertar
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ModificarToolStripMenuItem3_Click(sender As System.Object, e As System.EventArgs) Handles ModificarToolStripMenuItem3.Click
+        KillForm()
+        AddTitle("Modificar un Tratamiento")
+
+        Form = New uc_ListarTratamiento("Modificar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub EliminarToolStripMenuItem3_Click(sender As System.Object, e As System.EventArgs) Handles EliminarToolStripMenuItem3.Click
+        KillForm()
+        AddTitle("Eliminar un Tratamiento")
+
+        Form = New uc_ListarTratamiento("Eliminar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ListadoDeTratamientosToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ListadoDeTratamientosToolStripMenuItem.Click
+        KillForm()
+        AddTitle("Listado de Tratamientos")
+
+        Form = New uc_ListadoTratamiento
         Point_.X = 0
         Point_.Y = 140
         Form.Location = Point_

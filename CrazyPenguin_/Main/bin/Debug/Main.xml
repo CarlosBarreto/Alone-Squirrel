@@ -6,143 +6,25 @@ Main
 </name>
 </assembly>
 <members>
-<member name="M:Main.uc_FormularioDatosProveedores.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_FormularioDatosProveedores.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="M:Main.Tratamiento.#ctor">
+<member name="M:Main.EspecificacionSolicitud.#ctor">
 	<summary>
  Constructor 
  </summary>
 	<remarks></remarks>
-</member><member name="M:Main.Tratamiento.Dispose">
+</member><member name="M:Main.EspecificacionSolicitud.Dispose">
 	<summary>
  Destructor
  </summary>
 	<remarks></remarks>
-</member><member name="M:Main.uc_Material_Modificar.CleanText">
+</member><member name="M:Main.SolicitudCotizacion.#ctor">
 	<summary>
- Limpia los TextBox's del formulario
+ Constructor 
  </summary>
 	<remarks></remarks>
-</member><member name="M:Main.uc_Material_Modificar.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="M:Main.Requisitor.Dispose">
+</member><member name="M:Main.SolicitudCotizacion.Dispose">
 	<summary>
  Destructor
  </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_EliminarRequisitor.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_EliminarRequisitor.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="M:Main.uc_ModificarRequisitor.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_ModificarRequisitor.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="M:Main.uc_FormularioDatosTratamiento.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_FormularioDatosTratamiento.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="M:Main.uc_MostrarDatosEliminar.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_MostrarDatosEliminar.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="M:Main.uc_CondicionesPago_Insertar.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_CondicionesPago_Insertar.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="M:Main.uc_Material_Insertar.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_Material_Insertar.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="M:Main.uc_GuardarRequisitor.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_GuardarRequisitor.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="P:Main.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:Main.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:Main.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="M:Main.uc_Proceso_Insertar.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_Proceso_Insertar.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
 	<remarks></remarks>
 </member><member name="T:Main.uc_ModificarDatosCliente.DatosCliente">
 	<summary>
@@ -155,6 +37,17 @@ Main
  </summary>
 	<remarks></remarks>
 </member><member name="M:Main.uc_ModificarDatosCliente.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Material_Modificar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Material_Modificar.IsEditing">
 	<summary>
  Determina si se esta editando el formulario
  </summary>
@@ -205,30 +98,75 @@ Main
  Rellena la estructura de los datos del cliente a partir de _SolicitudCotizacion
  </summary>
 	<remarks></remarks>
-</member><member name="M:Main.CondicionesPago.#ctor">
+</member><member name="M:Main.uc_MostrarDatosEliminar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_MostrarDatosEliminar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.Tratamiento.#ctor">
 	<summary>
  Constructor 
  </summary>
 	<remarks></remarks>
-</member><member name="M:Main.CondicionesPago.Dispose">
+</member><member name="M:Main.Tratamiento.Dispose">
 	<summary>
  Destructor
  </summary>
 	<remarks></remarks>
-</member><member name="M:Main.DataBase.getSeqNo(System.String)">
+</member><member name="M:Main.uc_ModificarFormularioDatosCliente.CleanText">
 	<summary>
- Retorna el numero consecutivo correspondiente al tipo
+ Limpia los TextBox's del formulario
  </summary>
-	<param name="SecType">Tipo de numero consecutivo</param>
-	<returns>Numero consecutivo</returns>
 	<remarks></remarks>
-</member><member name="M:Main.DataBase.SaveTransactionLog(System.String,System.String,System.String)">
+</member><member name="M:Main.uc_ModificarFormularioDatosCliente.IsEditing">
 	<summary>
- Guarda un registro en el trnsactions Log de la aplicacion
+ Determina si se esta editando el formulario
  </summary>
-	<param name="Type">Tipo de registro que será guardado</param>
-	<param name="Reference">Referencia, puede ser una clave o valor proporcionado</param>
-	<param name="Description">registra el tipo de transaccion que se a guardado</param>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_CondicionesPago_Eliminar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_CondicionesPago_Eliminar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Proceso_Insertar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Proceso_Insertar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Tratamiento_Insertar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Tratamiento_Insertar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.Requisitor.Dispose">
+	<summary>
+ Destructor
+ </summary>
 	<remarks></remarks>
 </member><member name="M:Main.Cliente.#ctor">
 	<summary>
@@ -274,55 +212,23 @@ Main
  </summary>
 	<param name="NumeroCliente">Numero de cliente a buscar</param>
 	<remarks></remarks>
-</member><member name="M:Main.uc_ModificarFormularioDatosCliente.CleanText">
+</member><member name="M:Main.uc_Material_Insertar.CleanText">
 	<summary>
  Limpia los TextBox's del formulario
  </summary>
 	<remarks></remarks>
-</member><member name="M:Main.uc_ModificarFormularioDatosCliente.IsEditing">
+</member><member name="M:Main.uc_Material_Insertar.IsEditing">
 	<summary>
  Determina si se esta editando el formulario
  </summary>
 	<returns>Retorna verdadero si se está editando el formulario</returns>
 	<remarks></remarks>
-</member><member name="M:Main.uc_CondicionesPago_Eliminar.CleanText">
+</member><member name="M:Main.uc_FormularioDatosProveedores.CleanText">
 	<summary>
  Limpia los TextBox's del formulario
  </summary>
 	<remarks></remarks>
-</member><member name="M:Main.uc_CondicionesPago_Eliminar.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="M:Main.uc_Material_Eliminar.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_Material_Eliminar.IsEditing">
-	<summary>
- Determina si se esta editando el formulario
- </summary>
-	<returns>Retorna verdadero si se está editando el formulario</returns>
-	<remarks></remarks>
-</member><member name="M:Main.Proceso.#ctor">
-	<summary>
- Constructor 
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.Proceso.Dispose">
-	<summary>
- Destructor
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_FormularioDatosServicio.CleanText">
-	<summary>
- Limpia los TextBox's del formulario
- </summary>
-	<remarks></remarks>
-</member><member name="M:Main.uc_FormularioDatosServicio.IsEditing">
+</member><member name="M:Main.uc_FormularioDatosProveedores.IsEditing">
 	<summary>
  Determina si se esta editando el formulario
  </summary>
@@ -339,6 +245,32 @@ Main
  </summary>
 	<returns>Retorna verdadero si se está editando el formulario</returns>
 	<remarks></remarks>
+</member><member name="M:Main.Proceso.#ctor">
+	<summary>
+ Constructor 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.Proceso.Dispose">
+	<summary>
+ Destructor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosTratamiento.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosTratamiento.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.fr_Main.KillForm">
+	<summary>
+ Para eliminar el objeto en uso actual
+ </summary>
+	<remarks></remarks>
 </member><member name="M:Main.Material.#ctor">
 	<summary>
  Constructor 
@@ -349,10 +281,153 @@ Main
  Destructor
  </summary>
 	<remarks></remarks>
-</member><member name="M:Main.fr_Main.KillForm">
+</member><member name="M:Main.uc_Proceso_Eliminar.CleanText">
 	<summary>
- Para eliminar el objeto en uso actual
+ Limpia los TextBox's del formulario
  </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Proceso_Eliminar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Tratamiento_Eliminar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Tratamiento_Eliminar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.CondicionesPago.#ctor">
+	<summary>
+ Constructor 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.CondicionesPago.Dispose">
+	<summary>
+ Destructor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Proceso_Modificar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Proceso_Modificar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_EliminarRequisitor.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_EliminarRequisitor.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_ModificarRequisitor.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_ModificarRequisitor.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.DataBase.getSeqNo(System.String)">
+	<summary>
+ Retorna el numero consecutivo correspondiente al tipo
+ </summary>
+	<param name="SecType">Tipo de numero consecutivo</param>
+	<returns>Numero consecutivo</returns>
+	<remarks></remarks>
+</member><member name="M:Main.DataBase.SaveTransactionLog(System.String,System.String,System.String)">
+	<summary>
+ Guarda un registro en el trnsactions Log de la aplicacion
+ </summary>
+	<param name="Type">Tipo de registro que será guardado</param>
+	<param name="Reference">Referencia, puede ser una clave o valor proporcionado</param>
+	<param name="Description">registra el tipo de transaccion que se a guardado</param>
+	<remarks></remarks>
+</member><member name="P:Main.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Main.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Main.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Main.uc_CondicionesPago_Insertar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_CondicionesPago_Insertar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Material_Eliminar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Material_Eliminar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Tratamiento_Modificar.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_Tratamiento_Modificar.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosServicio.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_FormularioDatosServicio.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
+	<remarks></remarks>
+</member><member name="M:Main.uc_GuardarRequisitor.CleanText">
+	<summary>
+ Limpia los TextBox's del formulario
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Main.uc_GuardarRequisitor.IsEditing">
+	<summary>
+ Determina si se esta editando el formulario
+ </summary>
+	<returns>Retorna verdadero si se está editando el formulario</returns>
 	<remarks></remarks>
 </member>
 </members>

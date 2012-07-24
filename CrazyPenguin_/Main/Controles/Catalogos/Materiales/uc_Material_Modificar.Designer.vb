@@ -39,7 +39,6 @@ Partial Class uc_Material_Modificar
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txt_Unidad = New Main.TextBoxExt()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.txt_Fecha = New Main.TextBoxExt()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txt_Descripcion = New Main.TextBoxExt()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -50,6 +49,7 @@ Partial Class uc_Material_Modificar
         Me.bt_Guardar = New System.Windows.Forms.Button()
         Me.bt_Cancelar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.dt_Material = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -67,6 +67,7 @@ Partial Class uc_Material_Modificar
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.dt_Material)
         Me.GroupBox1.Controls.Add(Me.txt_Padre)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txt_Costo)
@@ -83,7 +84,6 @@ Partial Class uc_Material_Modificar
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.txt_Unidad)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.txt_Fecha)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txt_Descripcion)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -265,17 +265,6 @@ Partial Class uc_Material_Modificar
         Me.Label7.TabIndex = 59
         Me.Label7.Text = "Unidad"
         '
-        'txt_Fecha
-        '
-        Me.txt_Fecha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Fecha.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Fecha.ForeColor = System.Drawing.Color.Black
-        Me.txt_Fecha.Location = New System.Drawing.Point(134, 119)
-        Me.txt_Fecha.Name = "txt_Fecha"
-        Me.txt_Fecha.Size = New System.Drawing.Size(328, 22)
-        Me.txt_Fecha.TabIndex = 58
-        Me.txt_Fecha.Type = Main.TextBoxExt.ValidType.Text
-        '
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -391,6 +380,16 @@ Partial Class uc_Material_Modificar
         Me.Panel1.Size = New System.Drawing.Size(501, 34)
         Me.Panel1.TabIndex = 54
         '
+        'dt_Material
+        '
+        Me.dt_Material.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dt_Material.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dt_Material.Location = New System.Drawing.Point(134, 118)
+        Me.dt_Material.Name = "dt_Material"
+        Me.dt_Material.Size = New System.Drawing.Size(137, 22)
+        Me.dt_Material.TabIndex = 76
+        Me.dt_Material.Value = New Date(2012, 5, 7, 0, 0, 0, 0)
+        '
         'uc_Material_Modificar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -423,7 +422,6 @@ Partial Class uc_Material_Modificar
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txt_Unidad As Main.TextBoxExt
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents txt_Fecha As Main.TextBoxExt
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txt_Descripcion As Main.TextBoxExt
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -434,5 +432,6 @@ Partial Class uc_Material_Modificar
     Friend WithEvents bt_Guardar As System.Windows.Forms.Button
     Friend WithEvents bt_Cancelar As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents dt_Material As System.Windows.Forms.DateTimePicker
 
 End Class

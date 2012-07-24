@@ -122,7 +122,7 @@ Public Class NuevaSolicitud
 
         'strSQL.Append("-- Seleccionar los datos del cliente a partir de la Solicitud de cotizacion ")
         strSQL.Append("SELECT a.NumeroDeCliente, b.Empresa, b.Domicilio, b.Colonia, b.CP, b.Ciudad, b.Estado, b.Telefono, b.Ramo ")
-        strSQL.Append("FROM migsa_.migsa_solicitudcotizacion AS a LEFT OUTER JOIN migsa_.migsa_catalogocliente AS b ")
+        strSQL.Append("FROM appmigsa.solicitudcotizacion AS a LEFT OUTER JOIN appmigsa.cliente AS b ")
         strSQL.Append("ON a.NumeroDeCliente = b.NumeroDeCliente ")
         strSQL.Append("WHERE a.NumeroSolicitud = '" & NumeroSolicitud & "'; ")
 
@@ -136,9 +136,9 @@ Public Class NuevaSolicitud
         Dim strSQL As New StringBuilder
 
         'strSQL.Append("-- Seleccionar los datos del requisitor a partir de la solicitud de cotizacion ")
-        strSQL.Append("SELECT b.NumeroDeCliente, a.id_Requisitor, b.Nombre, b.Telefono, b.Ext, b.Celular, b.Radio, b.Correo ")
-        strSQL.Append("FROM migsa_.migsa_solicitudcotizacion AS a LEFT OUTER JOIN migsa_.migsa_requisitor AS b ")
-        strSQL.Append("ON a.id_Requisitor = b.id_Requisitor ")
+        strSQL.Append("SELECT b.NumeroDeCliente, a.IDRequisitor, b.Nombre, b.Telefono, b.Ext, b.Celular, b.Radio, b.Correo ")
+        strSQL.Append("FROM appmigsa.solicitudcotizacion AS a LEFT OUTER JOIN appmigsa.requisitor AS b ")
+        strSQL.Append("ON a.IDRequisitor = b.RequisitorID ")
         strSQL.Append("WHERE a.NumeroSolicitud = '" & NumeroSolicitud & "'; ")
 
         DT = DB.getDataTableQuery(strSQL.ToString)
@@ -150,7 +150,7 @@ Public Class NuevaSolicitud
         Dim DT As DataTable
         Dim strSQL As New StringBuilder
 
-        strSQL.Append("SELECT Servicio, Solicitud, Entrega FROM migsa_.migsa_solicitudcotizacion ")
+        strSQL.Append("SELECT Servicio, Solicitud, Entrega FROM appmigsa.solicitudcotizacion ")
         strSQL.Append("WHERE NumeroSolicitud = '" & NumeroSolicitud & "'; ")
         DT = DB.getDataTableQuery(strSQL.ToString)
 
@@ -161,8 +161,8 @@ Public Class NuevaSolicitud
         Dim DT As DataTable
         Dim strSQL As New StringBuilder
 
-        strSQL.Append("SELECT Anticipo, Resto, Credito, Contado, TiempoPago, Observaciones ")
-        strSQL.Append("FROM migsa_.migsa_solicitudcotizacion ")
+        strSQL.Append("SELECT  '' as Anticipo, '' as Resto, Credito, Contado, TiempoPago, '' as Observaciones ")
+        strSQL.Append("FROM appmigsa.solicitudcotizacion ")
         strSQL.Append("WHERE NumeroSolicitud = '" & NumeroSolicitud & "'; ")
         DT = DB.getDataTableQuery(strSQL.ToString)
 
@@ -173,9 +173,12 @@ Public Class NuevaSolicitud
         Dim DT As DataTable
         Dim strSQL As New StringBuilder
 
-        strSQL.Append("SELECT Nombre, Descripcion, Material, Proceso, Tratamiento, Cantidad, PrecioUnitario, ")
-        strSQL.Append("PrecioObjetivo, CondicionEntrega, MaterialesProporcionados ")
-        strSQL.Append("FROM migsa_.migsa_especificacionsolicitudcotizacion ")
+        strSQL.Append("SELECT a.Nombre, a.Descripcion, b.Nombre as 'Material', c.Nombre as 'Proceso', d.Nombre as 'Tratamiento', ")
+        strSQL.Append("a.Cantidad, a.PrecioUnitario, a.PrecioObjetivo, a.CondicionEntrega, a.MaterialProporcionado ")
+        strSQL.Append("FROM appmigsa.especificacionsolicitud as a  ")
+        strSQL.Append("LEFT OUTER JOIN appmigsa.material as b ON a.MaterialID = b.MaterialID ")
+        strSQL.Append("LEFT OUTER JOIN appmigsa.proceso as c ON a.ProcesoID = c.ProcesoID ")
+        strSQL.Append("LEFT OUTER JOIN appmigsa.tratamiento as d ON a.TratamientoID = d.TratamientoID ")
         strSQL.Append("WHERE NumeroSolicitud = '" & NumeroSolicitud & "'; ")
         DT = DB.getDataTableQuery(strSQL.ToString)
 
@@ -240,7 +243,7 @@ Public Class NuevaSolicitud
             .rq_CELULAR = UCase(DT.Rows(0)("Celular"))
             .rq_RADIO = UCase(DT.Rows(0)("Radio"))
             .rq_CORREO = UCase(DT.Rows(0)("Correo"))
-            .rq_REQUISITOR = UCase(DT.Rows(0)("id_Requisitor"))
+            .rq_REQUISITOR = UCase(DT.Rows(0)("IDRequisitor"))
         End With
 
         DT = Nothing

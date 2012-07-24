@@ -5,9 +5,9 @@ Imports System.Text
 Public Class uc_SolicitudToolBar
     Public UC As uc_NuevaSolicitudCotización
     Protected _frMain As fr_Main
-    Private DB As DBDataSource
     Public _DT As DataTable
 
+    Private _NumeroCotizacion As String
     '----------------------------------------------------------
     
 
@@ -23,12 +23,11 @@ Public Class uc_SolicitudToolBar
     End Sub
 
     Private Sub tb_Guardar_Click(sender As System.Object, e As System.EventArgs) Handles tb_Guardar.Click
-        Dim _NumeroCotizacion As String
         Dim DT As DataTable
-        Dim strSQL As StringBuilder
 
+        ' Comporbar los valores minimos necesarios para guardar una solicitud
         With UC
-            ' Comporbar los valores minimos necesarios para guardar una solicitud
+
             If .txt_NumeroCliente.Text = "" Then
                 MsgBox("El campo Numero de Cliente no puede quedar vacío", MsgBoxStyle.Critical, "MIGSA")
                 .txt_NumeroCliente.Focus()
@@ -54,45 +53,81 @@ Public Class uc_SolicitudToolBar
 
         'Guardar solicitud
         Try
-            strSQL = New StringBuilder
-            DB = New DBDataSource
-            strSQL.Append("CALL migsa_SolicitudCotizacion_Insertar(")
-            strSQL.Append("'" & UC.txt_NumeroCliente.Text & "', ")
-            strSQL.Append("'" & UC.cb_Requisitor.SelectedValue & "', ")
-            strSQL.Append("'" & UC.txt_Servicio.Text & "', ")
-            strSQL.Append("'" & UC.dt_Solicitud.Text & "', ") 'Solicitud
-            strSQL.Append("'" & UC.dt_Entrega.Text & "', ") 'Entrega
-            strSQL.Append("'" & UC.txt_Anticipo.Text & "', ") 'Anticipo
-            strSQL.Append("'" & UC.txt_Resto.Text & "', ") 'Resto
-            strSQL.Append("'" & UC.txt_Credito.Text & "', ") 'Credito
-            strSQL.Append("'" & UC.txt_Contado.Text & "', ") 'Contado
-            strSQL.Append("'" & UC.txt_TipoPago.Text & "', ") 'TiempoPago
-            strSQL.Append("'" & UC.txt_Observaciones.Text & "'); ") 'Observaciones
+            Dim Solicitud As New SolicitudCotizacion
+            With Solicitud
+                .NumeroDeCliente = UC.txt_NumeroCliente.Text
+                .IDRequisitor = UC.cb_Requisitor.SelectedValue
+                .Servicio = UC.txt_Servicio.Text
+                .Solicitud = UC.dt_Solicitud.Text
+                .Entrega = UC.dt_Entrega.Text
+                .CondicionID = UC.cb_Condiciones.SelectedValue
+                If UC.rd_Credito.Checked = True Then
+                    .Credito = "Si"
+                    .Contado = "No"
+                Else
+                    .Credito = "No"
+                    .Contado = "Si"
+                End If
+                .TiempoPago = UC.txt_TipoPago.Text
 
-            DT = DB.getDataTableQuery(strSQL.ToString)
-            _NumeroCotizacion = DT.Rows(0)("_NumeroSolicitud").ToString
-            strSQL = Nothing
+                .Solicitud_Insertar()
+            End With
+            _NumeroCotizacion = Solicitud.NumeroSolicitud
+
+            'Not Used --             strSQL = New StringBuilder
+            'Not Used --             DB = New DBDataSource
+            'Not Used --             strSQL.Append("CALL migsa_SolicitudCotizacion_Insertar(")
+            'Not Used --             strSQL.Append("'" & UC.txt_NumeroCliente.Text & "', ")
+            'Not Used --             strSQL.Append("'" & UC.cb_Requisitor.SelectedValue & "', ")
+            'Not Used --             strSQL.Append("'" & UC.txt_Servicio.Text & "', ")
+            'Not Used --             strSQL.Append("'" & UC.dt_Solicitud.Text & "', ") 'Solicitud
+            'Not Used --             strSQL.Append("'" & UC.dt_Entrega.Text & "', ") 'Entrega
+            'Not Used --             srSQL.Append("'" & UC.txt_Anticipo.Text & "', ") 'Anticipo
+            'Not Used --             strSQL.Append("'" & UC.txt_Resto.Text & "', ") 'Resto
+            'Not Used --             strSQL.Append("'" & UC.txt_Credito.Text & "', ") 'Credito
+            'Not Used --             strSQL.Append("'" & UC.txt_Contado.Text & "', ") 'Contado
+            'Not Used --             strSQL.Append("'" & UC.txt_TipoPago.Text & "', ") 'TiempoPago
+            'Not Used --             strSQL.Append("'" & UC.txt_Observaciones.Text & "'); ") 'Observaciones
+
+            'Not Used --             DT = DB.getDataTableQuery(strSQL.ToString)
+            'Not Used --             _NumeroCotizacion = DT.Rows(0)("_NumeroSolicitud").ToString
+            'Not Used --             strSQL = Nothing
 
             _DT = UC._DT
 
-
+            Dim Especificacion As New EspecificacionSolicitud
             For i As Integer = 0 To _DT.Rows.Count - 1
-                strSQL = New StringBuilder
-                strSQL.Append("call migsa_EspecificacionSolicitudCotizacion_Insertar(")
-                strSQL.Append("'" & _NumeroCotizacion & "', ")
-                strSQL.Append("'" & _DT.Rows(i)("Nombre") & "', ")
-                strSQL.Append("'" & _DT.Rows(i)("Descripcion") & "', ")
-                strSQL.Append("'" & _DT.Rows(i)("Material") & "', ")
-                strSQL.Append("'" & _DT.Rows(i)("Proceso") & "', ")
-                strSQL.Append("'" & _DT.Rows(i)("Tratamiento") & "', ")
-                strSQL.Append("'" & _DT.Rows(i)("Cantidad") & "', ")
-                strSQL.Append("'" & _DT.Rows(i)("PrecioUnitario") & "', ")
-                strSQL.Append("'" & _DT.Rows(i)("PrecioObjetivo") & "', ")
-                strSQL.Append("'" & _DT.Rows(i)("CondicionesEntrega") & "', ")
-                strSQL.Append("'" & _DT.Rows(i)("MaterialProporcionado") & "'); ")
+                With Especificacion
+                    .NumeroSolicitud = _NumeroCotizacion
+                    .Nombre = _DT.Rows(i)("Nombre")
+                    .Descripcion = _DT.Rows(i)("Descripcion")
+                    .MaterialID = _DT.Rows(i)("Material")
+                    .ProcesoID = _DT.Rows(i)("Proceso")
+                    .TratamientoID = _DT.Rows(i)("Tratamiento")
+                    .Cantidad = _DT.Rows(i)("Cantidad")
+                    .PrecioUnitario = _DT.Rows(i)("PrecioUnitario")
+                    .PrecioObjetivo = _DT.Rows(i)("PrecioObjetivo")
+                    .CondicionEntrega = _DT.Rows(i)("CondicionesEntrega")
+                    .MaterialProporcionado = _DT.Rows(i)("MaterialProporcionado")
 
-                DT = DB.getDataTableQuery(strSQL.ToString)
-                strSQL = Nothing
+                    .Especificacion_Insertar()
+                End With
+                'Not Used --                 strSQL = New StringBuilder
+                'Not Used --                 strSQL.Append("call migsa_EspecificacionSolicitudCotizacion_Insertar(")
+                'Not Used --                 strSQL.Append("'" & _NumeroCotizacion & "', ")
+                'Not Used --                 strSQL.Append("'" & _DT.Rows(i)("Nombre") & "', ")
+                'Not Used --                 strSQL.Append("'" & _DT.Rows(i)("Descripcion") & "', ")
+                'Not Used --                 strSQL.Append("'" & _DT.Rows(i)("Material") & "', ")
+                'Not Used --                 strSQL.Append("'" & _DT.Rows(i)("Proceso") & "', ")
+                'Not Used --                 strSQL.Append("'" & _DT.Rows(i)("Tratamiento") & "', ")
+                'Not Used --                 strSQL.Append("'" & _DT.Rows(i)("Cantidad") & "', ")
+                'Not Used --                 strSQL.Append("'" & _DT.Rows(i)("PrecioUnitario") & "', ")
+                'Not Used --                 strSQL.Append("'" & _DT.Rows(i)("PrecioObjetivo") & "', ")
+                'Not Used --                 strSQL.Append("'" & _DT.Rows(i)("CondicionesEntrega") & "', ")
+                'Not Used --                 strSQL.Append("'" & _DT.Rows(i)("MaterialProporcionado") & "'); ")
+
+                'Not Used --                 DT = DB.getDataTableQuery(strSQL.ToString)
+                'Not Used --                 strSQL = Nothing
             Next
 
             'Generar el documento PDF
@@ -117,8 +152,6 @@ Public Class uc_SolicitudToolBar
             MsgBox(ex.Message, MsgBoxStyle.Critical, "MIGSA")
             'Exit Sub
         Finally
-            DB.Dispose()
-            DB = Nothing
             DT = Nothing
 
             'Cerrar el formulario

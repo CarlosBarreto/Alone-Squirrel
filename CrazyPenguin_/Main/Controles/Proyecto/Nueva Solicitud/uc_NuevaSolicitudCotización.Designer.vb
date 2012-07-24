@@ -36,49 +36,51 @@ Partial Class uc_NuevaSolicitudCotización
         Me.dt_Entrega = New System.Windows.Forms.DateTimePicker()
         Me.dt_Solicitud = New System.Windows.Forms.DateTimePicker()
         Me.lb_Entrega = New System.Windows.Forms.Label()
-        Me.txt_Servicio = New Main.TextBoxExt()
         Me.lb_Servicio = New System.Windows.Forms.Label()
         Me.lb_Solicitud = New System.Windows.Forms.Label()
+        Me.txt_Servicio = New Main.TextBoxExt()
         Me.tbc_Especificacion = New System.Windows.Forms.TabPage()
+        Me.txt_Tratamiento = New System.Windows.Forms.ComboBox()
+        Me.txt_Proceso = New System.Windows.Forms.ComboBox()
+        Me.txt_Material = New System.Windows.Forms.ComboBox()
         Me.bt_Limpiar = New System.Windows.Forms.Button()
         Me.bt_Agregar = New System.Windows.Forms.Button()
         Me.DataGrid = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.opt_Empresa = New System.Windows.Forms.RadioButton()
         Me.opt_Cliente = New System.Windows.Forms.RadioButton()
-        Me.txt_CondicionesEntrega = New Main.TextBoxExt()
-        Me.txt_PrecioUnitario = New Main.TextBoxExt()
-        Me.txt_Cantidad = New Main.TextBoxExt()
-        Me.txt_PrecioObjetivo = New Main.TextBoxExt()
-        Me.txt_Proceso = New Main.TextBoxExt()
-        Me.txt_Descripcion = New Main.TextBoxExt()
         Me.lb_CondicionesEntrega = New System.Windows.Forms.Label()
         Me.lb_PrecioUnitario = New System.Windows.Forms.Label()
         Me.lb_PrecioObjetivo = New System.Windows.Forms.Label()
         Me.lb_Proceso = New System.Windows.Forms.Label()
         Me.lb_Tratamiento = New System.Windows.Forms.Label()
         Me.lb_Cantidad = New System.Windows.Forms.Label()
-        Me.txt_Material = New Main.TextBoxExt()
         Me.lb_Material = New System.Windows.Forms.Label()
-        Me.txt_Tratamiento = New Main.TextBoxExt()
-        Me.txt_Nombre = New Main.TextBoxExt()
         Me.lb_Nombre = New System.Windows.Forms.Label()
         Me.lb_Descripcion = New System.Windows.Forms.Label()
+        Me.txt_CondicionesEntrega = New Main.TextBoxExt()
+        Me.txt_PrecioUnitario = New Main.TextBoxExt()
+        Me.txt_Cantidad = New Main.TextBoxExt()
+        Me.txt_PrecioObjetivo = New Main.TextBoxExt()
+        Me.txt_Descripcion = New Main.TextBoxExt()
+        Me.txt_Nombre = New Main.TextBoxExt()
         Me.tbc_Condiciones = New System.Windows.Forms.TabPage()
+        Me.rd_Contado = New System.Windows.Forms.RadioButton()
+        Me.rd_Credito = New System.Windows.Forms.RadioButton()
         Me.cb_Condiciones = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txt_Observaciones = New Main.TextBoxExt()
-        Me.txt_TipoPago = New Main.TextBoxExt()
-        Me.txt_Contado = New Main.TextBoxExt()
-        Me.txt_Credito = New Main.TextBoxExt()
-        Me.txt_Resto = New Main.TextBoxExt()
-        Me.txt_Anticipo = New Main.TextBoxExt()
         Me.lb_Correo = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lb_Telefono = New System.Windows.Forms.Label()
         Me.lb_Ext = New System.Windows.Forms.Label()
         Me.lb_Celular = New System.Windows.Forms.Label()
         Me.lb_Radio = New System.Windows.Forms.Label()
+        Me.txt_Observaciones = New Main.TextBoxExt()
+        Me.txt_TipoPago = New Main.TextBoxExt()
+        Me.txt_Contado = New Main.TextBoxExt()
+        Me.txt_Credito = New Main.TextBoxExt()
+        Me.txt_Resto = New Main.TextBoxExt()
+        Me.txt_Anticipo = New Main.TextBoxExt()
         Me.TabControl.SuspendLayout()
         Me.tbc_Cliente.SuspendLayout()
         Me.tbc_Servicio.SuspendLayout()
@@ -155,11 +157,11 @@ Partial Class uc_NuevaSolicitudCotización
         '
         'bt_Options
         '
-        Me.bt_Options.Location = New System.Drawing.Point(299, 170)
+        Me.bt_Options.Location = New System.Drawing.Point(438, 169)
         Me.bt_Options.Name = "bt_Options"
-        Me.bt_Options.Size = New System.Drawing.Size(141, 23)
+        Me.bt_Options.Size = New System.Drawing.Size(71, 23)
         Me.bt_Options.TabIndex = 51
-        Me.bt_Options.Text = " > "
+        Me.bt_Options.Text = " Buscar "
         Me.bt_Options.UseVisualStyleBackColor = True
         '
         'Label3
@@ -180,7 +182,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.txt_NumeroCliente.ForeColor = System.Drawing.Color.Black
         Me.txt_NumeroCliente.Location = New System.Drawing.Point(161, 170)
         Me.txt_NumeroCliente.Name = "txt_NumeroCliente"
-        Me.txt_NumeroCliente.Size = New System.Drawing.Size(132, 22)
+        Me.txt_NumeroCliente.Size = New System.Drawing.Size(271, 22)
         Me.txt_NumeroCliente.TabIndex = 49
         Me.txt_NumeroCliente.Type = Main.TextBoxExt.ValidType.Alpha
         '
@@ -212,9 +214,9 @@ Partial Class uc_NuevaSolicitudCotización
         Me.tbc_Servicio.Controls.Add(Me.dt_Entrega)
         Me.tbc_Servicio.Controls.Add(Me.dt_Solicitud)
         Me.tbc_Servicio.Controls.Add(Me.lb_Entrega)
-        Me.tbc_Servicio.Controls.Add(Me.txt_Servicio)
         Me.tbc_Servicio.Controls.Add(Me.lb_Servicio)
         Me.tbc_Servicio.Controls.Add(Me.lb_Solicitud)
+        Me.tbc_Servicio.Controls.Add(Me.txt_Servicio)
         Me.tbc_Servicio.Location = New System.Drawing.Point(4, 28)
         Me.tbc_Servicio.Name = "tbc_Servicio"
         Me.tbc_Servicio.Padding = New System.Windows.Forms.Padding(3)
@@ -254,17 +256,6 @@ Partial Class uc_NuevaSolicitudCotización
         Me.lb_Entrega.TabIndex = 59
         Me.lb_Entrega.Text = "Entrega"
         '
-        'txt_Servicio
-        '
-        Me.txt_Servicio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Servicio.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Servicio.ForeColor = System.Drawing.Color.Black
-        Me.txt_Servicio.Location = New System.Drawing.Point(96, 51)
-        Me.txt_Servicio.Name = "txt_Servicio"
-        Me.txt_Servicio.Size = New System.Drawing.Size(360, 22)
-        Me.txt_Servicio.TabIndex = 58
-        Me.txt_Servicio.Type = Main.TextBoxExt.ValidType.Text
-        '
         'lb_Servicio
         '
         Me.lb_Servicio.AutoSize = True
@@ -289,37 +280,72 @@ Partial Class uc_NuevaSolicitudCotización
         Me.lb_Solicitud.TabIndex = 56
         Me.lb_Solicitud.Text = "Solicitud"
         '
+        'txt_Servicio
+        '
+        Me.txt_Servicio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Servicio.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Servicio.ForeColor = System.Drawing.Color.Black
+        Me.txt_Servicio.Location = New System.Drawing.Point(96, 51)
+        Me.txt_Servicio.Name = "txt_Servicio"
+        Me.txt_Servicio.Size = New System.Drawing.Size(360, 22)
+        Me.txt_Servicio.TabIndex = 58
+        Me.txt_Servicio.Type = Main.TextBoxExt.ValidType.Text
+        '
         'tbc_Especificacion
         '
         Me.tbc_Especificacion.BackColor = System.Drawing.Color.White
+        Me.tbc_Especificacion.Controls.Add(Me.txt_Tratamiento)
+        Me.tbc_Especificacion.Controls.Add(Me.txt_Proceso)
+        Me.tbc_Especificacion.Controls.Add(Me.txt_Material)
         Me.tbc_Especificacion.Controls.Add(Me.bt_Limpiar)
         Me.tbc_Especificacion.Controls.Add(Me.bt_Agregar)
         Me.tbc_Especificacion.Controls.Add(Me.DataGrid)
         Me.tbc_Especificacion.Controls.Add(Me.GroupBox1)
-        Me.tbc_Especificacion.Controls.Add(Me.txt_CondicionesEntrega)
-        Me.tbc_Especificacion.Controls.Add(Me.txt_PrecioUnitario)
-        Me.tbc_Especificacion.Controls.Add(Me.txt_Cantidad)
-        Me.tbc_Especificacion.Controls.Add(Me.txt_PrecioObjetivo)
-        Me.tbc_Especificacion.Controls.Add(Me.txt_Proceso)
-        Me.tbc_Especificacion.Controls.Add(Me.txt_Descripcion)
         Me.tbc_Especificacion.Controls.Add(Me.lb_CondicionesEntrega)
         Me.tbc_Especificacion.Controls.Add(Me.lb_PrecioUnitario)
         Me.tbc_Especificacion.Controls.Add(Me.lb_PrecioObjetivo)
         Me.tbc_Especificacion.Controls.Add(Me.lb_Proceso)
         Me.tbc_Especificacion.Controls.Add(Me.lb_Tratamiento)
         Me.tbc_Especificacion.Controls.Add(Me.lb_Cantidad)
-        Me.tbc_Especificacion.Controls.Add(Me.txt_Material)
         Me.tbc_Especificacion.Controls.Add(Me.lb_Material)
-        Me.tbc_Especificacion.Controls.Add(Me.txt_Tratamiento)
-        Me.tbc_Especificacion.Controls.Add(Me.txt_Nombre)
         Me.tbc_Especificacion.Controls.Add(Me.lb_Nombre)
         Me.tbc_Especificacion.Controls.Add(Me.lb_Descripcion)
+        Me.tbc_Especificacion.Controls.Add(Me.txt_CondicionesEntrega)
+        Me.tbc_Especificacion.Controls.Add(Me.txt_PrecioUnitario)
+        Me.tbc_Especificacion.Controls.Add(Me.txt_Cantidad)
+        Me.tbc_Especificacion.Controls.Add(Me.txt_PrecioObjetivo)
+        Me.tbc_Especificacion.Controls.Add(Me.txt_Descripcion)
+        Me.tbc_Especificacion.Controls.Add(Me.txt_Nombre)
         Me.tbc_Especificacion.Location = New System.Drawing.Point(4, 28)
         Me.tbc_Especificacion.Name = "tbc_Especificacion"
         Me.tbc_Especificacion.Padding = New System.Windows.Forms.Padding(3)
         Me.tbc_Especificacion.Size = New System.Drawing.Size(851, 512)
         Me.tbc_Especificacion.TabIndex = 2
         Me.tbc_Especificacion.Text = "Especificaciones de Servicio"
+        '
+        'txt_Tratamiento
+        '
+        Me.txt_Tratamiento.FormattingEnabled = True
+        Me.txt_Tratamiento.Location = New System.Drawing.Point(434, 101)
+        Me.txt_Tratamiento.Name = "txt_Tratamiento"
+        Me.txt_Tratamiento.Size = New System.Drawing.Size(195, 24)
+        Me.txt_Tratamiento.TabIndex = 95
+        '
+        'txt_Proceso
+        '
+        Me.txt_Proceso.FormattingEnabled = True
+        Me.txt_Proceso.Location = New System.Drawing.Point(233, 101)
+        Me.txt_Proceso.Name = "txt_Proceso"
+        Me.txt_Proceso.Size = New System.Drawing.Size(195, 24)
+        Me.txt_Proceso.TabIndex = 94
+        '
+        'txt_Material
+        '
+        Me.txt_Material.FormattingEnabled = True
+        Me.txt_Material.Location = New System.Drawing.Point(25, 101)
+        Me.txt_Material.Name = "txt_Material"
+        Me.txt_Material.Size = New System.Drawing.Size(195, 24)
+        Me.txt_Material.TabIndex = 93
         '
         'bt_Limpiar
         '
@@ -382,72 +408,6 @@ Partial Class uc_NuevaSolicitudCotización
         Me.opt_Cliente.TabStop = True
         Me.opt_Cliente.Text = "Cliente"
         Me.opt_Cliente.UseVisualStyleBackColor = True
-        '
-        'txt_CondicionesEntrega
-        '
-        Me.txt_CondicionesEntrega.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_CondicionesEntrega.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_CondicionesEntrega.ForeColor = System.Drawing.Color.Black
-        Me.txt_CondicionesEntrega.Location = New System.Drawing.Point(227, 197)
-        Me.txt_CondicionesEntrega.Name = "txt_CondicionesEntrega"
-        Me.txt_CondicionesEntrega.Size = New System.Drawing.Size(402, 22)
-        Me.txt_CondicionesEntrega.TabIndex = 88
-        Me.txt_CondicionesEntrega.Type = Main.TextBoxExt.ValidType.Text
-        '
-        'txt_PrecioUnitario
-        '
-        Me.txt_PrecioUnitario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_PrecioUnitario.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_PrecioUnitario.ForeColor = System.Drawing.Color.Black
-        Me.txt_PrecioUnitario.Location = New System.Drawing.Point(227, 155)
-        Me.txt_PrecioUnitario.Name = "txt_PrecioUnitario"
-        Me.txt_PrecioUnitario.Size = New System.Drawing.Size(195, 22)
-        Me.txt_PrecioUnitario.TabIndex = 87
-        Me.txt_PrecioUnitario.Type = Main.TextBoxExt.ValidType.Number
-        '
-        'txt_Cantidad
-        '
-        Me.txt_Cantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Cantidad.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Cantidad.ForeColor = System.Drawing.Color.Black
-        Me.txt_Cantidad.Location = New System.Drawing.Point(25, 154)
-        Me.txt_Cantidad.Name = "txt_Cantidad"
-        Me.txt_Cantidad.Size = New System.Drawing.Size(195, 22)
-        Me.txt_Cantidad.TabIndex = 86
-        Me.txt_Cantidad.Type = Main.TextBoxExt.ValidType.Number
-        '
-        'txt_PrecioObjetivo
-        '
-        Me.txt_PrecioObjetivo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_PrecioObjetivo.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_PrecioObjetivo.ForeColor = System.Drawing.Color.Black
-        Me.txt_PrecioObjetivo.Location = New System.Drawing.Point(434, 155)
-        Me.txt_PrecioObjetivo.Name = "txt_PrecioObjetivo"
-        Me.txt_PrecioObjetivo.Size = New System.Drawing.Size(195, 22)
-        Me.txt_PrecioObjetivo.TabIndex = 85
-        Me.txt_PrecioObjetivo.Type = Main.TextBoxExt.ValidType.Text
-        '
-        'txt_Proceso
-        '
-        Me.txt_Proceso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Proceso.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Proceso.ForeColor = System.Drawing.Color.Black
-        Me.txt_Proceso.Location = New System.Drawing.Point(231, 99)
-        Me.txt_Proceso.Name = "txt_Proceso"
-        Me.txt_Proceso.Size = New System.Drawing.Size(195, 22)
-        Me.txt_Proceso.TabIndex = 84
-        Me.txt_Proceso.Type = Main.TextBoxExt.ValidType.Alpha
-        '
-        'txt_Descripcion
-        '
-        Me.txt_Descripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Descripcion.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Descripcion.ForeColor = System.Drawing.Color.Black
-        Me.txt_Descripcion.Location = New System.Drawing.Point(112, 51)
-        Me.txt_Descripcion.Name = "txt_Descripcion"
-        Me.txt_Descripcion.Size = New System.Drawing.Size(517, 22)
-        Me.txt_Descripcion.TabIndex = 83
-        Me.txt_Descripcion.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'lb_CondicionesEntrega
         '
@@ -521,17 +481,6 @@ Partial Class uc_NuevaSolicitudCotización
         Me.lb_Cantidad.TabIndex = 77
         Me.lb_Cantidad.Text = "Cantidad"
         '
-        'txt_Material
-        '
-        Me.txt_Material.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Material.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Material.ForeColor = System.Drawing.Color.Black
-        Me.txt_Material.Location = New System.Drawing.Point(25, 99)
-        Me.txt_Material.Name = "txt_Material"
-        Me.txt_Material.Size = New System.Drawing.Size(195, 22)
-        Me.txt_Material.TabIndex = 76
-        Me.txt_Material.Type = Main.TextBoxExt.ValidType.Alpha
-        '
         'lb_Material
         '
         Me.lb_Material.AutoSize = True
@@ -543,28 +492,6 @@ Partial Class uc_NuevaSolicitudCotización
         Me.lb_Material.Size = New System.Drawing.Size(54, 16)
         Me.lb_Material.TabIndex = 75
         Me.lb_Material.Text = "Material"
-        '
-        'txt_Tratamiento
-        '
-        Me.txt_Tratamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Tratamiento.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Tratamiento.ForeColor = System.Drawing.Color.Black
-        Me.txt_Tratamiento.Location = New System.Drawing.Point(434, 99)
-        Me.txt_Tratamiento.Name = "txt_Tratamiento"
-        Me.txt_Tratamiento.Size = New System.Drawing.Size(195, 22)
-        Me.txt_Tratamiento.TabIndex = 74
-        Me.txt_Tratamiento.Type = Main.TextBoxExt.ValidType.Alpha
-        '
-        'txt_Nombre
-        '
-        Me.txt_Nombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Nombre.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Nombre.ForeColor = System.Drawing.Color.Black
-        Me.txt_Nombre.Location = New System.Drawing.Point(112, 14)
-        Me.txt_Nombre.Name = "txt_Nombre"
-        Me.txt_Nombre.Size = New System.Drawing.Size(517, 22)
-        Me.txt_Nombre.TabIndex = 73
-        Me.txt_Nombre.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'lb_Nombre
         '
@@ -590,29 +517,119 @@ Partial Class uc_NuevaSolicitudCotización
         Me.lb_Descripcion.TabIndex = 71
         Me.lb_Descripcion.Text = "Descripcion"
         '
+        'txt_CondicionesEntrega
+        '
+        Me.txt_CondicionesEntrega.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_CondicionesEntrega.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_CondicionesEntrega.ForeColor = System.Drawing.Color.Black
+        Me.txt_CondicionesEntrega.Location = New System.Drawing.Point(227, 197)
+        Me.txt_CondicionesEntrega.Name = "txt_CondicionesEntrega"
+        Me.txt_CondicionesEntrega.Size = New System.Drawing.Size(402, 22)
+        Me.txt_CondicionesEntrega.TabIndex = 88
+        Me.txt_CondicionesEntrega.Type = Main.TextBoxExt.ValidType.Text
+        '
+        'txt_PrecioUnitario
+        '
+        Me.txt_PrecioUnitario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_PrecioUnitario.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_PrecioUnitario.ForeColor = System.Drawing.Color.Black
+        Me.txt_PrecioUnitario.Location = New System.Drawing.Point(227, 155)
+        Me.txt_PrecioUnitario.Name = "txt_PrecioUnitario"
+        Me.txt_PrecioUnitario.Size = New System.Drawing.Size(195, 22)
+        Me.txt_PrecioUnitario.TabIndex = 87
+        Me.txt_PrecioUnitario.Type = Main.TextBoxExt.ValidType.Number
+        '
+        'txt_Cantidad
+        '
+        Me.txt_Cantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Cantidad.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Cantidad.ForeColor = System.Drawing.Color.Black
+        Me.txt_Cantidad.Location = New System.Drawing.Point(25, 154)
+        Me.txt_Cantidad.Name = "txt_Cantidad"
+        Me.txt_Cantidad.Size = New System.Drawing.Size(195, 22)
+        Me.txt_Cantidad.TabIndex = 86
+        Me.txt_Cantidad.Type = Main.TextBoxExt.ValidType.Number
+        '
+        'txt_PrecioObjetivo
+        '
+        Me.txt_PrecioObjetivo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_PrecioObjetivo.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_PrecioObjetivo.ForeColor = System.Drawing.Color.Black
+        Me.txt_PrecioObjetivo.Location = New System.Drawing.Point(434, 155)
+        Me.txt_PrecioObjetivo.Name = "txt_PrecioObjetivo"
+        Me.txt_PrecioObjetivo.Size = New System.Drawing.Size(195, 22)
+        Me.txt_PrecioObjetivo.TabIndex = 85
+        Me.txt_PrecioObjetivo.Type = Main.TextBoxExt.ValidType.Text
+        '
+        'txt_Descripcion
+        '
+        Me.txt_Descripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Descripcion.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Descripcion.ForeColor = System.Drawing.Color.Black
+        Me.txt_Descripcion.Location = New System.Drawing.Point(112, 51)
+        Me.txt_Descripcion.Name = "txt_Descripcion"
+        Me.txt_Descripcion.Size = New System.Drawing.Size(517, 22)
+        Me.txt_Descripcion.TabIndex = 83
+        Me.txt_Descripcion.Type = Main.TextBoxExt.ValidType.Alpha
+        '
+        'txt_Nombre
+        '
+        Me.txt_Nombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Nombre.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Nombre.ForeColor = System.Drawing.Color.Black
+        Me.txt_Nombre.Location = New System.Drawing.Point(112, 14)
+        Me.txt_Nombre.Name = "txt_Nombre"
+        Me.txt_Nombre.Size = New System.Drawing.Size(517, 22)
+        Me.txt_Nombre.TabIndex = 73
+        Me.txt_Nombre.Type = Main.TextBoxExt.ValidType.Alpha
+        '
         'tbc_Condiciones
         '
         Me.tbc_Condiciones.BackColor = System.Drawing.Color.White
+        Me.tbc_Condiciones.Controls.Add(Me.rd_Contado)
+        Me.tbc_Condiciones.Controls.Add(Me.rd_Credito)
         Me.tbc_Condiciones.Controls.Add(Me.cb_Condiciones)
         Me.tbc_Condiciones.Controls.Add(Me.Label1)
-        Me.tbc_Condiciones.Controls.Add(Me.txt_Observaciones)
-        Me.tbc_Condiciones.Controls.Add(Me.txt_TipoPago)
-        Me.tbc_Condiciones.Controls.Add(Me.txt_Contado)
-        Me.tbc_Condiciones.Controls.Add(Me.txt_Credito)
-        Me.tbc_Condiciones.Controls.Add(Me.txt_Resto)
-        Me.tbc_Condiciones.Controls.Add(Me.txt_Anticipo)
         Me.tbc_Condiciones.Controls.Add(Me.lb_Correo)
         Me.tbc_Condiciones.Controls.Add(Me.Label2)
         Me.tbc_Condiciones.Controls.Add(Me.lb_Telefono)
         Me.tbc_Condiciones.Controls.Add(Me.lb_Ext)
         Me.tbc_Condiciones.Controls.Add(Me.lb_Celular)
         Me.tbc_Condiciones.Controls.Add(Me.lb_Radio)
+        Me.tbc_Condiciones.Controls.Add(Me.txt_Observaciones)
+        Me.tbc_Condiciones.Controls.Add(Me.txt_TipoPago)
+        Me.tbc_Condiciones.Controls.Add(Me.txt_Contado)
+        Me.tbc_Condiciones.Controls.Add(Me.txt_Credito)
+        Me.tbc_Condiciones.Controls.Add(Me.txt_Resto)
+        Me.tbc_Condiciones.Controls.Add(Me.txt_Anticipo)
         Me.tbc_Condiciones.Location = New System.Drawing.Point(4, 28)
         Me.tbc_Condiciones.Name = "tbc_Condiciones"
         Me.tbc_Condiciones.Padding = New System.Windows.Forms.Padding(3)
         Me.tbc_Condiciones.Size = New System.Drawing.Size(851, 512)
         Me.tbc_Condiciones.TabIndex = 3
         Me.tbc_Condiciones.Text = "Condiciones de Pago"
+        '
+        'rd_Contado
+        '
+        Me.rd_Contado.AutoSize = True
+        Me.rd_Contado.Location = New System.Drawing.Point(148, 143)
+        Me.rd_Contado.Name = "rd_Contado"
+        Me.rd_Contado.Size = New System.Drawing.Size(74, 20)
+        Me.rd_Contado.TabIndex = 69
+        Me.rd_Contado.TabStop = True
+        Me.rd_Contado.Text = "Contado"
+        Me.rd_Contado.UseVisualStyleBackColor = True
+        '
+        'rd_Credito
+        '
+        Me.rd_Credito.AutoSize = True
+        Me.rd_Credito.Location = New System.Drawing.Point(148, 103)
+        Me.rd_Credito.Name = "rd_Credito"
+        Me.rd_Credito.Size = New System.Drawing.Size(67, 20)
+        Me.rd_Credito.TabIndex = 68
+        Me.rd_Credito.TabStop = True
+        Me.rd_Credito.Text = "Crédito"
+        Me.rd_Credito.UseVisualStyleBackColor = True
         '
         'cb_Condiciones
         '
@@ -634,73 +651,6 @@ Partial Class uc_NuevaSolicitudCotización
         Me.Label1.Size = New System.Drawing.Size(121, 16)
         Me.Label1.TabIndex = 66
         Me.Label1.Text = "Condiones de Pago"
-        '
-        'txt_Observaciones
-        '
-        Me.txt_Observaciones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Observaciones.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Observaciones.ForeColor = System.Drawing.Color.Black
-        Me.txt_Observaciones.Location = New System.Drawing.Point(148, 221)
-        Me.txt_Observaciones.Multiline = True
-        Me.txt_Observaciones.Name = "txt_Observaciones"
-        Me.txt_Observaciones.Size = New System.Drawing.Size(388, 86)
-        Me.txt_Observaciones.TabIndex = 65
-        Me.txt_Observaciones.Type = Main.TextBoxExt.ValidType.Alpha
-        '
-        'txt_TipoPago
-        '
-        Me.txt_TipoPago.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_TipoPago.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_TipoPago.ForeColor = System.Drawing.Color.Black
-        Me.txt_TipoPago.Location = New System.Drawing.Point(148, 180)
-        Me.txt_TipoPago.Name = "txt_TipoPago"
-        Me.txt_TipoPago.Size = New System.Drawing.Size(388, 22)
-        Me.txt_TipoPago.TabIndex = 64
-        Me.txt_TipoPago.Type = Main.TextBoxExt.ValidType.Alpha
-        '
-        'txt_Contado
-        '
-        Me.txt_Contado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Contado.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Contado.ForeColor = System.Drawing.Color.Black
-        Me.txt_Contado.Location = New System.Drawing.Point(148, 143)
-        Me.txt_Contado.Name = "txt_Contado"
-        Me.txt_Contado.Size = New System.Drawing.Size(388, 22)
-        Me.txt_Contado.TabIndex = 63
-        Me.txt_Contado.Type = Main.TextBoxExt.ValidType.Alpha
-        '
-        'txt_Credito
-        '
-        Me.txt_Credito.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Credito.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Credito.ForeColor = System.Drawing.Color.Black
-        Me.txt_Credito.Location = New System.Drawing.Point(148, 106)
-        Me.txt_Credito.Name = "txt_Credito"
-        Me.txt_Credito.Size = New System.Drawing.Size(388, 22)
-        Me.txt_Credito.TabIndex = 62
-        Me.txt_Credito.Type = Main.TextBoxExt.ValidType.Alpha
-        '
-        'txt_Resto
-        '
-        Me.txt_Resto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Resto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Resto.ForeColor = System.Drawing.Color.Black
-        Me.txt_Resto.Location = New System.Drawing.Point(386, 71)
-        Me.txt_Resto.Name = "txt_Resto"
-        Me.txt_Resto.Size = New System.Drawing.Size(150, 22)
-        Me.txt_Resto.TabIndex = 61
-        Me.txt_Resto.Type = Main.TextBoxExt.ValidType.Text
-        '
-        'txt_Anticipo
-        '
-        Me.txt_Anticipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Anticipo.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Anticipo.ForeColor = System.Drawing.Color.Black
-        Me.txt_Anticipo.Location = New System.Drawing.Point(148, 71)
-        Me.txt_Anticipo.Name = "txt_Anticipo"
-        Me.txt_Anticipo.Size = New System.Drawing.Size(150, 22)
-        Me.txt_Anticipo.TabIndex = 60
-        Me.txt_Anticipo.Type = Main.TextBoxExt.ValidType.Text
         '
         'lb_Correo
         '
@@ -749,6 +699,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.lb_Ext.Size = New System.Drawing.Size(49, 16)
         Me.lb_Ext.TabIndex = 56
         Me.lb_Ext.Text = "Credito"
+        Me.lb_Ext.Visible = False
         '
         'lb_Celular
         '
@@ -761,6 +712,7 @@ Partial Class uc_NuevaSolicitudCotización
         Me.lb_Celular.Size = New System.Drawing.Size(56, 16)
         Me.lb_Celular.TabIndex = 55
         Me.lb_Celular.Text = "Contado"
+        Me.lb_Celular.Visible = False
         '
         'lb_Radio
         '
@@ -773,6 +725,75 @@ Partial Class uc_NuevaSolicitudCotización
         Me.lb_Radio.Size = New System.Drawing.Size(100, 16)
         Me.lb_Radio.TabIndex = 54
         Me.lb_Radio.Text = "Tiempo de pago"
+        '
+        'txt_Observaciones
+        '
+        Me.txt_Observaciones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Observaciones.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Observaciones.ForeColor = System.Drawing.Color.Black
+        Me.txt_Observaciones.Location = New System.Drawing.Point(148, 221)
+        Me.txt_Observaciones.Multiline = True
+        Me.txt_Observaciones.Name = "txt_Observaciones"
+        Me.txt_Observaciones.Size = New System.Drawing.Size(388, 86)
+        Me.txt_Observaciones.TabIndex = 65
+        Me.txt_Observaciones.Type = Main.TextBoxExt.ValidType.Alpha
+        '
+        'txt_TipoPago
+        '
+        Me.txt_TipoPago.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_TipoPago.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_TipoPago.ForeColor = System.Drawing.Color.Black
+        Me.txt_TipoPago.Location = New System.Drawing.Point(148, 180)
+        Me.txt_TipoPago.Name = "txt_TipoPago"
+        Me.txt_TipoPago.Size = New System.Drawing.Size(388, 22)
+        Me.txt_TipoPago.TabIndex = 64
+        Me.txt_TipoPago.Type = Main.TextBoxExt.ValidType.Alpha
+        '
+        'txt_Contado
+        '
+        Me.txt_Contado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Contado.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Contado.ForeColor = System.Drawing.Color.Black
+        Me.txt_Contado.Location = New System.Drawing.Point(468, 143)
+        Me.txt_Contado.Name = "txt_Contado"
+        Me.txt_Contado.Size = New System.Drawing.Size(68, 22)
+        Me.txt_Contado.TabIndex = 63
+        Me.txt_Contado.Type = Main.TextBoxExt.ValidType.Alpha
+        Me.txt_Contado.Visible = False
+        '
+        'txt_Credito
+        '
+        Me.txt_Credito.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Credito.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Credito.ForeColor = System.Drawing.Color.Black
+        Me.txt_Credito.Location = New System.Drawing.Point(468, 106)
+        Me.txt_Credito.Name = "txt_Credito"
+        Me.txt_Credito.Size = New System.Drawing.Size(68, 22)
+        Me.txt_Credito.TabIndex = 62
+        Me.txt_Credito.Type = Main.TextBoxExt.ValidType.Alpha
+        Me.txt_Credito.Visible = False
+        '
+        'txt_Resto
+        '
+        Me.txt_Resto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Resto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Resto.ForeColor = System.Drawing.Color.Black
+        Me.txt_Resto.Location = New System.Drawing.Point(386, 71)
+        Me.txt_Resto.Name = "txt_Resto"
+        Me.txt_Resto.Size = New System.Drawing.Size(150, 22)
+        Me.txt_Resto.TabIndex = 61
+        Me.txt_Resto.Type = Main.TextBoxExt.ValidType.Text
+        '
+        'txt_Anticipo
+        '
+        Me.txt_Anticipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Anticipo.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Anticipo.ForeColor = System.Drawing.Color.Black
+        Me.txt_Anticipo.Location = New System.Drawing.Point(148, 71)
+        Me.txt_Anticipo.Name = "txt_Anticipo"
+        Me.txt_Anticipo.Size = New System.Drawing.Size(150, 22)
+        Me.txt_Anticipo.TabIndex = 60
+        Me.txt_Anticipo.Type = Main.TextBoxExt.ValidType.Text
         '
         'uc_NuevaSolicitudCotización
         '
@@ -813,9 +834,9 @@ Partial Class uc_NuevaSolicitudCotización
     Friend WithEvents txt_PrecioUnitario As TextBoxExt 'System.Windows.Forms.TextBox
     Friend WithEvents txt_Cantidad As TextBoxExt 'System.Windows.Forms.TextBox
     Friend WithEvents txt_PrecioObjetivo As TextBoxExt 'System.Windows.Forms.TextBox
-    Friend WithEvents txt_Proceso As TextBoxExt 'System.Windows.Forms.TextBox
+    'System.Windows.Forms.TextBox
     Friend WithEvents txt_Descripcion As TextBoxExt 'System.Windows.Forms.TextBox
-    Friend WithEvents txt_Material As TextBoxExt 'System.Windows.Forms.TextBox
+    'System.Windows.Forms.TextBox
     Friend WithEvents txt_NumeroCliente As TextBoxExt 'System.Windows.Forms.TextBox
     Friend WithEvents txt_Empresa As TextBoxExt 'System.Windows.Forms.TextBox
     Friend WithEvents txt_Observaciones As TextBoxExt 'System.Windows.Forms.TextBox
@@ -862,6 +883,10 @@ Partial Class uc_NuevaSolicitudCotización
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents lb_Requisitor As System.Windows.Forms.Label
     Friend WithEvents cb_Requisitor As System.Windows.Forms.ComboBox
-    Friend WithEvents txt_Tratamiento As Main.TextBoxExt
+    Friend WithEvents txt_Tratamiento As System.Windows.Forms.ComboBox
+    Friend WithEvents txt_Proceso As System.Windows.Forms.ComboBox
+    Friend WithEvents txt_Material As System.Windows.Forms.ComboBox
+    Friend WithEvents rd_Contado As System.Windows.Forms.RadioButton
+    Friend WithEvents rd_Credito As System.Windows.Forms.RadioButton
 
 End Class

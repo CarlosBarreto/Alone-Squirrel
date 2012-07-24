@@ -9,6 +9,7 @@ Public Class Tratamiento
     Private _TratamientoID As String
     Private _Nombre As String
     Private _Descripcion As String
+    Private _CostoUnitario As String
     Private _Fecha As String
 
     Public Property TratamientoID As String
@@ -33,6 +34,14 @@ Public Class Tratamiento
         End Get
         Set(ByVal value As String)
             _Descripcion = value
+        End Set
+    End Property
+    Public Property CostoUnitario As Integer
+        Get
+            Return _CostoUnitario
+        End Get
+        Set(value As Integer)
+            _CostoUnitario = value
         End Set
     End Property
     Public Property Fecha As String
@@ -68,10 +77,11 @@ Public Class Tratamiento
     Public Sub Tratamiento_Insertar()
         strSQl = New StringBuilder
 
-        _TratamientoID = DB.getSeqNo("Condicion")
+        _TratamientoID = DB.getSeqNo("Tratamiento")
+
         strSQl.Append("INSERT INTO `appmigsa`.`tratamiento` ")
-        strSQl.Append("(`TratamientoID`,`Nombre`,`Descripcion`,`Fecha`) ")
-        strSQl.Append("VALUES('" & _TratamientoID & "','" & _Nombre & "','" & _Descripcion & "','" & _Fecha & "',);")
+        strSQl.Append("(`TratamientoID`,`Nombre`,`Descripcion`,`CostoUnitario`,`Fecha`) ")
+        strSQl.Append("VALUES('" & _TratamientoID & "','" & _Nombre & "','" & _Descripcion & "', '" & _CostoUnitario & "' ,'" & _Fecha & "');")
 
         DT = DB.getDataTableQuery(strSQl.ToString)
 
@@ -83,8 +93,8 @@ Public Class Tratamiento
         strSQl = New StringBuilder
 
         strSQl.Append("UPDATE `appmigsa`.`tratamiento` ")
-        strSQl.Append("SET `Nombre` = '" & _Nombre & "',`Descripcion` = '" & _Descripcion & "',`Fecha` = '" & _Fecha & "' ")
-        strSQl.Append("WHERE `TratamientoID`= '" & _TratamientoID & "');")
+        strSQl.Append("SET `Nombre` = '" & _Nombre & "',`Descripcion` = '" & _Descripcion & "', `CostoUnitario` = '" & _CostoUnitario & "',`Fecha` = '" & _Fecha & "' ")
+        strSQl.Append("WHERE `TratamientoID`= '" & _TratamientoID & "';")
 
         DT = DB.getDataTableQuery(strSQl.ToString)
 
@@ -95,7 +105,7 @@ Public Class Tratamiento
         strSQl = New StringBuilder
 
         strSQl.Append("DELETE FROM `appmigsa`.`tratamiento` ")
-        strSQl.Append("WHERE `TratamientoID`= '" & _TratamientoID & "');")
+        strSQl.Append("WHERE `TratamientoID`= '" & _TratamientoID & "';")
 
         DT = DB.getDataTableQuery(strSQl.ToString)
 
@@ -121,4 +131,17 @@ Public Class Tratamiento
 
         Return DT
     End Function
+
+    Public Function MostrarTratamiento(ByVal Tratamiento As String) As DataTable
+        strSQl = New StringBuilder
+
+        strSQl.Append("SELECT * FROM `appmigsa`.`tratamiento` ")
+        strSQl.Append("WHERE `TratamientoID`= '" & Tratamiento & "';")
+
+        DT = DB.getDataTableQuery(strSQl.ToString)
+
+        Return DT
+    End Function
+
+    
 End Class

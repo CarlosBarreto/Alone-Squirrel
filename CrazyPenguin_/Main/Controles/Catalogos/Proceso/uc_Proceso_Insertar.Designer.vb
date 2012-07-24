@@ -119,6 +119,7 @@ Partial Class uc_Proceso_Insertar
         Me.txt_ProcesoID.Size = New System.Drawing.Size(137, 22)
         Me.txt_ProcesoID.TabIndex = 69
         Me.txt_ProcesoID.Type = Main.TextBoxExt.ValidType.Alpha
+        Me.txt_ProcesoID.Visible = False
         '
         'GroupBox2
         '
@@ -205,6 +206,7 @@ Partial Class uc_Proceso_Insertar
         Me.Label18.Size = New System.Drawing.Size(72, 18)
         Me.Label18.TabIndex = 61
         Me.Label18.Text = "Proceso ID"
+        Me.Label18.Visible = False
         '
         'uc_Proceso_Insertar
         '

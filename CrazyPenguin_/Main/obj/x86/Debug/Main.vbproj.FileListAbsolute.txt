@@ -99,7 +99,6 @@ C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_
 C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_FormularioDatosServicio.resources
 C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ModificarDatosServicios.resources
 C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_FormularioDatosTratamiento.resources
-C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ModificarDatosTratamiento.resources
 C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.TextBoxExt.resources
 C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_PopUp.resources
 C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Title.resources
@@ -172,3 +171,23 @@ C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_
 C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListadoMaterial.resources
 C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Proceso_Eliminar.resources
 C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Proceso_Modificar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_CondicionesPago_Eliminar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_CondicionesPago_Insertar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_CondicionesPago_Modificar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListadoCondicionesPago.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListarCondicionesPago.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListadoMaterial.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListarMaterial.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Material_Eliminar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Material_Insertar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Material_Modificar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListadoProceso.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListarProceso.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Proceso_Eliminar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Proceso_Insertar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Proceso_Modificar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListadoTratamiento.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_ListarTratamiento.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Tratamiento_Eliminar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Tratamiento_Insertar.resources
+C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\Main\obj\x86\Debug\Main.uc_Tratamiento_Modificar.resources

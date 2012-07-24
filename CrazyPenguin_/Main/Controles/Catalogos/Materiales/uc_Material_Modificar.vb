@@ -25,7 +25,7 @@
             .MaterialID = txt_MaterialID.Text
             .Nombre = txt_Nombre.Text
             .Descripcion = txt_Descripcion.Text
-            .Fecha = txt_Fecha.Text
+            .Fecha = dt_Material.Text
             .Unidad = txt_Unidad.Text
             .Ancho = txt_Ancho.Text
             .Largo = txt_Largo.Text
@@ -54,7 +54,7 @@
         txt_MaterialID.Text = ""
         txt_Nombre.Text = ""
         txt_Descripcion.Text = ""
-        txt_Fecha.Text = ""
+        'dt_Material.Text = ""
         txt_Unidad.Text = ""
         txt_Ancho.Text = ""
         txt_Largo.Text = ""
@@ -72,7 +72,7 @@
     ''' <remarks></remarks>
     Protected Function IsEditing() As Boolean
         Dim Response As Boolean = False
-        If txt_MaterialID.Text <> "" Or txt_Nombre.Text <> "" Or txt_Descripcion.Text <> "" Or txt_Fecha.Text <> "" Or _
+        If txt_MaterialID.Text <> "" Or txt_Nombre.Text <> "" Or txt_Descripcion.Text <> "" Or _
             txt_Unidad.Text <> "" Or txt_Ancho.Text <> "" Or txt_Largo.Text <> "" Or txt_Alto.Text <> "" Or _
             txt_Peso.Text <> "" Or txt_UnidadPeso.Text <> "" Or txt_Costo.Text <> "" Or txt_Padre.Text <> "" Then
             Response = True
@@ -96,7 +96,7 @@
         txt_MaterialID.Text = _MaterialID
         txt_Nombre.Text = DT.Rows(0)(1).ToString()
         txt_Descripcion.Text = DT.Rows(0)(2).ToString()
-        txt_Fecha.Text = DT.Rows(0)(3).ToString()
+        dt_Material.Text = DT.Rows(0)(3).ToString()
         txt_Unidad.Text = DT.Rows(0)(4).ToString()
         txt_Ancho.Text = DT.Rows(0)(5).ToString()
         txt_Largo.Text = DT.Rows(0)(6).ToString()
