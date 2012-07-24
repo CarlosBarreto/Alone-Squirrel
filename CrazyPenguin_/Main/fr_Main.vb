@@ -216,4 +216,129 @@ Public Class fr_Main
         Form.Width = Me.Width
         Me.Controls.Add(Form)
     End Sub
+
+    '----- CONDICIONES DE PAGO --- Begin
+    Private Sub AgregarToolStripMenuItem5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarToolStripMenuItem5.Click
+        KillForm()
+        AddTitle("Agregar una Condicion de pago")
+
+        Form = New uc_CondicionesPago_Insertar()
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ModificarToolStripMenuItem5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarToolStripMenuItem5.Click
+        KillForm()
+        AddTitle("Modificar una Condicion de pago")
+
+        Form = New uc_ListarCondicionesPago("Modificar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ElimanarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ElimanarToolStripMenuItem.Click
+        KillForm()
+        AddTitle("Eliminar una Condicion de pago")
+
+        Form = New uc_ListarCondicionesPago("Eliminar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ListadoDeCondicionesDePagoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListadoDeCondicionesDePagoToolStripMenuItem.Click
+        KillForm()
+        AddTitle("Listado de Condiciones de pago")
+
+        Form = New uc_ListadoCondicionesPago()
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+    '----- CONDICIONES DE PAGO --- End
+
+    '----- MATERIALES -- Begin
+    Private Sub AgregarToolStripMenuItem4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarToolStripMenuItem4.Click
+        KillForm()
+        AddTitle("Agregar un nuevo Material")
+
+        Form = New uc_Material_Insertar()
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ModificarToolStripMenuItem4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarToolStripMenuItem4.Click
+        KillForm()
+        AddTitle("Modificar un  Material")
+
+        Form = New uc_ListarMaterial("Modificar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub EliminarToolStripMenuItem4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EliminarToolStripMenuItem4.Click
+        KillForm()
+        AddTitle("Eliminar un  Material")
+
+        Form = New uc_ListarMaterial("Eliminar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ListadoDeMaterialesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListadoDeMaterialesToolStripMenuItem.Click
+        KillForm()
+        AddTitle("Listado de Materiales")
+
+        Form = New uc_ListadoMaterial
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+    '----- MATERIALES -- End
+
+    '----- PROCESOS -- Begin
+    Private Sub InsertarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InsertarToolStripMenuItem.Click
+        KillForm()
+        AddTitle("Agregar un nuevo Proceso")
+
+        Form = New uc_Proceso_Insertar()
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
+
+    Private Sub ModificarToolStripMenuItem7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarToolStripMenuItem7.Click
+        KillForm()
+        AddTitle("Modificar un  Proceso")
+
+        Form = New uc_ListarProceso("Modificar")
+        Point_.X = 0
+        Point_.Y = 140
+        Form.Location = Point_
+        Form.Width = Me.Width
+        Me.Controls.Add(Form)
+    End Sub
 End Class

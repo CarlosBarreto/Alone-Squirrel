@@ -145,16 +145,47 @@
     <Compile Include="Controles\Catalogos\CondicionesPago\uc_ListarCondicionesPago.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controles\Catalogos\Proceso\ListadoProceso.Designer.vb">
-      <DependentUpon>ListadoProceso.vb</DependentUpon>
+    <Compile Include="Controles\Catalogos\Materiales\Material.vb" />
+    <Compile Include="Controles\Catalogos\Materiales\uc_ListarMaterial.Designer.vb">
+      <DependentUpon>uc_ListarMaterial.vb</DependentUpon>
     </Compile>
-    <Compile Include="Controles\Catalogos\Proceso\ListadoProceso.vb">
+    <Compile Include="Controles\Catalogos\Materiales\uc_ListarMaterial.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controles\Catalogos\Proceso\ListarProceso.Designer.vb">
-      <DependentUpon>ListarProceso.vb</DependentUpon>
+    <Compile Include="Controles\Catalogos\Materiales\uc_ListadoMaterial.Designer.vb">
+      <DependentUpon>uc_ListadoMaterial.vb</DependentUpon>
     </Compile>
-    <Compile Include="Controles\Catalogos\Proceso\ListarProceso.vb">
+    <Compile Include="Controles\Catalogos\Materiales\uc_ListadoMaterial.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Materiales\uc_Material_Eliminar.Designer.vb">
+      <DependentUpon>uc_Material_Eliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Materiales\uc_Material_Eliminar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Materiales\uc_Material_Insertar.Designer.vb">
+      <DependentUpon>uc_Material_Insertar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Materiales\uc_Material_Insertar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Materiales\uc_Material_Modificar.Designer.vb">
+      <DependentUpon>uc_Material_Modificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Materiales\uc_Material_Modificar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\uc_ListadoProceso.Designer.vb">
+      <DependentUpon>uc_ListadoProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\uc_ListadoProceso.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\uc_ListarProceso.Designer.vb">
+      <DependentUpon>uc_ListarProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Catalogos\Proceso\uc_ListarProceso.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controles\Catalogos\Proceso\Proceso.vb" />
@@ -369,8 +400,35 @@
     <EmbeddedResource Include="Controles\Catalogos\CondicionesPago\uc_ListarCondicionesPago.resx">
       <DependentUpon>uc_ListarCondicionesPago.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Materiales\uc_ListadoMaterial.resx">
+      <DependentUpon>uc_ListadoMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Materiales\uc_ListarMaterial.resx">
+      <DependentUpon>uc_ListarMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Materiales\uc_Material_Eliminar.resx">
+      <DependentUpon>uc_Material_Eliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Materiales\uc_Material_Insertar.resx">
+      <DependentUpon>uc_Material_Insertar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Materiales\uc_Material_Modificar.resx">
+      <DependentUpon>uc_Material_Modificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Proceso\uc_ListadoProceso.resx">
+      <DependentUpon>uc_ListadoProceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Proceso\uc_ListarProceso.resx">
+      <DependentUpon>uc_ListarProceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Proceso\uc_Proceso_Eliminar.resx">
+      <DependentUpon>uc_Proceso_Eliminar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controles\Catalogos\Proceso\uc_Proceso_Insertar.resx">
       <DependentUpon>uc_Proceso_Insertar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Catalogos\Proceso\uc_Proceso_Modificar.resx">
+      <DependentUpon>uc_Proceso_Modificar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controles\Catalogos\Proveedores\uc_FormularioDatosProveedores.resx">
       <DependentUpon>uc_FormularioDatosProveedores.vb</DependentUpon>

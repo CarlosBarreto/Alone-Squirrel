@@ -68,6 +68,7 @@ Public Class CondicionesPago
         strSQl = New StringBuilder
 
         _CondicionID = DB.getSeqNo("Condicion")
+
         strSQl.Append("INSERT INTO `appmigsa`.`condiciones_pago` ")
         strSQl.Append("(`CondicionID`,`Nombre`,`Anticipo`,`Resto`) ")
         strSQl.Append("VALUES('" & _CondicionID & "','" & _Nombre & "'," & _Anticipo & "," & _Resto & "); ")
@@ -81,8 +82,8 @@ Public Class CondicionesPago
         strSQl = New StringBuilder
 
         strSQl.Append("UPDATE `appmigsa`.`condiciones_pago` ")
-        strSQl.Append(" SET `Nombre` = '" & _Nombre & "',`Anticipo` = " & _Anticipo & ",`Resto` = " & _Resto & ") ")
-        strSQl.Append("WHERE `CondicionID` = '" & _CondicionID & ");")
+        strSQl.Append(" SET `Nombre` = '" & _Nombre & "',`Anticipo` = " & _Anticipo & ",`Resto` = " & _Resto & " ")
+        strSQl.Append("WHERE `CondicionID` = '" & _CondicionID & "';")
         DT = DB.getDataTableQuery(strSQl.ToString)
 
         DB.SaveTransactionLog("UPDATE", _CondicionID, "Se ha actualizado una Condicion de Pago - " & _CondicionID)
@@ -92,23 +93,38 @@ Public Class CondicionesPago
         strSQl = New StringBuilder
 
         strSQl.Append("DELETE FROM `appmigsa`.`condiciones_pago` ")
-        strSQl.Append("WHERE `CondicionID` = '" & _CondicionID & ");")
+        strSQl.Append("WHERE `CondicionID` = '" & _CondicionID & "';")
         DT = DB.getDataTableQuery(strSQl.ToString)
 
         DB.SaveTransactionLog("DELETE", _CondicionID, "Se ha eliminado una condicion de pago - " & _CondicionID)
     End Sub
 
-    Public Sub ListarCondicionesPago()
+    Public Function ListarCondicionesPago() As DataTable
         strSQl = New StringBuilder
 
         strSQl.Append("SELECT `CondicionID`, `Nombre` FROM `appmigsa`.`condiciones_pago`; ")
         DT = DB.getDataTableQuery(strSQl.ToString)
-    End Sub
 
-    Public Sub ListadoCondicionesPago()
+        Return DT
+    End Function
+
+    Public Function ListadoCondicionesPago() As DataTable
         strSQl = New StringBuilder
 
         strSQl.Append("SELECT * FROM `appmigsa`.`condiciones_pago`; ")
         DT = DB.getDataTableQuery(strSQl.ToString)
-    End Sub
+
+        Return DT
+    End Function
+
+    Public Function MostrarCondicionesPago(ByVal Condicion As String) As DataTable
+        strSQl = New StringBuilder
+
+        strSQl.Append("SELECT * FROM `appmigsa`.`condiciones_pago` ")
+        strSQl.Append("WHERE `CondicionID` = '" & Condicion & "';")
+
+        DT = DB.getDataTableQuery(strSQl.ToString)
+
+        Return DT
+    End Function
 End Class

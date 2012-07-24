@@ -22,63 +22,21 @@ Partial Class uc_CondicionesPago_Modificar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBoxExt2 = New Main.TextBoxExt()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBoxExt1 = New Main.TextBoxExt()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.bt_Cancelar = New System.Windows.Forms.Button()
         Me.bt_Guardar = New System.Windows.Forms.Button()
-        Me.txt_NumeroCliente = New Main.TextBoxExt()
-        Me.txt_Empresa = New Main.TextBoxExt()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txt_Resto = New Main.TextBoxExt()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txt_Anticipo = New Main.TextBoxExt()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txt_CondicionID = New Main.TextBoxExt()
+        Me.txt_Nombre = New Main.TextBoxExt()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'TextBoxExt2
-        '
-        Me.TextBoxExt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxExt2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxExt2.ForeColor = System.Drawing.Color.Black
-        Me.TextBoxExt2.Location = New System.Drawing.Point(126, 139)
-        Me.TextBoxExt2.Name = "TextBoxExt2"
-        Me.TextBoxExt2.Size = New System.Drawing.Size(132, 22)
-        Me.TextBoxExt2.TabIndex = 59
-        Me.TextBoxExt2.Type = Main.TextBoxExt.ValidType.Text
-        '
-        'Label4
-        '
-        Me.Label4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label4.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label4.Location = New System.Drawing.Point(7, 141)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(72, 18)
-        Me.Label4.TabIndex = 58
-        Me.Label4.Text = "Resto"
-        '
-        'TextBoxExt1
-        '
-        Me.TextBoxExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxExt1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxExt1.ForeColor = System.Drawing.Color.Black
-        Me.TextBoxExt1.Location = New System.Drawing.Point(126, 110)
-        Me.TextBoxExt1.Name = "TextBoxExt1"
-        Me.TextBoxExt1.Size = New System.Drawing.Size(132, 22)
-        Me.TextBoxExt1.TabIndex = 57
-        Me.TextBoxExt1.Type = Main.TextBoxExt.ValidType.Text
-        '
-        'Label3
-        '
-        Me.Label3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.Label3.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label3.Location = New System.Drawing.Point(7, 112)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(72, 18)
-        Me.Label3.TabIndex = 56
-        Me.Label3.Text = "Anticipo"
         '
         'Panel1
         '
@@ -116,35 +74,98 @@ Partial Class uc_CondicionesPago_Modificar
         Me.bt_Guardar.Text = "&Guardar"
         Me.bt_Guardar.UseVisualStyleBackColor = True
         '
-        'txt_NumeroCliente
+        'GroupBox1
         '
-        Me.txt_NumeroCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_NumeroCliente.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_NumeroCliente.ForeColor = System.Drawing.Color.Black
-        Me.txt_NumeroCliente.Location = New System.Drawing.Point(126, 52)
-        Me.txt_NumeroCliente.Name = "txt_NumeroCliente"
-        Me.txt_NumeroCliente.Size = New System.Drawing.Size(132, 22)
-        Me.txt_NumeroCliente.TabIndex = 54
-        Me.txt_NumeroCliente.Type = Main.TextBoxExt.ValidType.Alpha
-        Me.txt_NumeroCliente.Visible = False
+        Me.GroupBox1.Controls.Add(Me.txt_Resto)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.txt_Anticipo)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.txt_CondicionID)
+        Me.GroupBox1.Controls.Add(Me.txt_Nombre)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.GroupBox1.Location = New System.Drawing.Point(10, 40)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(481, 171)
+        Me.GroupBox1.TabIndex = 56
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = " Condiciones de Pago "
         '
-        'txt_Empresa
+        'txt_Resto
         '
-        Me.txt_Empresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_Empresa.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Empresa.ForeColor = System.Drawing.Color.Black
-        Me.txt_Empresa.Location = New System.Drawing.Point(126, 82)
-        Me.txt_Empresa.Name = "txt_Empresa"
-        Me.txt_Empresa.Size = New System.Drawing.Size(348, 22)
-        Me.txt_Empresa.TabIndex = 53
-        Me.txt_Empresa.Type = Main.TextBoxExt.ValidType.Text
+        Me.txt_Resto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Resto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Resto.ForeColor = System.Drawing.Color.Black
+        Me.txt_Resto.Location = New System.Drawing.Point(134, 119)
+        Me.txt_Resto.Name = "txt_Resto"
+        Me.txt_Resto.Size = New System.Drawing.Size(132, 22)
+        Me.txt_Resto.TabIndex = 58
+        Me.txt_Resto.Type = Main.TextBoxExt.ValidType.Number
+        '
+        'Label4
+        '
+        Me.Label4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.Label4.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label4.Location = New System.Drawing.Point(15, 121)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(72, 18)
+        Me.Label4.TabIndex = 57
+        Me.Label4.Text = "Resto"
+        '
+        'txt_Anticipo
+        '
+        Me.txt_Anticipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Anticipo.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Anticipo.ForeColor = System.Drawing.Color.Black
+        Me.txt_Anticipo.Location = New System.Drawing.Point(134, 90)
+        Me.txt_Anticipo.Name = "txt_Anticipo"
+        Me.txt_Anticipo.Size = New System.Drawing.Size(132, 22)
+        Me.txt_Anticipo.TabIndex = 56
+        Me.txt_Anticipo.Type = Main.TextBoxExt.ValidType.Number
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.Label3.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label3.Location = New System.Drawing.Point(15, 92)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(72, 18)
+        Me.Label3.TabIndex = 55
+        Me.Label3.Text = "Anticipo"
+        '
+        'txt_CondicionID
+        '
+        Me.txt_CondicionID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_CondicionID.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_CondicionID.ForeColor = System.Drawing.Color.Black
+        Me.txt_CondicionID.Location = New System.Drawing.Point(134, 32)
+        Me.txt_CondicionID.Name = "txt_CondicionID"
+        Me.txt_CondicionID.Size = New System.Drawing.Size(132, 22)
+        Me.txt_CondicionID.TabIndex = 54
+        Me.txt_CondicionID.Type = Main.TextBoxExt.ValidType.Alpha
+        Me.txt_CondicionID.Visible = False
+        '
+        'txt_Nombre
+        '
+        Me.txt_Nombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Nombre.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Nombre.ForeColor = System.Drawing.Color.Black
+        Me.txt_Nombre.Location = New System.Drawing.Point(134, 62)
+        Me.txt_Nombre.Name = "txt_Nombre"
+        Me.txt_Nombre.Size = New System.Drawing.Size(328, 22)
+        Me.txt_Nombre.TabIndex = 53
+        Me.txt_Nombre.Type = Main.TextBoxExt.ValidType.Alpha
         '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Label2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label2.Location = New System.Drawing.Point(7, 84)
+        Me.Label2.Location = New System.Drawing.Point(15, 64)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(72, 18)
         Me.Label2.TabIndex = 52
@@ -155,7 +176,7 @@ Partial Class uc_CondicionesPago_Modificar
         Me.Label1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
         Me.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label1.Location = New System.Drawing.Point(7, 54)
+        Me.Label1.Location = New System.Drawing.Point(15, 34)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(123, 18)
         Me.Label1.TabIndex = 51
@@ -167,31 +188,26 @@ Partial Class uc_CondicionesPago_Modificar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
-        Me.Controls.Add(Me.TextBoxExt2)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBoxExt1)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.txt_NumeroCliente)
-        Me.Controls.Add(Me.txt_Empresa)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Name = "uc_CondicionesPago_Modificar"
-        Me.Size = New System.Drawing.Size(499, 312)
+        Me.Size = New System.Drawing.Size(499, 240)
         Me.Panel1.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBoxExt2 As Main.TextBoxExt
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBoxExt1 As Main.TextBoxExt
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents bt_Cancelar As System.Windows.Forms.Button
     Friend WithEvents bt_Guardar As System.Windows.Forms.Button
-    Friend WithEvents txt_NumeroCliente As Main.TextBoxExt
-    Friend WithEvents txt_Empresa As Main.TextBoxExt
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents txt_Resto As Main.TextBoxExt
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents txt_Anticipo As Main.TextBoxExt
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents txt_CondicionID As Main.TextBoxExt
+    Friend WithEvents txt_Nombre As Main.TextBoxExt
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
 

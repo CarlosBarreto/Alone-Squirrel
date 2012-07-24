@@ -1,5 +1,6 @@
 ﻿Public Class uc_GuardarRequisitor
     Private _NumeroDeCliente As String
+
     'Botones
     Private Sub bt_Cancelar_Click(sender As System.Object, e As System.EventArgs) Handles bt_Cancelar.Click
         Dim x As fr_Main
@@ -75,7 +76,6 @@
     'metodos
     Public Sub New(ByVal NoCliente As String)
         InitializeComponent()
-
         _NumeroDeCliente = NoCliente
     End Sub
 

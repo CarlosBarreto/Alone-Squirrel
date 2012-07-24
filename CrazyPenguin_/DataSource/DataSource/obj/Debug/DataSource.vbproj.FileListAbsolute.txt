@@ -32,3 +32,14 @@ C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\D
 C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\Debug\DataSource.dll
 C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\Debug\DataSource.xml
 C:\Users\carlos.barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\Debug\DataSource.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\bin\Debug\DataSource.dll.config
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\bin\Debug\DataSource.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\bin\Debug\DataSource.pdb
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\bin\Debug\DataSource.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\Debug\DataSource.Resources.resources
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\Debug\DataSource.dll
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\Debug\DataSource.xml
+C:\Users\Carlos Barreto\Alone-Squirrel\CrazyPenguin_\DataSource\DataSource\obj\Debug\DataSource.pdb
