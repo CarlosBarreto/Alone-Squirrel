@@ -161,7 +161,7 @@ Public Class NuevaSolicitud
         Dim DT As DataTable
         Dim strSQL As New StringBuilder
 
-        strSQL.Append("SELECT  '' as Anticipo, '' as Resto, Credito, Contado, TiempoPago, '' as Observaciones ")
+        strSQL.Append("SELECT  Anticipo, Resto, Credito, Contado, TiempoPago, Observaciones ")
         strSQL.Append("FROM appmigsa.solicitudcotizacion ")
         strSQL.Append("WHERE NumeroSolicitud = '" & NumeroSolicitud & "'; ")
         DT = DB.getDataTableQuery(strSQL.ToString)
@@ -271,7 +271,7 @@ Public Class NuevaSolicitud
 
         DT = getDatosCondicionesDeServicio(_SolicitudCotizacion)
         With _CondicionesPago
-            .Anticipo = FormatCurrency(DT.Rows(0)("Resto"), 2)
+            .Anticipo = FormatCurrency(DT.Rows(0)("Anticipo"), 2)
             .Resto = FormatCurrency(DT.Rows(0)("Resto"), 2)
             .Credito = UCase(DT.Rows(0)("Credito"))
             .Contado = UCase(DT.Rows(0)("Contado"))
@@ -346,7 +346,7 @@ Public Class NuevaSolicitud
             pdfFormFields.SetField("pobjetivo", FormatCurrency(_DT.Rows(i)("PrecioObjetivo"), 2))
             pdfFormFields.SetField("cond entrega", UCase(_DT.Rows(i)("CondicionEntrega")))
             pdfFormFields.SetField("dibujo", "")
-            If _DT.Rows(i)("MaterialesProporcionados").ToString = "Empresa" Then
+            If _DT.Rows(i)("MaterialProporcionado").ToString = "Empresa" Then
                 pdfFormFields.SetField("empresa", "Yes")
                 pdfFormFields.SetField("cliente", "No")
             Else

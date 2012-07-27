@@ -42,10 +42,10 @@ Public Class Cliente
     End Property
     Public Property Colonia As String
         Get
-            Return _CP
+            Return _Colonia
         End Get
         Set(ByVal value As String)
-            _CP = value
+            _Colonia = value
         End Set
     End Property
     Public Property CP As String

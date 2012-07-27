@@ -344,6 +344,7 @@
     <Compile Include="Controles\Proyecto\Nueva Solicitud\uc_NuevaSolicitudCotización.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controles\Proyecto\Proyecto.vb" />
     <Compile Include="DataBase.vb" />
     <Compile Include="fr_Main.vb">
       <SubType>Form</SubType>

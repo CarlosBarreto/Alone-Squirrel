@@ -11,10 +11,13 @@ Public Class SolicitudCotizacion
     Private _Servicio As String
     Private _Solicitud As String
     Private _Entrega As String
-    Private _CondicionID As String
+    'Private _CondicionID As String
+    Private _Anticipo As Integer
+    Private _Resto As Integer
     Private _Credito As String
     Private _Contado As String
     Private _TiempoPago As String
+    Private _Observaciones As String
 
     Public Property NumeroSolicitud As String
         Get
@@ -70,12 +73,28 @@ Public Class SolicitudCotizacion
         End Set
     End Property
 
-    Public Property CondicionID As String
+    'Public Property CondicionID As String
+    '    Get
+    '        Return _CondicionID
+    '    End Get
+    '    Set(value As String)
+    '        _CondicionID = value
+    '    End Set
+    'End Property
+    Public Property Anticipo As Integer
         Get
-            Return _CondicionID
+            Return _Anticipo
         End Get
-        Set(value As String)
-            _CondicionID = value
+        Set(value As Integer)
+            _Anticipo = value
+        End Set
+    End Property
+    Public Property Resto As Integer
+        Get
+            Return _Resto
+        End Get
+        Set(value As Integer)
+            _Resto = value
         End Set
     End Property
 
@@ -106,6 +125,14 @@ Public Class SolicitudCotizacion
         End Set
     End Property
 
+    Public Property Observaciones As String
+        Get
+            Return _Observaciones
+        End Get
+        Set(value As String)
+            _Observaciones = value
+        End Set
+    End Property
 
     '---- Métodos
     ''' <summary>
@@ -133,8 +160,8 @@ Public Class SolicitudCotizacion
         _NumeroSolicitud = DB.getSeqNo("Solicitud")
 
         strSQl.Append("INSERT INTO `appmigsa`.`solicitudcotizacion` ")
-        strSQl.Append("(`NumeroSolicitud`,`NumeroDeCliente`,`IDRequisitor`,`Servicio`,`Solicitud`,`Entrega`,`CondicionID`,`Credito`,`Contado`,`TiempoPago`) ")
-        strSQl.Append("VALUES('" & _NumeroSolicitud & "', '" & _NumeroDeCliente & "', '" & _IDRequisitor & "', '" & _Servicio & "', '" & _Solicitud & "', '" & _Entrega & "', '" & _CondicionID & "', '" & _Credito & "', '" & _Contado & "','" & _TiempoPago & "'  );")
+        strSQl.Append("(`NumeroSolicitud`,`NumeroDeCliente`,`IDRequisitor`,`Servicio`,`Solicitud`,`Entrega`,`Anticipo`,`Resto`,`Credito`,`Contado`,`TiempoPago`, `Observaciones`, `Status`) ")
+        strSQl.Append("VALUES('" & _NumeroSolicitud & "', '" & _NumeroDeCliente & "', '" & _IDRequisitor & "', '" & _Servicio & "', '" & _Solicitud & "', '" & _Entrega & "', '" & _Anticipo & "', '" & _Resto & "', '" & _Credito & "', '" & _Contado & "','" & _TiempoPago & "', '" & _Observaciones & "', 'OPEN');")
 
         DT = DB.getDataTableQuery(strSQl.ToString)
 

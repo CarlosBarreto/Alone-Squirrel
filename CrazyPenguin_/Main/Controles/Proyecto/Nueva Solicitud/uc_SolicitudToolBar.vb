@@ -60,7 +60,10 @@ Public Class uc_SolicitudToolBar
                 .Servicio = UC.txt_Servicio.Text
                 .Solicitud = UC.dt_Solicitud.Text
                 .Entrega = UC.dt_Entrega.Text
-                .CondicionID = UC.cb_Condiciones.SelectedValue
+                .Anticipo = UC.txt_Anticipo.Text
+                .Resto = UC.txt_Resto.Text
+
+                '.CondicionID = UC.cb_Condiciones.SelectedValue
                 If UC.rd_Credito.Checked = True Then
                     .Credito = "Si"
                     .Contado = "No"
@@ -69,6 +72,7 @@ Public Class uc_SolicitudToolBar
                     .Contado = "Si"
                 End If
                 .TiempoPago = UC.txt_TipoPago.Text
+                .Observaciones = UC.txt_Observaciones.Text
 
                 .Solicitud_Insertar()
             End With

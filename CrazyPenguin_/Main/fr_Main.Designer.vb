@@ -91,10 +91,14 @@ Partial Class fr_Main
         Me.ProyectoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevaSolicitudToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevaCotizaciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SolicitudesPendientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ToolStripMenuItem11 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SolicitudesPendientesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevoProyectoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CancelarProyectoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TrabajarProyectoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel_Menu_Principal.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
@@ -525,7 +529,7 @@ Partial Class fr_Main
         '
         'ProyectoToolStripMenuItem
         '
-        Me.ProyectoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaSolicitudToolStripMenuItem, Me.NuevaCotizaciónToolStripMenuItem, Me.SolicitudesPendientesToolStripMenuItem})
+        Me.ProyectoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaSolicitudToolStripMenuItem, Me.ToolStripMenuItem11, Me.NuevoProyectoToolStripMenuItem, Me.CancelarProyectoToolStripMenuItem, Me.TrabajarProyectoToolStripMenuItem, Me.NuevaCotizaciónToolStripMenuItem})
         Me.ProyectoToolStripMenuItem.Name = "ProyectoToolStripMenuItem"
         Me.ProyectoToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
         Me.ProyectoToolStripMenuItem.Text = "Proyecto"
@@ -533,23 +537,18 @@ Partial Class fr_Main
         'NuevaSolicitudToolStripMenuItem
         '
         Me.NuevaSolicitudToolStripMenuItem.Name = "NuevaSolicitudToolStripMenuItem"
-        Me.NuevaSolicitudToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.NuevaSolicitudToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
         Me.NuevaSolicitudToolStripMenuItem.Text = "Nueva Solicitud"
         '
         'NuevaCotizaciónToolStripMenuItem
         '
         Me.NuevaCotizaciónToolStripMenuItem.Name = "NuevaCotizaciónToolStripMenuItem"
-        Me.NuevaCotizaciónToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.NuevaCotizaciónToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
         Me.NuevaCotizaciónToolStripMenuItem.Text = "Nueva Cotización"
-        '
-        'SolicitudesPendientesToolStripMenuItem
-        '
-        Me.SolicitudesPendientesToolStripMenuItem.Name = "SolicitudesPendientesToolStripMenuItem"
-        Me.SolicitudesPendientesToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
-        Me.SolicitudesPendientesToolStripMenuItem.Text = "Solicitudes Pendientes"
         '
         'ReportesToolStripMenuItem
         '
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SolicitudesPendientesToolStripMenuItem1})
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
@@ -569,6 +568,35 @@ Partial Class fr_Main
         Me.PictureBox1.Size = New System.Drawing.Size(167, 57)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
+        '
+        'ToolStripMenuItem11
+        '
+        Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
+        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(166, 6)
+        '
+        'SolicitudesPendientesToolStripMenuItem1
+        '
+        Me.SolicitudesPendientesToolStripMenuItem1.Name = "SolicitudesPendientesToolStripMenuItem1"
+        Me.SolicitudesPendientesToolStripMenuItem1.Size = New System.Drawing.Size(201, 22)
+        Me.SolicitudesPendientesToolStripMenuItem1.Text = "Solicitudes Pendientes"
+        '
+        'NuevoProyectoToolStripMenuItem
+        '
+        Me.NuevoProyectoToolStripMenuItem.Name = "NuevoProyectoToolStripMenuItem"
+        Me.NuevoProyectoToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
+        Me.NuevoProyectoToolStripMenuItem.Text = "Nuevo Proyecto"
+        '
+        'CancelarProyectoToolStripMenuItem
+        '
+        Me.CancelarProyectoToolStripMenuItem.Name = "CancelarProyectoToolStripMenuItem"
+        Me.CancelarProyectoToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.CancelarProyectoToolStripMenuItem.Text = "Cancelar Proyecto"
+        '
+        'TrabajarProyectoToolStripMenuItem
+        '
+        Me.TrabajarProyectoToolStripMenuItem.Name = "TrabajarProyectoToolStripMenuItem"
+        Me.TrabajarProyectoToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.TrabajarProyectoToolStripMenuItem.Text = "Trabajar Proyecto"
         '
         'fr_Main
         '
@@ -632,7 +660,6 @@ Partial Class fr_Main
     Friend WithEvents ProyectoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NuevaSolicitudToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NuevaCotizaciónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SolicitudesPendientesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AgregarToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
@@ -666,5 +693,10 @@ Partial Class fr_Main
     Friend WithEvents EliminarToolStripMenuItem6 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem10 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ListadoDeProcesosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem11 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents SolicitudesPendientesToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NuevoProyectoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CancelarProyectoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TrabajarProyectoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
